@@ -25,7 +25,7 @@ Open source isn't just about code—it's about collaboration! As a developer, yo
 - Submit a Pull Request (PR): Follow the contribution guidelines and share your changes.
 - Learn & Iterate: Collaborate with the community to improve your code.
 
-🌱 Start Your Development Journey Today!
+### 🌱 Start Your Development Journey Today!
 No contribution is too small—whether it's fixing a bug, adding a feature, or reviewing code. Jump in, write code, and help make open source better one commit at a time!
 
 If you ever get stuck, reach out to the community—developers love to help each other grow and learn. Together, we can build amazing things! 🚀
