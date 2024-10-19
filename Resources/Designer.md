@@ -56,7 +56,7 @@
    - Or, suggest improvements after reviewing the project.
 
 4. **Submit Your Work**  
-   - Once your work is ready, submit a **pull request** with your designs or suggestions.
+   - Once your work is ready, submit an **issue** with your designs or suggestions. (for a start, you really don't need to create a pr)
    - Provide context and explain how your design improves the project.
 
 ---
