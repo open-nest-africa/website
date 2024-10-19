@@ -20,9 +20,9 @@ OpenNest-Africa is a beginner-friendly, community-driven space designed to:
 ---
 
 ### 🌱 How to Contribute to OpenNest
-Every contribution counts at OpenNest no matter how little:
+Every contribution counts at OpenNest, no matter how little:
 
-- Explore our [Link to Contributing](./Contributing.md/) to get started with your first conrtibution. 
+- Explore our [Link to Contributing](./Contributing.md/) to get started with your first contribution. 
 - Find a Beginner Task – Look for issues tagged good first issue.
 - Create an issue or pull request to suggest improvements.
 - Help others by answering questions or joining discussions.
@@ -34,4 +34,4 @@ Every contribution counts at OpenNest no matter how little:
 
 ### 💌 Our Values
 
-We believe in collaboration, kindness, and learning. At OpenNest, everyone is welcome, whether you're a first-timer or experienced contributor. Please review our [Link to Code of Conduct](./Code_Of_Conduct.md) to help us maintain a respectful and inclusive space.
+We believe in collaboration, kindness, and learning. At OpenNest, everyone is welcome, whether you're a first-timer or an experienced contributor. Please review our [Link to Code of Conduct](./Code_Of_Conduct.md) to help us maintain a respectful and inclusive space.
