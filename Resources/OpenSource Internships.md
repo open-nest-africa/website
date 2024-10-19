@@ -25,7 +25,7 @@ This section highlights various **paid open-source internships** that provide co
 | **Google Summer of Code** | Google                      | Varies by country         | 12-week coding program for students to contribute to open-source projects.     |
 | **Google Season of Docs** | Google                      | Varies                    | Supports technical writers to improve documentation for open-source projects. |
 | **LFX Mentorship**        | Linux Foundation            | $500 - $6,000             | Offers mentorship in Linux and cloud-native technologies through projects.     |
-| **AsyncAPI Maintainership** | AsyncAPI Community       | Competitive stipend       | Focuses on maintaining open-source API tools with professional mentorship.     |
+| **AsyncAPI Maintainership** | AsyncAPI Community       | $1500 + Swags               | Focuses on maintaining open-source API tools with professional mentorship.     |
 | **KDE SoK (Season of KDE)** | KDE Community            | Varies                    | Coding and non-coding projects to improve KDE software with mentors.           |
 | **Red Hat Open Source**   | Red Hat                     | Varies                    | Provides internships on Linux, Kubernetes, and cloud tech contributions.      |
 | **MLH Fellowship**        | Major League Hacking        | $5,000                    | Offers internships focused on software engineering and open-source projects.  |
