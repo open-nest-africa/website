@@ -1,5 +1,5 @@
 # 🌸OpenNest-Africa: Code of Conduct
----
+
 
 ### Our Pledge
 ---
@@ -24,6 +24,7 @@ Examples of unacceptable behavior by participants include:
 - Other conduct which could reasonably be considered inappropriate in a professional setting
 
 ### Scope
+---
 This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.
 
 ### Enforce Responsibilities
@@ -62,7 +63,8 @@ Community Impact: Demonstrating a pattern of violation of community standards, i
 
 Consequence: A permanent ban from any sort of public interaction within the community.
 
-Attribution
+### Attribution
+---
 This Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at http://contributor-covenant.org/version/2/1.
 
 Community Impact Guidelines were inspired by CHAOSS Africa and AsyncAPI's code of conduct enforcement ladder.
