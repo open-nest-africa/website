@@ -1,16 +1,16 @@
-# 🌸 OpenNest-Community
+# 🌸 OpenNest-Africa
 
 Your Safe Start for Every OpenSourcer!
 
-Welcome to OpenNest, a cozy hub where beginners—technical or non-technical—can explore, learn, and grow in the world of open source.
+Welcome to OpenNest-Africa, a cozy hub where beginners—technical or non-technical—can explore, learn, and grow in the world of open source.
 
 Whether you’re coding, writing, designing, or just curious, you belong here. Let’s start your open-source journey together!
 
 ---
 
-### 🌟 What is OpenNest?
+### 🌟 What is OpenNest-Africa?
 
-OpenNest is a beginner-friendly, community-driven space designed to:
+OpenNest-Africa is a beginner-friendly, community-driven space designed to:
 
 - Provide resources to help you make your first contribution.
 - Support all roles—from coding to documentation, design, and more.
