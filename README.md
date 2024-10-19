@@ -14,8 +14,8 @@ OpenNest is a beginner-friendly, community-driven space designed to:
 
 - Provide resources to help you make your first contribution.
 - Support all roles—from coding to documentation, design, and more.
-  = Guide you step-by-step through your open-source journey.
-  = Foster inclusivity, welcoming contributors of all backgrounds and skill levels.
+- Guide you step-by-step through your open-source journey.
+- Foster inclusivity, welcoming contributors of all backgrounds and skill levels.
 
 ---
 
