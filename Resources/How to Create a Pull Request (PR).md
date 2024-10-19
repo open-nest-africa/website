@@ -10,4 +10,5 @@ A PR allows you to propose changes to a project. Follow these steps to create on
 - In your terminal(Git Bash/VScode), run:
 
 ```git clone https://github.com/your-username/project-name.git```
+
 ```cd project-name```
