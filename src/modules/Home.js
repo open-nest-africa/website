@@ -1,15 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Header from "../components/layout/Header";
+import Hero from "./component/Hero";
+import HowItWorks from "./component/HowItWorks";
+import WhyOpenNest from "./component/WhyOpenNest";
+import OpenNestInAction from "./component/OpenNestInAction";
+import CTA from "./component/CTA";
+import OurCommunity from "./component/OurCommunity";
 
 const Home = () => {
   return (
     <section>
-      <nav className="flex gap-x-2">
-        <Link to="/login">Login</Link>
-        <Link to="/signup">Signup</Link>
-      </nav>
-
-      <h1> Home page</h1>
+      <Header />
+      <main>
+        <Hero />
+        <HowItWorks />
+        <WhyOpenNest />
+        <OpenNestInAction />
+        <CTA />
+        <OurCommunity />
+      </main>
     </section>
   );
 };
