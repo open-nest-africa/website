@@ -12,32 +12,26 @@ Whether you’re coding, writing, designing, or just curious, you belong here. L
 
 OpenNest-Africa is a beginner-friendly, community-driven space designed to:
 
-- Provide resources to help you make your first contribution.
+- Provide [Link to resources](./Resources/) to help you make your first contribution to OpenSource.
 - Support all roles—from coding to documentation, design, and more.
 - Guide you step-by-step through your open-source journey.
 - Foster inclusivity, welcoming contributors of all backgrounds and skill levels.
 
 ---
 
-### 🛠️ How to Get Started
+### 🌱 How to Contribute to OpenNest
+Every contribution counts at OpenNest no matter how little:
 
-- Explore Resources – Start with our beginner guides in the resources/ folder.
+- Explore our [Link to Contributing](./Contributing.md/) to get started with your first conrtibution. 
 - Find a Beginner Task – Look for issues tagged good first issue.
-- Join the Conversation – Participate in GitHub Discussions.
+- Create an issue or pull request to suggest improvements.
+- Help others by answering questions or joining discussions.
+- Share resources you’ve found useful.
 - Ask for Help – We're here to support you!
 
 ---
 
-### 🌱 How You Can Contribute
-
-- Every contribution counts! You can:
-- Share resources you’ve found useful.
-- Create an issue or pull request to suggest improvements.
-- Help others by answering questions or joining discussions.
-
----
 
 ### 💌 Our Values
 
-We believe in collaboration, kindness, and learning.
-At OpenNest, everyone is welcome, whether you're a first-timer or experienced contributor. Please review our Code of Conduct to help us maintain a respectful and inclusive space.
+We believe in collaboration, kindness, and learning. At OpenNest, everyone is welcome, whether you're a first-timer or experienced contributor. Please review our [Link to Code of Conduct](./Code_Of_Conduct.md) to help us maintain a respectful and inclusive space.
