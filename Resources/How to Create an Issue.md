@@ -4,7 +4,7 @@ Issues are used to report bugs, request new features, or suggest improvements. F
 
 
 ### 🚶 Step-by-Step Guide to Creating an Issue:
-1. Go to the Repository
+**1. Go to the Repository**
 - Visit the project repository on GitHub (e.g., https://github.com/YourRepo).
 
 2. Navigate to the Issues Tab
