@@ -8,7 +8,9 @@ const Header = () => {
     <header className="px-[112px] py-6">
       <nav className="flex items-center justify-between">
         <div>
-          <img src="/images/logo.svg" alt="" />
+          <Link to="/">
+            <img src="/images/logo.svg" alt="" />
+          </Link>
         </div>
         <ul className="flex items-center justify-between text-base font-semibold text-dark-2 capitalize gap-x-8 bg-[#F7F9FC] rounded-[40px] py-4 px-10">
           <li className="flex items-center gap-x-1">
