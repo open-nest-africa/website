@@ -5,16 +5,18 @@ function App() {
   const Home = lazy(() => import("./modules/Home"));
   const Login = lazy(() => import("./modules/auth/pages/Login"));
   const Signup = lazy(() => import("./modules/auth/pages/Signup"));
+  const Resources = lazy(() => import("./modules/Resources"));
   return (
-    <Router>
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-        </Routes>
-      </Suspense>
-    </Router>
+		<Router>
+			<Suspense fallback={<div>Loading...</div>}>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/login" element={<Login />} />
+					<Route path="/signup" element={<Signup />} />
+					<Route path="/resources" element={<Resources />} />
+				</Routes>
+			</Suspense>
+		</Router>
   );
 }
 
