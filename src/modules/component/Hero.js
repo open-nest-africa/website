@@ -3,12 +3,12 @@ import Button from "../../components/Button";
 
 const Hero = () => {
   return (
-    <section className="text-center text-black">
-      <h1 className="px-[150px] font-semibold text-6xl leading-[92.8px]">
+    <section className="text-center text-black py-10">
+      <h1 className="px-[150px] font-semibold text-6xl leading-[90px] mb-4">
         Navigate Open Source Like a Pro with{" "}
         <span className="text-blue">OpenNest</span>
       </h1>
-      <p className="px-[200px] leading-[52.2px] text-4xl font-medium">
+      <p className="px-[220px] leading-[45px] text-3xl font-medium">
         Your go-to platform for mastering the open-source space, with
         step-by-step guides and resources to kickstart your journey.
       </p>

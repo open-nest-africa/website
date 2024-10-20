@@ -4,7 +4,7 @@ const Overview = () => {
 	return (
 		<div className="p-24 bg-[#F5FCFF] flex flex-col gap-10">
 			<h1 className="text-6xl font-bold">Welcome to OpenNest Resources</h1>
-			<p className="text-xl">
+			<p className="text-xl leading-9">
 				Welcome to OpenNest, your cozy community hub for embarking on your
 				open-source journey! Here, we believe that everyone has something
 				valuable to contribute, regardless of their background or experience
@@ -12,7 +12,7 @@ const Overview = () => {
 				the world of open source by providing essential resources, guidance,
 				and a supportive community.
 			</p>
-			<p className="text-xl">
+			<p className="text-xl leading-9">
 				Whether you're interested in coding, documentation, design, or
 				community management, OpenNest offers a variety of pathways to get
 				involved. Join us as we cultivate an inclusive environment where

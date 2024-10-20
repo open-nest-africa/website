@@ -3,7 +3,7 @@ import WhyOpenNestCard from "../../components/WhyOpenNestCard";
 
 const WhyOpenNest = () => {
   return (
-    <section className="px-[100px]">
+    <section className="px-[100px] py-14">
       <h1 className="text-black text-[64px] leading-[92.8px] font-semibold text-center">Why Choose OpenNest</h1>
       <main className="grid grid-cols-2 gap-x-[25px] gap-y-6 pt-8">
         <WhyOpenNestCard title="Beginner-Friendly Guides" paragraph="Step-by-step tutorials to guide you through the open-source space." />
