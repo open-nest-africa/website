@@ -64,7 +64,9 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <img src="/images/logo.svg" alt="" />
+            <Link to="/">
+              <img src="/images/logo.svg" alt="" />
+            </Link>
           </div>
         </div>
         <div className="space-x-9 text-[#514A4A] text-sm font-semibold">
