@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="mt-10 cursor-pointer">
         <Button
           text="Get Started Now"
-          className="text-white bg-blue text-base font-semibold py-2 px-[152px]"
+          className="text-white bg-blue text-base font-semibold py-4 px-[152px]"
         />
       </div>
       <div className="px-16 pt-[77px]">

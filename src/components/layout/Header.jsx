@@ -14,8 +14,10 @@ const Header = () => {
           <li className="flex items-center gap-x-1">
             use cases <ChevronDownIcon className="w-6 h-6" />
           </li>
-          <li className="flex items-center gap-x-1">
-            Resources <ChevronDownIcon className="w-6 h-6" />
+          <li>
+            <Link to="/resources" className="flex items-center gap-x-1">
+              Resources <ChevronDownIcon className="w-6 h-6" />
+            </Link>
           </li>
           <li>About us</li>
           <li>What's new</li>
