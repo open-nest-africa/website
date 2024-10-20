@@ -6,22 +6,21 @@ import WhyOpenNest from "./component/WhyOpenNest";
 import OpenNestInAction from "./component/OpenNestInAction";
 import CTA from "./component/CTA";
 import OurCommunity from "./component/OurCommunity";
-import Footer from "./component/Footer";
+import Footer from "../components/layout/Footer";
+import Layout from "../components/layout/Layout";
 
 const Home = () => {
   return (
-    <section>
-      <Header />
-      <main>
+    <Layout>
+      <>
         <Hero />
         <HowItWorks />
         <WhyOpenNest />
         <OpenNestInAction />
         <CTA />
         <OurCommunity />
-        <Footer />
-      </main>
-    </section>
+      </>
+    </Layout>
   );
 };
 

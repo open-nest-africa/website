@@ -5,7 +5,7 @@ function App() {
   const Home = lazy(() => import("./modules/Home"));
   const Login = lazy(() => import("./modules/auth/pages/Login"));
   const Signup = lazy(() => import("./modules/auth/pages/Signup"));
-  const Resources = lazy(() => import("./modules/Resources"));
+  const Resources = lazy(() => import("./modules/resources/Resources"));
   return (
 		<Router>
 			<Suspense fallback={<div>Loading...</div>}>
