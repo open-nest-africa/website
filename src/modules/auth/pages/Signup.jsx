@@ -1,9 +1,7 @@
 import React from "react";
 import AuthLayout from "../component/AuthLayout";
 import Button from "../../../components/Button";
-import TextField from "../../../components/form/TextField";
 import { Link } from "react-router-dom";
-import { FormDivider } from "../../../components/FormDivider";
 
 const Signup = () => {
   return (

@@ -5,7 +5,6 @@ import Developers from "./Developers";
 import Designers from "./Designers";
 import Layout from "../../components/layout/Layout";
 import {
-  ArrowDownRightIcon,
   ArrowLeftIcon,
   ArrowRightIcon,
 } from "@heroicons/react/24/solid";
@@ -20,12 +19,10 @@ const Resources = () => {
   ];
 
   const handleNext = () => {
-    console.log("next");
     setTab((prev) => (prev + 1) % resources.length);
   };
 
   const handlePrevious = () => {
-    console.log("previous");
     setTab((prev) => (prev === 0 ? resources.length - 1 : prev - 1));
   };
 
@@ -37,7 +34,7 @@ const Resources = () => {
           tab === 0 ? "justify-end" : "justify-between"
         } bg-[#E3DA35] w-full h-[118px] mb-[140px] flex items-center px-[99px]`}
       >
-        {tab != 0 && (
+        {tab !== 0 && (
           <div className="flex items-center gap-x-2">
             <button onClick={handlePrevious}>
               <ArrowLeftIcon className="w-5 h-5" />
