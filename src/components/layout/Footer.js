@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <section className="bg-primary p-6 flex gap-x-6">
-      <aside className="bg-[#02202C] rounded-[20px] w-1/3 h-[380px] pl-10 pt-8 pr-[71px] pb-[29px] space-y-3">
-        <h3 className="text-white font-semibold text-[40px] -tracking-[4%]">
+      <aside className="bg-[#02202C] rounded-[20px] w-1/3 h-[380px] pl-10 pt-8 pr-[71px] pb-[29px] space-y-4">
+        <h3 className="text-white font-semibold text-[30px] -tracking-[4%]">
           Built by Open Sourcers, for Open Sourcers.
         </h3>
         <p className="text-[#E4DBDB] text-base">

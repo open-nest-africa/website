@@ -2,7 +2,7 @@ import React from "react";
 
 const OpenNestInAction = () => {
   return (
-    <section className="py-12 px-[100px]">
+    <section className="py-14 px-[100px]">
       <div className="text-center">
         <h1 className="text-black text-[64px] leading-[92.8px] font-semibold text-center">OpenNest in Action</h1>
         <p className="text-[#04354A] text-3xl">Hear from our community members</p>

@@ -25,12 +25,12 @@ const Login = () => {
 					<Button
 						icon="/images/github-logo.svg"
 						text="Continue with Github"
-						className="bg-white text-black text-base font-semibold px-[114px] py-4 text-center border border-dark rounded-md"
+						className="bg-white text-black text-base font-semibold px-[108px] py-4 text-center border border-dark rounded-md"
 					/>
 					<Button
 						icon="/images/google-logo.svg"
 						text="Continue with Google"
-						className="bg-white text-black text-base font-semibold px-[114px] py-4 text-center border border-dark rounded-md"
+						className="bg-white text-black text-base font-semibold px-[110px] py-4 text-center border border-dark rounded-md"
 					/>
 				</div>
 				<p className="text-sm text-[#667185]">

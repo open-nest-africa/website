@@ -1,7 +1,7 @@
 export const contributionData = [
 	{
 		role: "Technical Writers",
-        icon: "✍️ ",
+		icon: "✍️ ",
 		intro: "Making your first contribution to an open-source project might feel daunting, but it doesn’t have to be! This step-by-step guide will walk you through everything you need to know to confidently contribute to an open-source project for the very first time.",
 		contributions: [
 			{
@@ -90,6 +90,12 @@ export const contributionData = [
 				],
 			},
 		],
+		videoTutorial: {
+			title: "🎥 Video Tutorial",
+			description:
+				"Watch this YouTube tutorial to learn how technical writers can contribute to open source",
+			link: "https://youtu.be/IaBTzZIZPks?si=exCfpk6xqyRiXA0_",
+		},
 		remarks: {
 			title: "✍️ Start Your Writing Journey Today!",
 			content1:
@@ -101,8 +107,8 @@ export const contributionData = [
 	},
 	{
 		role: "Developers",
-        icon: "💻",
-		intro: "Open source isn't just about code—it's about collaboration! As a developer, you have endless opportunities to make an impact, learn new skills, and grow your network. This guide will help you get started.",
+		icon: "💻",
+		intro: "Open source isn't just about code — it's about collaboration! As a developer, you have endless opportunities to make an impact, learn new skills, and grow your network. This guide will help you get started.",
 		contributions: [
 			{
 				title: "🌟 Why Developers Should Contribute to Open Source",
@@ -186,6 +192,12 @@ export const contributionData = [
 				],
 			},
 		],
+		videoTutorial: {
+			title: "🎥 Video Tutorial",
+			description:
+				"Watch this YouTube tutorial to learn how developers can contribute to open source",
+			link: "https://youtu.be/dLRA1lffWBw?si=5h0HP0ARJwi0N1eF",
+		},
 		remarks: {
 			title: "✍️ Start Your Development Journey Today!",
 			content1:
@@ -197,8 +209,8 @@ export const contributionData = [
 	},
 	{
 		role: "Designers",
-        icon:"🎨",
-		intro: "Contributing to open source isn't just for developers—designers play an important role in making open-source projects more user-friendly, visually appealing, and accessible. If you’re a designer and want to get started, this guide is for you!",
+		icon: "🎨",
+		intro: "Contributing to open source isn't just for developers — designers play an important role in making open-source projects more user-friendly, visually appealing, and accessible. If you’re a designer and want to get started, this guide is for you!",
 		contributions: [
 			{
 				title: "🌟 Why Should Designers Contribute to Open Source?",
@@ -284,7 +296,8 @@ export const contributionData = [
 		videoTutorial: {
 			title: "🎥 Video Tutorial",
 			description:
-				"Watch this YouTube tutorial we created for you to learn how designers can contribute to open source: 'How to Contribute to Open Source as a Designer'.",
+				"Watch this YouTube tutorial to learn how designers can contribute to open source",
+			link: "https://youtu.be/wcJFS9HOUOk?si=7JFCP_nS3I-BNBvh",
 		},
 		remarks: {
 			title: "🌻 Start Your Design Journey Today!",
