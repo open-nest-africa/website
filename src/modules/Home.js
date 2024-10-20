@@ -6,6 +6,7 @@ import WhyOpenNest from "./component/WhyOpenNest";
 import OpenNestInAction from "./component/OpenNestInAction";
 import CTA from "./component/CTA";
 import OurCommunity from "./component/OurCommunity";
+import Footer from "./component/Footer";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <OpenNestInAction />
         <CTA />
         <OurCommunity />
+        <Footer />
       </main>
     </section>
   );
