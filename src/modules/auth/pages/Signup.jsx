@@ -4,11 +4,18 @@ import Button from "../../../components/Button";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
+  const handleGithubLogin = () => {
+		const clientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
+		const redirectUri = "https://opennestafrica.netlify.app/auth/github";
+		const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=user`;
+		window.location.href = githubAuthUrl;
+	};
   return (
     <AuthLayout title="Sign up" className="flex-col items-center">
       <div>
         <div className="space-y-4 flex flex-col justify-center items-center w-[448px] pt-10">
         <Button
+        onClick={handleGithubLogin}
             text="Continue with Github"
             icon="/images/github-logo.svg"
             className="bg-primary text-[#344054] text-base font-semibold align-center py-4 px-24 w-full"

@@ -7,3 +7,17 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+.loader {
+  border-top-color: #AEDFF4;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
