@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Login = () => {
 	const handleGithubLogin = () => {
 		const clientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
-		const redirectUri = "http://localhost:3000/auth/github"; 
+		const redirectUri = "https://opennestafrica.netlify.app/auth/github"; 
 		const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=user`;
 		window.location.href = githubAuthUrl;
 	};
