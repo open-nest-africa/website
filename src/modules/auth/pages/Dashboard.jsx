@@ -12,9 +12,12 @@ const Dashboard = () => {
 
 			if (accessToken) {
 				try {
-					const response = await axios.get("http://localhost:4000/user", {
-						headers: { Authorization: `Bearer ${accessToken}` },
-					});
+					const response = await axios.get(
+						"https://open-nest-africa.onrender.com/user",
+						{
+							headers: { Authorization: `Bearer ${accessToken}` },
+						}
+					);
 					setUser(response.data.user);
 				} catch (err) {
 					console.error(err);
