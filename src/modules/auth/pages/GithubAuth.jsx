@@ -22,7 +22,7 @@ const GithubAuth = () => {
 
 			try {
 				const response = await axios.get(
-					`http://localhost:4000/auth/github?code=${code}`
+					`https://open-nest-africa.onrender.com/auth/github?code=${code}`
 				);
 
 				localStorage.setItem("accessToken", response.data.accessToken);
