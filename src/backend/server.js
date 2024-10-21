@@ -10,6 +10,7 @@ app.use(cors());
 
 const CLIENT_ID = process.env.GITHUB_CLIENT_ID;
 const CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
+const PORT = process.env.PORT || 4000;
 
 app.get("/auth/github", async (req, res) => {
 	const code = req.query.code;
@@ -91,6 +92,6 @@ app.get("/user", async (req, res) => {
 	}
 });
 
-app.listen(4000, () => {
-	console.log("Server running on http://localhost:4000");
+app.listen(PORT, () => {
+	console.log(`Server running on port ${PORT}`);
 });
