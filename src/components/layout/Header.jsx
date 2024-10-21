@@ -21,7 +21,11 @@ const Header = () => {
               Resources <ChevronDownIcon className="w-6 h-6" />
             </Link>
           </li>
-          <li>About us</li>
+          <li>
+            <Link to="/about-us">
+              About us
+            </Link>
+          </li>
           <li>What's new</li>
         </ul>
         <Link to="/signup">

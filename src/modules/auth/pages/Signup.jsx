@@ -8,8 +8,13 @@ const Signup = () => {
     <AuthLayout title="Sign up" className="flex-col items-center">
       <div>
         <div className="space-y-4 flex flex-col justify-center items-center w-[448px] pt-10">
-          <Button
+        <Button
             text="Continue with Github"
+            icon="/images/github-logo.svg"
+            className="bg-primary text-[#344054] text-base font-semibold align-center py-4 px-24 w-full"
+          />
+          <Button
+            text="Continue with Google"
             icon="/images/google-logo.svg"
             className="bg-primary text-[#344054] text-base font-semibold align-center py-4 px-24 w-full"
           />
