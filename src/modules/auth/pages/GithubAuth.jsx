@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import PageLoader from "../../../components/PageLoader";
+// import PageLoader from "../../../components/PageLoader";
 
 const GithubAuth = () => {
 	const [loading, setLoading] = useState(true);
@@ -42,6 +42,7 @@ const GithubAuth = () => {
 		fetchUser();
 	}, [navigate]);
 
+	// eslint-disable-next-line no-unused-vars
 	return (
 		<>
 			<div className="flex items-center justify-center min-h-screen bg-gray-100">
