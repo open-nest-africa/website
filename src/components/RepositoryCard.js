@@ -3,7 +3,6 @@ import {
 	StarIcon,
 	CodeBracketIcon,
 	ShareIcon,
-	ExclamationTriangleIcon, 
 	ExclamationCircleIcon, 
 } from "@heroicons/react/24/solid";
 

@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../components/Button";
-import useFetchUser from "../hooks/useFetchUser";
 import PageLoader from "../components/PageLoader";
 
 const DashboardContentLayout = ({children, user, loading, error}) => {

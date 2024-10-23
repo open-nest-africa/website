@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import DashboardContentLayout from "../../DashboardContentLayout";
@@ -60,9 +62,9 @@ const Dashboard = () => {
 			error={userError}
 			loading={userLoading}
 		>
-			<div className="flex gap-9"> 
+			<div className="flex gap-9">
 				<RepositoryList repos={projects} loading={loading} error={error} />
-                <LatestChanges/>
+				<LatestChanges/>
 			</div>
 		</DashboardContentLayout>
 	);
