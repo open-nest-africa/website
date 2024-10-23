@@ -6,7 +6,7 @@ A PR allows you to propose changes to a project. Follow these steps to create on
 **1. Fork the Repository**
 - Go to the project repository and click ‘Fork’ to create a copy in your account.
 
-**2. Clone the Fork**
+**2. Clone the Repository**
 - In your terminal(Git Bash/VScode), run:
 
 ```git clone https://github.com/your-username/project-name.git```
