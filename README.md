@@ -52,6 +52,7 @@ Use the following tools to set up the project:
 
 - Navigate to the website directory.
 
+---
 ### 💌 Our Values
 
 We believe in collaboration, kindness, and learning. At OpenNest, everyone is welcome, whether you're a first-timer or an experienced contributor. - Review our [Code of Conduct](./CODE_OF_CONDUCT.md) to help us maintain a respectful and inclusive space.
