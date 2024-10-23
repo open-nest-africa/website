@@ -66,6 +66,7 @@ const AboutUs = () => {
                     href="https://github.com/open-nest-africa"
                     className="font-semibold underline"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Star us on GitHub
                   </a>
@@ -78,6 +79,7 @@ const AboutUs = () => {
                     href="https://opencollective.com/opennest-africa"
                     target="_blank"
                     className="font-semibold underline"
+                    rel="noreferrer"
                   >
                     Sponsor us on OpenCollective
                   </a>{" "}
