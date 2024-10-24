@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import DashboardContentLayout from "../../DashboardContentLayout";
+import OpenAIContent from "../../component/OpenAIContent";
 
 function OpenAI() {
   return (
-    <div>OpenAI</div>
-  )
+    <DashboardContentLayout>
+      <div>
+        <OpenAIContent />
+      </div>
+    </DashboardContentLayout>
+  );
 }
 
-export default OpenAI
+export default OpenAI;

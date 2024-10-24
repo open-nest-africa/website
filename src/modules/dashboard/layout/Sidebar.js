@@ -3,13 +3,13 @@ import { Link, NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="bg-white w-[272px] flex flex-col h-screen  border-r border-[#E4E7EC]">
+    <div className="bg-white w-[272px] flex flex-col h-screen overflow-hidden  border-r border-[#E4E7EC]">
       <Link to="/dashboard" className="py-8 px-5 inline-block">
         <span>
           <img src="/images/logo.svg" alt="" />
         </span>
       </Link>
-      <ul >
+      <ul>
           <CustomLink name="Most Contributed Projects" link="/dashboard" end />
           <CustomLink name="Sopohome" link="/dashboard/sopohome" />
           <CustomLink name="Gitlab" link="/dashboard/gitlab" />
