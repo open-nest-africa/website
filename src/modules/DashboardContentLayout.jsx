@@ -4,7 +4,7 @@ import PageLoader from "../components/PageLoader";
 
 const DashboardContentLayout = ({children, user, loading, error}) => {
 	return (
-		<div className="bg-[#F0F2F5] p-12 min-h-screen">
+		<div className="bg-[#F0F2F5] min-h-screen">
 			{loading ? (
 				<PageLoader />
 			) : error ? (

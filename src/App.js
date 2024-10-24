@@ -9,21 +9,36 @@ function App() {
   const Resources = lazy(() => import("./modules/resources/Resources"));
   const AboutUs = lazy(() => import("./modules/about-us/AboutUs"));
   const GithubAuth = lazy(() => import("./modules/auth/pages/GithubAuth"));
-  const Dashboard = lazy(() => import("./modules/auth/pages/Dashboard"));
+  const Dashboard = lazy(() => import("./modules/dashboard"));
+  const MostProjects = lazy(() =>
+    import("./modules/dashboard/pages/MostProjects")
+  );
+  const Sopohome = lazy(() => import("./modules/dashboard/pages/Sopohome"));
+  const Gitlab = lazy(() => import("./modules/dashboard/pages/Gitlab"));
+  const MeshAI = lazy(() => import("./modules/dashboard/pages/MeshAI"));
+  const OpenAI = lazy(() => import("./modules/dashboard/pages/OpenAI"));
+
   return (
-		<Router>
-			<Suspense fallback={<PageLoader/>}>
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/login" element={<Login />} />
-					<Route path="/signup" element={<Signup />} />
-					<Route path="/resources" element={<Resources />} />
-					<Route path="/auth/github" element={<GithubAuth />} />
-					<Route path="/dashboard" element={<Dashboard />} />
+    <Router>
+      <Suspense fallback={<PageLoader />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/auth/github" element={<GithubAuth />} />
+          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
           <Route path="/about-us" element={<AboutUs />} />
-				</Routes>
-			</Suspense>
-		</Router>
+          <Route element={<Dashboard />} path="/dashboard">
+            <Route index element={<MostProjects />} />
+            <Route path="sopohome" element={<Sopohome />} />
+            <Route path="gitlab" element={<Gitlab />} />
+            <Route path="meshai" element={<MeshAI />} />
+            <Route path="openai" element={<OpenAI />} />
+          </Route>
+        </Routes>
+      </Suspense>
+    </Router>
   );
 }
 

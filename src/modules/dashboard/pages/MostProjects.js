@@ -1,15 +1,13 @@
-/* eslint-disable no-unused-vars */
+import React, { useEffect, useState } from 'react'
+import DashboardContentLayout from '../../DashboardContentLayout'
+import LatestChanges from '../../component/LatestChanges';
+import RepositoryList from '../../component/RepositoryList';
+import useFetchUser from '../../../hooks/useFetchUser';
+import axios from 'axios';
 
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import DashboardContentLayout from "../../DashboardContentLayout";
-import useFetchUser from "../../../hooks/useFetchUser";
-import PageLoader from "../../../components/PageLoader";
-import RepositoryList from "../../component/RepositoryList";
-import LatestChanges from "../../component/LatestChanges";
+const MostProjects = () => {
 
-const Dashboard = () => {
-	const { user, error: userError, loading: userLoading } = useFetchUser();
+    const { user, error: userError, loading: userLoading } = useFetchUser();
 	const [repos, setRepos] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(null);
@@ -51,13 +49,8 @@ const Dashboard = () => {
 		fetchRepositories();
 	}, [user]);
 
-	// if (userLoading) return <PageLoader />;
-	// if (userError) return <div>Error: {userError}</div>;
-
-	const latestRepos = repos.slice(0, 5);
-
-	return (
-		<DashboardContentLayout
+  return (
+    <DashboardContentLayout
 			user={user}
 			// error={userError}
 			// loading={userLoading}
@@ -69,7 +62,7 @@ const Dashboard = () => {
 				<LatestChanges/>
 			</div>
 		</DashboardContentLayout>
-	);
-};
+  )
+}
 
-export default Dashboard;
+export default MostProjects
