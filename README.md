@@ -53,6 +53,19 @@ Use the following tools to set up the project:
 - Navigate to the website directory.
 
 ---
+
+## Available Pages
+Here are the currently available and functional pages in the application:
+- Home Page (`/`)
+- Dashboard (`/dashboard`)
+- OpenAI Page (`/dashboard/openai`)
+
+## Limitations
+Please note the following limitations in the current version of the project:
+- **Sign Up and Sign In with Google:** Not implemented yet.
+- **Responsiveness:** The app is not fully responsive on mobile devices yet.
+We’re actively working on resolving these issues. Contributions are welcome!
+
 ### 💌 Our Values
 
 We believe in collaboration, kindness, and learning. At OpenNest, everyone is welcome, whether you're a first-timer or an experienced contributor. - Review our [Code of Conduct](./CODE_OF_CONDUCT.md) to help us maintain a respectful and inclusive space.
