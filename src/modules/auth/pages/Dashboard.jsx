@@ -51,19 +51,21 @@ const Dashboard = () => {
 		fetchRepositories();
 	}, [user]);
 
-	if (userLoading) return <PageLoader />;
-	if (userError) return <div>Error: {userError}</div>;
+	// if (userLoading) return <PageLoader />;
+	// if (userError) return <div>Error: {userError}</div>;
 
 	const latestRepos = repos.slice(0, 5);
 
 	return (
 		<DashboardContentLayout
 			user={user}
-			error={userError}
-			loading={userLoading}
+			// error={userError}
+			// loading={userLoading}
 		>
 			<div className="flex gap-9">
-				<RepositoryList repos={projects} loading={loading} error={error} />
+				<RepositoryList repos={projects} 
+				// loading={loading} error={error} 
+				/>
 				<LatestChanges/>
 			</div>
 		</DashboardContentLayout>
