@@ -1,14 +1,12 @@
+/* eslint-disable no-unused-vars */
+
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-// import PageLoader from "../../../components/PageLoader";
 
 const GithubAuth = () => {
-	// eslint-disable-next-line no-unused-vars
 	const [loading, setLoading] = useState(true);
-	// eslint-disable-next-line no-unused-vars
 	const [error, setError] = useState(null);
-	// eslint-disable-next-line no-unused-vars
 	const [accessToken, setAccessToken] = useState(null);
 
 	const navigate = useNavigate();

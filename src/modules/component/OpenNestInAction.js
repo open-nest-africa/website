@@ -27,10 +27,10 @@ const OpenNestInAction = () => {
 
 export default OpenNestInAction;
 
-const Card = ({ image, name, paragraph, jobRole }) => {
+export const Card = ({ image, name, paragraph, jobRole }) => {
   return (
-    <div className="drop-shadow-custom border-2 border-[#0C9EDD36] rounded-[20px] px-[54px] py-[60px] text-[#04354A] -tracking-[1px]">
-      <div className="flex items-center gap-x-5">
+    <div className="drop-shadow-custom border-2 bg-white border-[#0C9EDD36] rounded-[20px] px-[40px] py-[60px] text-[#04354A] -tracking-[1px]">
+      <div className="flex items-center gap-x-3">
         <span>
           <img src={image} alt="" />
         </span>
