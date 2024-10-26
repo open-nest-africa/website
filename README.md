@@ -33,6 +33,22 @@ Every contribution counts at OpenNest, no matter how little:
 
 ---
 
+### 👫 **Meet the Team**  
+We’re a passionate group of developers, designers, and writers—working together to make open source more inclusive.  
+
+- **Aishat Muibudeen** – *Community Manager & Product Designer*  
+  _I love building meaningful tools and simplifying complex ideas for the community._  
+- **Noimot Alabi** – *FrontEnd Developer*  
+  _Frontend enthusiast with a passion for clean, functional design._
+- **Miracle Ozukalu** – *Product Designer*  
+  _Committed to crafting intuitive and accessible user experiences._
+- **Mutiat Bashua** – *Software Developer*  
+  _Passionate about coding and building impactful open-source tools._
+
+![Temyyy](https://github.com/user-attachments/assets/5148134e-4225-4055-8dc3-95f6392b34cf)
+
+---
+
 ### 🌱 How to Start the project locally
  
 This repository contains the sources of OpenNest-Africa website:
