@@ -6,6 +6,8 @@ Welcome to OpenNest-Africa, a cozy hub where beginners—technical or non-techni
 
 Whether you’re coding, writing, designing, or just curious, you belong here. Let’s start your open-source journey together!
 
+![OpenNest Africa](https://github.com/user-attachments/assets/6a641175-18b8-4247-b763-94e763e8a34d)
+
 ---
 
 ### 🌟 What is OpenNest-Africa?
