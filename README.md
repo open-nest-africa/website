@@ -49,6 +49,14 @@ We’re a passionate group of developers, designers, and writers—working toget
 
 ---
 
+### 📬 **Get in Touch**  
+If you have questions or ideas or want to say hello, we'd love to hear from you!  
+
+- **Join Us on Slack:** [@Opennest-Africa](https://X.com/OpenNest-Africa)  
+- **Website:** [https://open-nest-africa-website.com](opennestcommunity.netlify.app/)  
+
+---
+
 ### 🌱 How to Start the project locally
  
 This repository contains the sources of OpenNest-Africa website:
