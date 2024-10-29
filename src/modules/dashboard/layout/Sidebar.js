@@ -28,7 +28,7 @@ const Sidebar = ({ userName, fullName, githubAvatar }) => {
 					icon="images/settings-icon.svg"
 				/>
 				<li className="flex items-center gap-x-2 pt-8">
-					<span>
+					<span className="h-10 w-10 rounded-full">
 						<img
 							src={githubAvatar || profileImage}
 							alt="User Avatar"
@@ -36,6 +36,7 @@ const Sidebar = ({ userName, fullName, githubAvatar }) => {
 								e.target.onerror = null; 
 								e.target.src = profileImage;
 							}}
+							className="w-full h-full object-cover rounded-full"
 						/>
 					</span>
 					<div className="text-sm">
