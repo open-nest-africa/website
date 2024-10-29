@@ -21,6 +21,23 @@ OpenNest-Africa is a beginner-friendly, community-driven space designed to:
 
 ---
 
+### Available Pages
+Here are the currently available and functional pages in the application:
+- Home Page (`/`)
+  - Resources (`/resources`)
+  - About Us (`/about-us`)
+- Dashboard (`/dashboard`)
+- OpenAI Page (`/dashboard/openai`)
+
+### Limitations
+There's still so much to do on the project, as most of the data are just dummy data. This is why we are making it open to everyone around the world to contribute. Please note the following limitations in the current version of the project:
+- **Sign Up and Sign In with Google:** Not implemented yet.
+- **Responsiveness:** The app is not fully responsive on mobile devices yet.
+- The dashboard is also a work in progress.
+We’re actively working on resolving these issues. Contributions are welcome!
+
+---
+
 ### 🌱 How to Contribute to OpenNest
 Every contribution counts at OpenNest, no matter how little:
 
@@ -49,14 +66,6 @@ We’re a passionate group of developers, designers, and writers—working toget
 
 ---
 
-### 📬 **Get in Touch**  
-If you have questions or ideas or want to say hello, we'd love to hear from you!  
-
-- **Join Us on Slack:** [@Opennest-Africa](https://X.com/OpenNest-Africa)  
-- **Website:** [https://open-nest-africa-website.com](opennestcommunity.netlify.app/)  
-
----
-
 ### 🌱 How to Start the project locally
  
 This repository contains the sources of OpenNest-Africa website:
@@ -80,18 +89,14 @@ Use the following tools to set up the project:
 
 ---
 
-## Available Pages
-Here are the currently available and functional pages in the application:
-- Home Page (`/`)
-- Dashboard (`/dashboard`)
-- OpenAI Page (`/dashboard/openai`)
-
-## Limitations
-Please note the following limitations in the current version of the project:
-- **Sign Up and Sign In with Google:** Not implemented yet.
-- **Responsiveness:** The app is not fully responsive on mobile devices yet.
-We’re actively working on resolving these issues. Contributions are welcome!
-
 ### 💌 Our Values
 
 We believe in collaboration, kindness, and learning. At OpenNest, everyone is welcome, whether you're a first-timer or an experienced contributor. - Review our [Code of Conduct](./CODE_OF_CONDUCT.md) to help us maintain a respectful and inclusive space.
+
+### 📬 **Get in Touch**  
+If you have questions or ideas or want to say hello, we'd love to hear from you!  
+
+- **Join Us on Slack:** [@Opennest-Africa](https://X.com/OpenNest-Africa)  
+- **Website:** [OpenNest Africa Website](https://opennestafrica.netlify.app)  
+
+---
