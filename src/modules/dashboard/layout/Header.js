@@ -28,7 +28,7 @@ const Header = ({githubAvatar}) => {
 							e.target.onerror = null;
 							e.target.src = profileImage;
 						}}
-						className="w-full h-full object-cover"
+						className="w-full h-full object-cover rounded-full"
 					/>
 				</span>
 			</div>
