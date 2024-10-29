@@ -90,19 +90,28 @@ Use the following tools to set up the project:
 ---
 
 ### Navigating OpenNest Application
-- **Home Page**: The OpenNest home page provides an overview of the project and guidance on how to get started as an open-source enthusiast.
+- **Home Page**:
+  The OpenNest home page provides an overview of the project and guidance on how to get started as an open-source enthusiast.
+  
   ![Home page](https://github.com/open-nest-africa/open-nest-africa/blob/main/home-page.png)
 
-- **Resources Page**: The resources page contains materials that can help you get started, regardless of your field. We have included videos that explain extensively how you can contribute to an open-source project. You can use the arrow icon to navigate to the resource of your choice.
+- **Resources Page**:
+  The resources page contains materials that can help you get started, regardless of your field. We have included videos that explain extensively how you can contribute to an open-source project. You can use the arrow icon to navigate to the resource of your choice.
+  
   ![Resources page](https://github.com/open-nest-africa/open-nest-africa/blob/main/resources.png)
 
-- **About Us Page**: This page provides information about the four unique individuals who are the brains behind OpenNest. It also calls on open-source enthusiasts to contribute to the project to make the open-source journey easier for others.
+- **About Us Page**:
+  This page provides information about the four unique individuals who are the brains behind OpenNest. It also calls on open-source enthusiasts to contribute to the project to make the open-source journey easier for others.
+  
   ![About us page](https://github.com/open-nest-africa/open-nest-africa/blob/main/about-us.png)
 
-- **Dashboard**: The dashboard gives you exclusive access to the OpenNest community, while also helping you keep track of the projects you've contributed to and providing a list of projects you can contribute to. To access this page, You can either login with your github or google account.
+- **Dashboard**:
+  The dashboard gives you exclusive access to the OpenNest community, while also helping you keep track of the projects you've contributed to and providing a list of projects you can contribute to. To access this page, You can either login with your github or google account.
+  
   ![Dashboard](https://github.com/open-nest-africa/open-nest-africa/blob/main/dashboard.png)
 
-- **Openai Page**: The Openai page is only access once you login to the dashboard. The plan is to integrate OpenAI, making it easy for you to use the AI prompts while on the platform.
+- **Openai Page**: The Openai page is only accessible once you login to the dashboard. The plan is to integrate OpenAI, making it easy for you to use the AI prompts while on the platform.
+- 
   ![Openai page](https://github.com/open-nest-africa/open-nest-africa/blob/main/openai.png)
 
 ---
