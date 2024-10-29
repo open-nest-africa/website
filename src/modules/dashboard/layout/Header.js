@@ -20,7 +20,7 @@ const Header = ({githubAvatar}) => {
 				<span>
 					<img src="/images/notification-icon.svg" alt="" />
 				</span>
-				<span className="h-10 w-10">
+				<span className="h-10 w-10 rounded-full">
 					<img
 						src={githubAvatar || profileImage}
 						alt="User Avatar"
