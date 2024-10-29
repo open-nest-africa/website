@@ -20,7 +20,7 @@ const Header = ({githubAvatar}) => {
 				<span>
 					<img src="/images/notification-icon.svg" alt="" />
 				</span>
-				<span>
+				<span className="h-10 w-10">
 					<img
 						src={githubAvatar || profileImage}
 						alt="User Avatar"
@@ -28,6 +28,7 @@ const Header = ({githubAvatar}) => {
 							e.target.onerror = null;
 							e.target.src = profileImage;
 						}}
+						className="w-full h-full object-cover"
 					/>
 				</span>
 			</div>
