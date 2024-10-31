@@ -38,6 +38,15 @@ We’re actively working on resolving these issues. Contributions are welcome!
 
 ---
 
+### 🌟 Future Improvements 
+- Have enough resources 
+- Onboard 20 active contributor before the end of 2024
+- Create Mentorship Programs fir beginners in OSS
+- Have our first OpenNest Africa Summit
+
+
+---
+
 ### 🌱 How to Contribute to OpenNest
 Every contribution counts at OpenNest, no matter how little:
 
@@ -120,8 +129,11 @@ Use the following tools to set up the project:
 
 We believe in collaboration, kindness, and learning. At OpenNest, everyone is welcome, whether you're a first-timer or an experienced contributor. - Review our [Code of Conduct](./CODE_OF_CONDUCT.md) to help us maintain a respectful and inclusive space.
 
+---
+
+
 ### 📬 **Get in Touch**  
-If you have questions or ideas or want to say hello, we'd love to hear from you!  
+If you have questions or ideas or want to say hello, we'd love to hear from you! 
 
 - **Join Us on Slack:** [@Opennest-Africa](https://join.slack.com/t/opennestafrica/shared_invite/zt-2thai992d-d5UqQ0FYHhj4Boty5S5UKA)  
 - **Website:** [OpenNest Africa Website](https://opennestafrica.netlify.app)
