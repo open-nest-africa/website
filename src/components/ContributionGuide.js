@@ -53,12 +53,16 @@ const ContributionGuide = ({
 							width="800"
 							height="500"
 							src={`https://www.youtube.com/embed/${
-								videoLink.split("youtu.be/")[1]
+								videoLink.includes("youtu.be/")
+									? videoLink.split("youtu.be/")[1]
+									: videoLink
+											.split("youtube.com/live/")[1]
+											.split("?")[0]
 							}`}
 							title="YouTube video player"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 							allowFullScreen
-							className="rounded-2xl" 
+							className="rounded-2xl"
 						></iframe>
 					</div>
 				</div>
