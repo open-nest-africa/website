@@ -33,28 +33,28 @@ const Sidebar = ({ userName, fullName, githubAvatar }) => {
 				<li className="flex items-center gap-x-2 pt-8">
 					<span className="h-10 w-10 rounded-full">
 						{imageError || !githubAvatar ? (
-							<div className="relative w-10 h-10">
+							<div className="relative w-8 h-8">
 								<UserCircleIcon className="w-full h-full text-gray-500" />
-								<span className="absolute bottom-[2px] right-[2px] w-3.5 h-3.5 bg-green-500 border-2 border-white rounded-full"></span>
+								<span className="absolute bottom-[1px] right-[1px] w-3 h-3 bg-green-500 border-2 border-white rounded-full"></span>
 							</div>
 						) : (
-							<div className="relative w-10 h-10">
+							<div className="relative w-8 h-8">
 								<img
 									src={githubAvatar}
 									alt="User Avatar"
 									onError={() => setImageError(true)}
 									className="w-full h-full object-cover rounded-full"
 								/>
-								<span className="absolute bottom-[2px] right-[2px] w-3.5 h-3.5 bg-green-500 border-2 border-white rounded-full"></span>
+								<span className="absolute bottom-[1px] right-[1px] w-3 h-3 bg-green-500 border-2 border-white rounded-full"></span>
 							</div>
 						)}
 					</span>
 
 					<div className="text-sm">
 						<h3 className="text-[#101928] font-semibold">{fullName}</h3>
-						<p className="text-[#475367]">{userName}@opennest.ui</p>
+						<p className="text-[#475367] text-xs">{userName}@opennest.ui</p>
 					</div>
-					<span className="ml-1">
+					<span className="ml-1 w-5">
 						<img src="/images/side-arrow-icon.svg" alt="" />
 					</span>
 				</li>
