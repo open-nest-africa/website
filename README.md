@@ -123,7 +123,7 @@ We believe in collaboration, kindness, and learning. At OpenNest, everyone is we
 ### 📬 **Get in Touch**  
 If you have questions or ideas or want to say hello, we'd love to hear from you!  
 
-- **Join Us on Slack:** [@Opennest-Africa](https://X.com/OpenNest-Africa)  
+- **Join Us on Slack:** [@Opennest-Africa](https://join.slack.com/t/opennestafrica/shared_invite/zt-2thai992d-d5UqQ0FYHhj4Boty5S5UKA)  
 - **Website:** [OpenNest Africa Website](https://opennestafrica.netlify.app)  
 
 ---
