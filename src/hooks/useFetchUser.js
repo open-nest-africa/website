@@ -31,8 +31,9 @@ const useFetchUser = () => {
 					setLoading(false);
 				}
 			} else {
-				setError("No access token found. Please log in.");
+				setError("Please log in.");
 				setLoading(false);
+				navigate("/signup"); 
 			}
 		};
 
