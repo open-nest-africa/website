@@ -21,15 +21,48 @@ OpenNest-Africa is a beginner-friendly, community-driven space designed to:
 
 ---
 
-### Available Pages
-Here are the currently available and functional pages in the application:
-- Home Page (`/`)
-  - Resources (`/resources`)
-  - About Us (`/about-us`)
-- Dashboard (`/dashboard`)
-- OpenAI Page (`/dashboard/openai`)
+### 🌱 How to Contribute to OpenNest
+Every contribution counts at OpenNest, no matter how little:
 
-### Limitations
+- Explore our [Designers](./Resources/Designer.md), [Developers](./Resources/Developer.md), and [Technical Writers](./Resources/Technical%20Writing.md) guides to kickstart your contributions!
+- Find a Beginner Task – Look for issues tagged good first issue.
+- Create an issue or pull request to suggest improvements.
+- Help others by answering questions or joining discussions.
+- Share resources you’ve found useful.
+- Ask for Help – We're here to support you!
+
+---
+
+### 📚 Available Pages and Navigating the OpenNest Application
+Here are the currently available and functional pages in the application:
+
+- Home Page (`/`)
+  The OpenNest home page provides an overview of the project and guidance on how to get started as an open-source enthusiast.
+  ![Home page](https://github.com/open-nest-africa/open-nest-africa/blob/main/home-page.png)
+  
+  - Resources (`/resources`)
+    The resources page contains materials that can help you get started, regardless of your field. We have included videos that explain extensively how you can contribute to an open-source project. You can use the arrow icon to navigate to the resource of your choice.
+  
+  ![Resources page](https://github.com/open-nest-africa/open-nest-africa/blob/main/resources.png)
+  
+  - About Us (`/about-us`)
+    This page provides information about the four unique individuals who are the brains behind OpenNest. It also calls on open-source enthusiasts to contribute to the project to make the open-source journey easier for others.
+  
+  ![About us page](https://github.com/open-nest-africa/open-nest-africa/blob/main/about-us.png)
+  
+- Dashboard (`/dashboard`)
+The dashboard gives you exclusive access to the OpenNest community, while also helping you keep track of the projects you've contributed to and providing a list of projects you can contribute to. To access this page, You can either login with your github or google account.
+  
+  ![Dashboard](https://github.com/open-nest-africa/open-nest-africa/blob/main/dashboard.png)
+  
+- OpenAI Page (`/dashboard/openai`)
+The Openai page is only accessible once you login to the dashboard. The plan is to integrate OpenAI, making it easy for you to use the AI prompts while on the platform.
+
+  ![Openai page](https://github.com/open-nest-africa/open-nest-africa/blob/main/openai.png)
+
+---
+
+### ⚠️ Limitations
 There's still so much to do on the project, as most of the data are just dummy data. This is why we are making it open to everyone around the world to contribute. Please note the following limitations in the current version of the project:
 - **Sign Up and Sign In with Google:** Not implemented yet.
 - **Responsiveness:** The app is not fully responsive on mobile devices yet.
@@ -41,21 +74,31 @@ We’re actively working on resolving these issues. Contributions are welcome!
 ### 🌟 Future Improvements 
 - Have enough resources 
 - Onboard 20 active contributor before the end of 2024
-- Create Mentorship Programs fir beginners in OSS
+- Create Mentorship Programs for beginners in open source
 - Have our first OpenNest Africa Summit
-
 
 ---
 
-### 🌱 How to Contribute to OpenNest
-Every contribution counts at OpenNest, no matter how little:
+### 🌱 How to Start the project locally
+ 
+This repository contains the sources of OpenNest-Africa website:
 
-- Explore our [Designers](./Resources/Designer.md), [Developers](./Resources/Developer.md), and [Technical Writers](./Resources/Technical%20Writing.md) guides to kickstart your contributions!
-- Find a Beginner Task – Look for issues tagged good first issue.
-- Create an issue or pull request to suggest improvements.
-- Help others by answering questions or joining discussions.
-- Share resources you’ve found useful.
-- Ask for Help – We're here to support you!
+- It's powered by React.js,
+- It uses Tailwind CSS framework,
+- It's build and deployed with Netlify,
+
+### Requirements
+Use the following tools to set up the project:
+- Node.js v20.12.0+
+- npm v10.5.0+
+
+### Run locally
+- Fork the repository by clicking on Fork option on top right of the main repository.
+- Open Command Prompt on your local computer.
+- Clone the forked repository by adding your own GitHub username in place of <username>. For multiple contributions it is recommended to have proper configuration of forked repo.
+```git clone https://github.com/<username>/website/```
+
+- Navigate to the website directory.
 
 ---
 
@@ -75,62 +118,11 @@ We’re a passionate group of developers, designers, and writers—working toget
 
 ---
 
-### 🌱 How to Start the project locally
- 
-This repository contains the sources of OpenNest-Africa website:
-
-- It's powered by React.js,
-- It uses Tailwind CSS framework,
-- It's build and deployed with Netlify,
-
-# Requirements
-Use the following tools to set up the project:
-- Node.js v20.12.0+
-- npm v10.5.0+
-
-# Run locally
-- Fork the repository by clicking on Fork option on top right of the main repository.
-- Open Command Prompt on your local computer.
-- Clone the forked repository by adding your own GitHub username in place of <username>. For multiple contributions it is recommended to have proper configuration of forked repo.
-```git clone https://github.com/<username>/website/```
-
-- Navigate to the website directory.
-
----
-
-### Navigating OpenNest Application
-- **Home Page**:
-  The OpenNest home page provides an overview of the project and guidance on how to get started as an open-source enthusiast.
-  
-  ![Home page](https://github.com/open-nest-africa/open-nest-africa/blob/main/home-page.png)
-
-- **Resources Page**:
-  The resources page contains materials that can help you get started, regardless of your field. We have included videos that explain extensively how you can contribute to an open-source project. You can use the arrow icon to navigate to the resource of your choice.
-  
-  ![Resources page](https://github.com/open-nest-africa/open-nest-africa/blob/main/resources.png)
-
-- **About Us Page**:
-  This page provides information about the four unique individuals who are the brains behind OpenNest. It also calls on open-source enthusiasts to contribute to the project to make the open-source journey easier for others.
-  
-  ![About us page](https://github.com/open-nest-africa/open-nest-africa/blob/main/about-us.png)
-
-- **Dashboard**:
-  The dashboard gives you exclusive access to the OpenNest community, while also helping you keep track of the projects you've contributed to and providing a list of projects you can contribute to. To access this page, You can either login with your github or google account.
-  
-  ![Dashboard](https://github.com/open-nest-africa/open-nest-africa/blob/main/dashboard.png)
-
-- **Openai Page**: The Openai page is only accessible once you login to the dashboard. The plan is to integrate OpenAI, making it easy for you to use the AI prompts while on the platform.
-- 
-  ![Openai page](https://github.com/open-nest-africa/open-nest-africa/blob/main/openai.png)
-
----
-
 ### 💌 Our Values
 
 We believe in collaboration, kindness, and learning. At OpenNest, everyone is welcome, whether you're a first-timer or an experienced contributor. - Review our [Code of Conduct](./CODE_OF_CONDUCT.md) to help us maintain a respectful and inclusive space.
 
 ---
-
 
 ### 📬 **Get in Touch**  
 If you have questions or ideas or want to say hello, we'd love to hear from you! 
@@ -140,5 +132,5 @@ If you have questions or ideas or want to say hello, we'd love to hear from you!
 - **Follow Us on Twitter:** [@Opennest-Africa](https://x.com/Opennest_Africa)
 - **Follow Us on Linkedin:** [@Opennest-Africa](https://www.linkedin.com/company/opennest-africa/)
 - **Sponsor OpenNest Africa** [@Opennest-Africa](https://www.opencollective.com/opennest-africa/)
-- 
+
 ---
