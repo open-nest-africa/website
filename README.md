@@ -126,6 +126,6 @@ If you have questions or ideas or want to say hello, we'd love to hear from you!
 - **Join Us on Slack:** [@Opennest-Africa](https://join.slack.com/t/opennestafrica/shared_invite/zt-2thai992d-d5UqQ0FYHhj4Boty5S5UKA)  
 - **Website:** [OpenNest Africa Website](https://opennestafrica.netlify.app)
 - **Follow Us on Twitter:** [@Opennest-Africa](https://x.com/Opennest_Africa)
-**Follow Us on Linkedin:** [@Opennest-Africa](https://www.linkedin.com/company/opennest-africa/)
+- **Follow Us on Linkedin:** [@Opennest-Africa](https://www.linkedin.com/company/opennest-africa/)
 
 ---
