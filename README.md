@@ -1,4 +1,4 @@
-# 🌸 OpenNest Website
+# 🌸 OpenNest-Africa
 
 Your Safe Start for Every OpenSourcer!
 
