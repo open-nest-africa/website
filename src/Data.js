@@ -297,7 +297,7 @@ export const contributionData = [
 			title: "🎥 Video Tutorial",
 			description:
 				"Watch this YouTube tutorial to learn how designers can contribute to open source",
-			link: "https://youtu.be/wcJFS9HOUOk?si=7JFCP_nS3I-BNBvh",
+			link: "https://www.youtube.com/live/AZl6-kMRMpE",
 		},
 		remarks: {
 			title: "🌻 Start Your Design Journey Today!",

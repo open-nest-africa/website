@@ -27,7 +27,6 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/auth/github" element={<GithubAuth />} />
-          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
           <Route path="/about-us" element={<AboutUs />} />
           <Route element={<Dashboard />} path="/dashboard">
             <Route index element={<MostProjects />} />
