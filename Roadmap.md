@@ -78,7 +78,7 @@ To create a welcoming and resource-rich community hub that provides guides, tuto
 ## How to Get Involved
 We welcome all contributors! If you're interested, please check out the “good first issue” tag on our issues page and join our Slack community.
 
-**[Link to Join Our Slack Channel]([@Opennest-Africa](https://join.[@Opennest-Africa](https://join.slack.com/t/opennestafrica/)**
+**[Link to Join Our Slack Channel]([@Opennest-Africa](https://join.slack.com/t/opennestafrica/)**
 
 --- 
 
