@@ -139,5 +139,6 @@ If you have questions or ideas or want to say hello, we'd love to hear from you!
 - **Website:** [OpenNest Africa Website](https://opennestafrica.netlify.app)
 - **Follow Us on Twitter:** [@Opennest-Africa](https://x.com/Opennest_Africa)
 - **Follow Us on Linkedin:** [@Opennest-Africa](https://www.linkedin.com/company/opennest-africa/)
-
+- **Sponsor OpenNest Africa** [@Opennest-Africa](https://www.opencollective.com/opennest-africa/)
+- 
 ---
