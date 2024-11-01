@@ -31,6 +31,7 @@ To create a welcoming and resource-rich community hub that provides guides, tuto
    - Schedule a live “Getting Started with Open Source” webinar.
    - Open Q&A for participants.
    - **Status**: To Do
+   - Collaborate with schools to bring open source to students
    - **Link to Issue**: [#5](https://github.com/OpenNest-Africa/repo/issues/5)
 
 ---
