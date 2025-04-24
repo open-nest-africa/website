@@ -127,10 +127,10 @@ We believe in collaboration, kindness, and learning. At OpenNest, everyone is we
 ### 📬 **Get in Touch**  
 If you have questions or ideas or want to say hello, we'd love to hear from you! 
 
-- **Join Us on Slack:** [@Opennest-Africa](https://join.slack.com/t/opennestafrica/shared_invite/zt-2thai992d-d5UqQ0FYHhj4Boty5S5UKA)  
+- **Join Us on Slack:** [@Opennest-Africa](https://join.slack.com/t/opennestafrica/shared_invite/zt-2thai992d-d5UqQ0FYHhj4Boty5S5UKA)
+- **Sponsor OpenNest Africa** [@Opennest-Africa](https://www.opencollective.com/opennest-africa/)
 - **Website:** [OpenNest Africa Website](https://opennestafrica.netlify.app)
 - **Follow Us on Twitter:** [@Opennest-Africa](https://x.com/Opennest_Africa)
 - **Follow Us on Linkedin:** [@Opennest-Africa](https://www.linkedin.com/company/opennest-africa/)
-- **Sponsor OpenNest Africa** [@Opennest-Africa](https://www.opencollective.com/opennest-africa/)
 
 ---
