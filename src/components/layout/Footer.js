@@ -53,7 +53,7 @@ const Footer = () => {
             <ul className="text-[#3E3838]  text-sm font-medium space-y-4">
               <span className="text-[#8D8484]">Learn</span>
               <li className="pt-6">
-                <Link to="/">Documenttaion</Link>
+                <Link to="/">Documentation</Link>
               </li>
               <li>
                 <Link to="/">Blog</Link>
