@@ -9,16 +9,16 @@ const OpenNestInAction = () => {
       </div>
       <main className="grid grid-cols-2 gap-x-6 mt-12">
         <Card
-          name="Amina,"
+          name="Sarah,"
           image="/images/member-icon1.svg"
-          paragraph="Openenest made my open-source journey so much easier. Now, I confidently contribute to multiple projects."
-          jobRole=" Product Designer"
+          paragraph="OpenNest provided me with the perfect platform to start my open source journey. The community support and resources helped me make my first contribution with confidence."
+          jobRole="Frontend Developer"
         />
          <Card
-          name="Amina,"
+          name="Michael,"
           image="/images/member-icon2.svg"
-          paragraph="Openenest made my open-source journey so much easier. Now, I confidently contribute to multiple projects."
-          jobRole=" Product Designer"
+          paragraph="As a designer, I found OpenNest's approach to open source incredibly welcoming. The platform helped me understand how to contribute design work to open source projects effectively."
+          jobRole="UI/UX Designer"
         />
       </main>
     </section>

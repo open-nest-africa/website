@@ -13,13 +13,13 @@ const DashboardContentLayout = ({children, user, loading, error}) => {
 				<div className="flex flex-col gap-8">
 					<div>
 						<h2 className="text-2xl font-semibold pb-1">
-							Welcome {user?.name}
+							Welcome back, {user?.name}!
 						</h2>
-						<p>It’s Open Source Week, how is it going?</p>
+						<p>Ready to make your mark in open source today?</p>
 					</div>
 					<div className="bg-[#AEDFF4] flex px-24 py-7 items-center justify-between gap-10">
-						<p>What software are you interested in?</p>
-						<Button text={"Send"} className="bg-blue p-3 px-6" />
+						<p>What type of open source projects interest you the most?</p>
+						<Button text={"Share"} className="bg-blue p-3 px-6" />
 					</div>
 					<div>{children}</div>
 				</div>

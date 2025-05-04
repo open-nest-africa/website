@@ -4,10 +4,10 @@ import Button from "../../components/Button";
 const CTA = () => {
   return (
     <section className="bg-primary px-[212px] py-16 text-center">
-      <h1 className="font-semibold text-6xl leading-[92.8px]">Our Commitment to Openness</h1>
+      <h1 className="font-semibold text-6xl leading-[92.8px]">Our Commitment to Open Source</h1>
       <p className="text-[#04354A] -tracking-[1px] text-2xl">
-        At OpenNest, we believe in transparency. Learn more about our mission,
-        financials, and how you can get your hands on OpenNest merch
+        We're dedicated to making open source accessible to everyone. Join us in building a diverse, 
+        inclusive community where knowledge is shared freely and innovation thrives.
       </p>
       <div className="mt-11">
         <Button

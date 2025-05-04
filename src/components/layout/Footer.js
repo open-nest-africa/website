@@ -19,54 +19,23 @@ const Footer = () => {
       </aside>
       <aside className="bg-[#AEDFF4] rounded-[20px] w-2/3 h-[380px] p-9 flex flex-col gap-y-20">
         <div className="flex justify-between">
-          <div className="flex gap-x-6">
-            <ul className="text-[#3E3838]  text-sm font-medium space-y-4">
-              <span className="text-[#8D8484]">Product</span>
-              <li className="pt-6">
-                <Link to="/">Technical Writing</Link>
-              </li>
-              <li>
-                <Link to="/">Development</Link>
-              </li>
-              <li>
-                <Link to="/">Product Design</Link>
-              </li>
-              <li>
-                <Link to="/">Pull Request</Link>
-              </li>
-              <li>
-                <Link to="/">Resume Build</Link>
-              </li>
-            </ul>
-            <ul className="text-[#3E3838]  text-sm font-medium space-y-4">
-              <span className="text-[#8D8484]">Community</span>
-              <li className="pt-6">
-                <Link to="/">OpenNest Community</Link>
-              </li>
-              <li>
-                <Link to="/">Get Support</Link>
-              </li>
-              <li>
-                <Link to="/">Help Center</Link>
-              </li>
-            </ul>
-            <ul className="text-[#3E3838]  text-sm font-medium space-y-4">
-              <span className="text-[#8D8484]">Learn</span>
-              <li className="pt-6">
-                <Link to="/">Documentation</Link>
-              </li>
-              <li>
-                <Link to="/">Blog</Link>
-              </li>
-              <li>
-                <Link to="/">Git Tutorials</Link>
-              </li>
+          <div className="space-y-4">
+            <h4 className="text-xl font-semibold">Resources</h4>
+            <ul className="space-y-2">
+              <li><Link to="/about">About Us</Link></li>
+              <li><Link to="/resources">Learning Resources</Link></li>
+              <li><Link to="/contribute">How to Contribute</Link></li>
+              <li><Link to="/community">Community Guidelines</Link></li>
             </ul>
           </div>
-          <div>
-            <Link to="/">
-              <img src="/images/logo.svg" alt="" />
-            </Link>
+          <div className="space-y-4">
+            <h4 className="text-xl font-semibold">Connect</h4>
+            <ul className="space-y-2">
+              <li><a href="https://github.com/open-nest-africa" target="_blank" rel="noreferrer">GitHub</a></li>
+              <li><a href="https://twitter.com/opennest_africa" target="_blank" rel="noreferrer">Twitter</a></li>
+              <li><a href="https://discord.gg/opennest" target="_blank" rel="noreferrer">Discord</a></li>
+              <li><a href="mailto:contact@opennest.africa">Contact Us</a></li>
+            </ul>
           </div>
         </div>
         <div className="space-x-9 text-[#514A4A] text-sm font-semibold">

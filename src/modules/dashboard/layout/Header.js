@@ -17,7 +17,7 @@ const Header = ({ githubAvatar }) => {
 				</span>
 				<input
 					type="text"
-					placeholder="Search here"
+					placeholder="Search for projects, resources, or contributors..."
 					className="w-full border-none outline-none"
 				/>
 			</div>
