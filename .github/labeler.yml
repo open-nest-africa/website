@@ -1,0 +1,21 @@
+src/*:
+  - "frontend"
+
+backend/*:
+  - "backend"
+  
+resources/*:
+  - "documentation"
+  - "content"
+README.md:
+  - "documentation"
+  - "content"
+
+CODE_OF_CONDUCT.md:
+  - "documentation"
+  - "content"
+
+Roadmap.md:
+  - "documentation"
+  - "content"
+
