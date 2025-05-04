@@ -2,9 +2,14 @@
 Please include a summary of the changes and which issue is addressed.
 
 ## Related Issue  
-Use `Fixes #issue_number` if this PR fully resolves the issue.  
-Use `Related to #issue_number` if this PR is part of a solution.  
-👉 Tip: You can find the issue number beside the issue title or in the URL.
+Use **Fixes `#issue_number`** if this PR fully resolves the issue.  
+Use **Related to `#issue_number`** if this PR is part of a solution.  
+👉 Tip: You can find the issue number beside the issue title or in the URL.  
+⚠️ **Note**: Please **remove the quotation marks** around the issue number before submitting the PR.
+
+Example:  
+- Fixes #234 if this PR fully resolves the issue.
+- Related to #234 if this PR is part of the solution.
 
 ## Type of Change  
 - [ ] Bug fix  
