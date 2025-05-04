@@ -31,10 +31,10 @@ const OpenAIContent = () => {
         </div>
         <div className="bg-white rounded-2xl p-9 space-y-12">
           <p className="text-black text-2xl leading-8">
-            Simple, everyday activity like walking, swimming, gardening and
-            dancing can ease some of the pain directly by blocking pain signals
-            to the brain. Activity also helps lessen pain by stretching stiff
-            and tense muscles, ligaments and joints.
+            Getting started with open source can be intimidating, but it doesn't have to be. 
+            Start by exploring projects that interest you, reading their documentation, and 
+            looking for issues labeled "good first issue" or "help wanted". Remember, every 
+            contribution, no matter how small, makes a difference in the open source community.
           </p>
           <div className="flex items-center gap-x-6">
             <span>
