@@ -21,7 +21,7 @@ const OpenAIContent = () => {
         <div className="flex items-center justify-between px-10 pb-[22px]">
           <div className="flex items-center gap-x-2">
             <span>
-              <img src="/images/avatar.svg" alt="" />
+              <img src="/images/avatar.svg" alt="User avatar" />
             </span>
             <p className="text-2xl text-black">How do I get started in Open Source?</p>
           </div>
@@ -38,16 +38,16 @@ const OpenAIContent = () => {
           </p>
           <div className="flex items-center gap-x-6">
             <span>
-              <img src="/images/camera-icon.svg" alt="" />
+              <img src="/images/camera-icon.svg" alt="Camera emoji" />
             </span>
             <span>
-              <img src="/images/copy-icon.svg" alt="" />
+              <img src="/images/copy-icon.svg" alt="Copy emoji" />
             </span>
             <span>
-              <img src="/images/thumbs-up-icon.svg" alt="" />
+              <img src="/images/thumbs-up-icon.svg" alt="Thumbs up emoji" />
             </span>
             <span>
-              <img src="/images/thumbs-down-icon.svg" alt="" />
+              <img src="/images/thumbs-down-icon.svg" alt="Thumbs down emoji" />
             </span>
           </div>
         </div>
