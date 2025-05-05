@@ -63,7 +63,7 @@ const AboutUs = () => {
                 <li>
                   ⭐{" "}
                   <a
-                    href="https://github.com/open-nest-africa"
+                    href="https://github.com/open-nest-africa/open-nest-africa"
                     className="font-semibold underline"
                     target="_blank"
                     rel="noreferrer"
