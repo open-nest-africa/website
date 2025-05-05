@@ -4,11 +4,13 @@
 # Backend code
 /backend/ @MutiatBash @Noimot
 
-# Documentation / Content
-/resources/ @Mayaleeeee @miracle-E
-
 # GitHub config
-.github/ @MutiatBash @Noimot @Mayaleeeee @miracle-E
+.github/ @MutiatBash @Noimot 
 
-# Everything else
-*  @MutiatBash @Noimot @Mayaleeeee @miracle-E
+# Everything Documentation / Content 
+/resources/ @Mayaleeeee @miracle-E
+/public/ @Mayaleeeee @miracle-E @MutiatBash @Noimot
+/README.md @Mayaleeeee @miracle-E @MutiatBash @Noimot
+/CODE_OF_CONDUCT.md @Mayaleeeee @miracle-E @MutiatBash @Noimot
+/Roadmap.md @Mayaleeeee @miracle-E @MutiatBash @Noimot
+
