@@ -32,7 +32,7 @@ export const Card = ({ image, name, paragraph, jobRole }) => {
     <div className="drop-shadow-custom border-2 bg-white border-[#0C9EDD36] rounded-[20px] px-[40px] py-[60px] text-[#04354A] -tracking-[1px]">
       <div className="flex items-center gap-x-3">
         <span>
-          <img src={image} alt="" />
+          <img src={image} alt="Employee picture" />
         </span>
         <h5 className="font-medium text-2xl">
           <span className="font-semibold">{name}</span>
