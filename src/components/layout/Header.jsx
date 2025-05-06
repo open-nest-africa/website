@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../Button";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
+
+  useEffect(() => {
+    setIsResourcesOpen(false);
+  }, [location]);
+
+  const navigate = useNavigate();
+
+  const handleResourceClick = (tabIndex) => {
+    navigate("/resources", { state: { initialTab: tabIndex } });
+    setIsResourcesOpen(false);
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-white px-[112px] py-6 shadow">
       <nav className="flex items-center justify-between">
@@ -16,15 +29,69 @@ const Header = () => {
           <li className="flex items-center gap-x-1">
             use cases <ChevronDownIcon className="w-6 h-6" />
           </li>
-          <li>
-            <Link to="/resources" className="flex items-center gap-x-1">
+          <li className="relative">
+            <div
+              className="flex items-center gap-x-1 cursor-pointer"
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsResourcesOpen(!isResourcesOpen);
+              }}
+              onMouseEnter={() => setIsResourcesOpen(true)}
+            >
               Resources <ChevronDownIcon className="w-6 h-6" />
-            </Link>
+            </div>
+            {isResourcesOpen && (
+              <div
+                className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50"
+                onClick={(e) => e.stopPropagation()}
+                onMouseLeave={() => setIsResourcesOpen(false)}
+              >
+                <Link to={"/resources"}>
+                  <button
+                    className="b  lock w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleResourceClick(0);
+                    }}
+                  >
+                    Overview
+                  </button>
+                </Link>
+
+                <button
+                  className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleResourceClick(1);
+                  }}
+                >
+                  Technical Writing
+                </button>
+
+                <button
+                  className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleResourceClick(2);
+                  }}
+                >
+                  Developer Guide
+                </button>
+
+                <button
+                  className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleResourceClick(3);
+                  }}
+                >
+                  Design Guide
+                </button>
+              </div>
+            )}
           </li>
           <li>
-            <Link to="/about-us">
-              About us
-            </Link>
+            <Link to="/about-us">About us</Link>
           </li>
           <li>What's new</li>
         </ul>

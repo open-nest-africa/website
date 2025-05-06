@@ -1,16 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Overview from "./Overview";
 import TechnicalWriters from "./TechnicalWriters";
 import Developers from "./Developers";
 import Designers from "./Designers";
 import Layout from "../../components/layout/Layout";
-import {
-  ArrowLeftIcon,
-  ArrowRightIcon,
-} from "@heroicons/react/24/solid";
+import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
+import { useLocation } from "react-router-dom";
 
 const Resources = () => {
+  const location = useLocation();
   const [tab, setTab] = useState(0);
+
+  useEffect(() => {
+    if (location.state?.initialTab !== undefined) {
+      setTab(location.state.initialTab);
+    }
+  }, [location.state]);
+
   const resources = [
     { name: "Overview", component: <Overview key="1" /> },
     { name: "Technical Writing", component: <TechnicalWriters key="2" /> },
@@ -42,7 +48,7 @@ const Resources = () => {
 
             <span className="text-2xl">Previous</span>
             <label className="text-black text-[32px]">
-              {resources[tab-1].name}
+              {resources[tab - 1].name}
             </label>
           </div>
         )}
@@ -50,7 +56,7 @@ const Resources = () => {
           <div className="flex items-center gap-x-2">
             <span className="text-2xl">Next</span>
             <label className="text-black font-medium text-[32px]">
-              {resources[tab+1].name}
+              {resources[tab + 1].name}
             </label>
             <button
               disabled={tab === resources.length - 1}
