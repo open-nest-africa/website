@@ -1,6 +1,9 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PageLoader from "./components/PageLoader";
+import TechnicalWriters from "./modules/resources/TechnicalWriters";
+import Developers from "./modules/resources/Developers";
+import Designers from "./modules/resources/Designers";
 
 function App() {
   const Home = lazy(() => import("./modules/Home"));
