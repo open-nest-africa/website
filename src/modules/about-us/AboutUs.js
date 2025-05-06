@@ -76,7 +76,7 @@ const AboutUs = () => {
                 <li>
                   🌐{" "}
                   <a
-                    href="https://opencollective.com/opennest-africa"
+                    href="https://opencollective.com/open-nest-africa"
                     target="_blank"
                     className="font-semibold underline"
                     rel="noreferrer"
