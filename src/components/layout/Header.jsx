@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Button from "../Button";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isResourcesOpen, setIsResourcesOpen] = useState(false);
 
   useEffect(() => {
     setIsResourcesOpen(false);
-  }, [location]);
+  }, []);
 
   const navigate = useNavigate();
 
