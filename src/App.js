@@ -21,6 +21,7 @@ function App() {
   const MeshAI = lazy(() => import("./modules/dashboard/pages/MeshAI"));
   const OpenAI = lazy(() => import("./modules/dashboard/pages/OpenAI"));
 
+  // route updated
   return (
     <Router>
       <Suspense fallback={<PageLoader />}>
