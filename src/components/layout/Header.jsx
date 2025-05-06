@@ -50,7 +50,7 @@ const Header = () => {
                   </button>
                 </Link>
 
-                <Link to={"/resources/technicalWriters"}>
+                <Link to={"/resources/technical-writing"}>
                   <button
                     className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white"
                     color=""
@@ -58,7 +58,7 @@ const Header = () => {
                       e.stopPropagation();
                     }}
                   >
-                    Technical Writing
+                    Technical-Writing
                   </button>
                 </Link>
                 <Link to={"/resources/developers"}>
@@ -68,7 +68,7 @@ const Header = () => {
                       e.stopPropagation();
                     }}
                   >
-                    Developer Guide
+                    Development
                   </button>
                 </Link>
                 <Link to={"/resources/designers"}>
@@ -78,7 +78,7 @@ const Header = () => {
                       e.stopPropagation();
                     }}
                   >
-                    Design Guide
+                    Design
                   </button>
                 </Link>
               </div>
