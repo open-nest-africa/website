@@ -8,7 +8,7 @@ const Button = ({ text, icon, className, onClick}) => {
         icon && "flex items-center gap-x-5"
       }`}
     >
-      {icon && typeof(icon) === "string" ? <img src={icon} alt="" /> : icon}
+      {icon && typeof(icon) === "string" ? <img src={icon} alt="Icon" /> : icon}
       <span>{text}</span>
     </button>
   );

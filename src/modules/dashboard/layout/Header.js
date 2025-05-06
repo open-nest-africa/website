@@ -17,13 +17,13 @@ const Header = ({ githubAvatar }) => {
 				</span>
 				<input
 					type="text"
-					placeholder="Search here"
+					placeholder="Search for projects, resources, or contributors..."
 					className="w-full border-none outline-none"
 				/>
 			</div>
 			<div className="flex items-center gap-x-3">
 				<span>
-					<img src="/images/notification-icon.svg" alt="" />
+					<img src="/images/notification-icon.svg" alt="Notification bell" />
 				</span>
 				<span className="h-10 w-10 rounded-full">
 					{imageError || !githubAvatar ? (
