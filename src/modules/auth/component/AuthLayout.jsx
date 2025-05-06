@@ -13,7 +13,7 @@ const AuthLayout = ({ title, children, className }) => {
 			</aside>
 			<aside className="w-2/5 bg-light-yellow flex flex-col justify-between p-10">
 				<Link to="/">
-					<img src="/images/logo.svg" alt="" />
+					<img src="/images/logo.svg" alt="OpenNest logo" />
 				</Link>
 				<Card
 					name="Sarah, "

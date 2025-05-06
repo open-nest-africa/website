@@ -15,7 +15,7 @@ const Header = () => {
       <nav className="flex items-center justify-between">
         <div>
           <Link to="/">
-            <img src="/images/logo.svg" alt="" />
+            <img src="/images/logo.svg" alt="OpenNest logo" />
           </Link>
         </div>
         <ul className="flex items-center justify-between text-base font-semibold text-dark-2 capitalize gap-x-8 bg-[#F7F9FC] rounded-[40px] py-4 px-10">

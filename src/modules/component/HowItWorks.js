@@ -43,7 +43,7 @@ const HowItWorks = () => {
           />
         </aside>
         <aside className="w-1/2">
-          <img src="/images/how-it-works-image.svg" alt="" />
+          <img src="/images/how-it-works-image.svg" alt="Woman smiling" />
         </aside>
       </div>
     </section>

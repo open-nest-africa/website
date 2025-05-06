@@ -21,7 +21,7 @@ const Login = () => {
 			<div className="flex flex-col gap-8">
 				<p className="text-2xl font-semibold">Login with your email</p>
 				<form action="">
-					<TextField className="border-dark outline-dark py-4" placeholder={"Email Address"} />
+					<TextField className="border-dark outline-dark py-4" placeholder={"Enter your email address"} />
 				</form>
 				<Button
 					text="Login"
