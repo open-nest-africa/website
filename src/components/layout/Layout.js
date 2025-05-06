@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <section>
       <Header />
-      <main>{children}</main>
+      <main className="max-w-[1190px] px-8 mx-auto box-border">{children}</main>
       <Footer />
     </section>
   );
