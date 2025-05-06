@@ -10,13 +10,6 @@ const Header = () => {
     setIsResourcesOpen(false);
   }, []);
 
-  const navigate = useNavigate();
-
-  const handleResourceClick = (tabIndex) => {
-    navigate("/resources", { state: { initialTab: tabIndex } });
-    setIsResourcesOpen(false);
-  };
-
   return (
     <header className="sticky top-0 z-50 bg-white px-[112px] py-6 shadow">
       <nav className="flex items-center justify-between">
@@ -48,45 +41,46 @@ const Header = () => {
               >
                 <Link to={"/resources"}>
                   <button
-                    className="b  lock w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    className="b  lock w-full text-left px-4 py-2 text-sm text-gray-700   hover:bg-[#0C9EDD] hover:text-white"
                     onClick={(e) => {
                       e.stopPropagation();
-                      handleResourceClick(0);
                     }}
                   >
                     Overview
                   </button>
                 </Link>
 
-                <button
-                  className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleResourceClick(1);
-                  }}
-                >
-                  Technical Writing
-                </button>
-
-                <button
-                  className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleResourceClick(2);
-                  }}
-                >
-                  Developer Guide
-                </button>
-
-                <button
-                  className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleResourceClick(3);
-                  }}
-                >
-                  Design Guide
-                </button>
+                <Link to={"/resources/technicalWriters"}>
+                  <button
+                    className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white"
+                    color=""
+                    onClick={(e) => {
+                      e.stopPropagation();
+                    }}
+                  >
+                    Technical Writing
+                  </button>
+                </Link>
+                <Link to={"/resources/developers"}>
+                  <button
+                    className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                    }}
+                  >
+                    Developer Guide
+                  </button>
+                </Link>
+                <Link to={"/resources/designers"}>
+                  <button
+                    className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                    }}
+                  >
+                    Design Guide
+                  </button>
+                </Link>
               </div>
             )}
           </li>
