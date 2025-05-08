@@ -18,7 +18,7 @@ const Home = () => {
         <OpenNestInAction />
         <CTA />
         <OurCommunity />
-        <BackToTop/>
+      
       </>
     </Layout>
   );
