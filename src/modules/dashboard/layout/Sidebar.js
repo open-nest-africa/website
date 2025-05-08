@@ -80,7 +80,7 @@ const CustomLink = ({ name, link, end, icon }) => {
 		>
 			<div className="flex items-center gap-x-2">
 				<span>
-					<img src={icon} alt="icon" />
+					<img src={icon}/>
 				</span>{" "}
 				{name}
 			</div>
