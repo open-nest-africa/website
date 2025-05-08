@@ -1,16 +1,14 @@
 # Frontend code
-/src/ @MutiatBash @Noimot
+/src/ @MutiatBash @Noimot @Mayaleeeee
 
 # Backend code
-/backend/ @MutiatBash @Noimot
+/backend/ @MutiatBash @Noimot @Mayaleeeee
 
 # GitHub config
-.github/ @MutiatBash @Noimot 
+.github/ @MutiatBash @Noimot @Mayaleeeee
 
 # Everything Documentation / Content 
-/resources/ @Mayaleeeee @miracle-E
+/resources/ @Mayaleeeee @miracle-E @MutiatBash @Noimot
 /public/ @Mayaleeeee @miracle-E @MutiatBash @Noimot
-/README.md @Mayaleeeee @miracle-E @MutiatBash @Noimot
-/CODE_OF_CONDUCT.md @Mayaleeeee @miracle-E @MutiatBash @Noimot
-/Roadmap.md @Mayaleeeee @miracle-E @MutiatBash @Noimot
+*.md @Mayaleeeee @miracle-E @MutiatBash @Noimot
 

@@ -9,19 +9,16 @@ Use **Related to `#issue_number`** if this PR is part of a solution.
 
 Example:  
 - Fixes #234 if this PR fully resolves the issue.
-- Related to #234 if this PR is part of the solution.
 
 ## Type of Change  
-- [ ] Bug fix  
+- [ ] Bug fix / Refactor
 - [ ] New feature  
-- [ ] Refactor  
-- [ ] Documentation or Content update  
+- [ ] Documentation / Content update  
 - [ ] UI update  
 
 ## Checklist  
 - [ ] I have tested my changes locally  
 - [ ] I have updated documentation (if applicable)  
-- [ ] I have added tests (if applicable)  
 - [ ] I have included screenshots or relevant links (if applicable)
 - [ ] My changes follow the project's code style and contribution guidelines  
 
