@@ -11,7 +11,7 @@ const OurCommunity = () => {
         <Button text="Join Our Community" className="bg-blue text-white text-base font-semibold px-[114px] py-4"/>
     </div>
 </aside>
-<aside className='w-1/2  relative right-0'><img src="/images/community-image.svg" className='h-[30rem] w-full' alt="" /></aside>
+<aside className='w-1/2  relative right-0'><img src="/images/community-image.svg" className='h-[30rem] w-full' alt="Lot of people sanding together" /></aside>
     </section>
   )
 }

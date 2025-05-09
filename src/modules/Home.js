@@ -6,7 +6,11 @@ import OpenNestInAction from "./component/OpenNestInAction";
 import CTA from "./component/CTA";
 import OurCommunity from "./component/OurCommunity";
 import Layout from "../components/layout/Layout";
+ feature/update-seo-meta-tags
 import SEO from "../components/SEO";
+
+import BackToTop from "./component/BackToTop";
+ main
 
 const Home = () => {
   return (
@@ -23,6 +27,7 @@ const Home = () => {
         <OpenNestInAction />
         <CTA />
         <OurCommunity />
+      
       </>
     </Layout>
   );

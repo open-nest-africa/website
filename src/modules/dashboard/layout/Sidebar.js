@@ -10,7 +10,7 @@ const Sidebar = ({ userName, fullName, githubAvatar }) => {
 		<div className="bg-white w-[272px] flex flex-col h-screen overflow-hidden  border-r border-[#E4E7EC]">
 			<Link to="/dashboard" className="py-8 px-5 inline-block">
 				<span>
-					<img src="/images/logo.svg" alt="" />
+					<img src="/images/logo.svg" alt="OpenNest logo" />
 				</span>
 			</Link>
 			<ul>
@@ -55,7 +55,7 @@ const Sidebar = ({ userName, fullName, githubAvatar }) => {
 						<p className="text-[#475367] text-xs">{userName}@opennest.ui</p>
 					</div>
 					<span className="ml-1 w-5">
-						<img src="/images/side-arrow-icon.svg" alt="" />
+						<img src="/images/side-arrow-icon.svg" alt="Side arrow" />
 					</span>
 				</li>
 			</ul>
@@ -80,7 +80,7 @@ const CustomLink = ({ name, link, end, icon }) => {
 		>
 			<div className="flex items-center gap-x-2">
 				<span>
-					<img src={icon} alt="" />
+					<img src={icon}/>
 				</span>{" "}
 				{name}
 			</div>

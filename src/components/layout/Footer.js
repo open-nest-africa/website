@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
           <div>
             <Link to="/">
-              <img src="/images/logo.svg" alt="" />
+              <img src="/images/logo.svg" alt="OpenNest logo" />
             </Link>
           </div>
         </div>
