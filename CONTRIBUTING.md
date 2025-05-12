@@ -145,6 +145,5 @@ If you have questions or want to discuss ideas:
    - Ask your question in the Q&A discussions category
    ![Discussions](public/images/discussions.png)
    - Reach out via [project community channels](https://opennestafrica.slack.com)
-   ![Discussions](public/images/discussions.png)
 
 **Thank you for contributing to Open Nest Africa! 🚀🫶🏼**
