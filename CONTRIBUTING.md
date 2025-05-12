@@ -108,11 +108,13 @@ Example of Commit Message:
   
   ```git push origin feature/your-feature-name```
 - Go to the forked repo on GitHub and click Compare & Pull Request.
+![Make a Pull Request](public/images/make-pull-request.png)
 - Fill in the PR template (if available) with:
     - Summary of changes
     - Issue linked (if applicable)
     - Screenshots or test outputs (if relevant)
     - Submit your PR!
+![Fill in PR Template](public/image)
       
 Wait for maintainers to review and give feedback.
 
