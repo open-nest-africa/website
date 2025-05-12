@@ -1,6 +1,6 @@
-# Contributing to Open Nest
+# Contributing to Open Nest Africa
 
-🎉 Thank you for your interest in contributing to **Open Nest**! We're excited to grow this community together. This guide will walk you through how to get started and contribute effectively.
+🎉 Thank you for your interest in contributing to **Open Nest Africa**! We're excited to grow this community together. This guide will walk you through how to get started and contribute effectively.
 
 ---
 
@@ -25,17 +25,21 @@
 
 ### Forking the Repository
 
-1. Go to the [Open Nest GitHub page](https://github.com/open-nest-africa/open-nest-africa).
+1. Go to the [Open Nest Africa GitHub page](https://github.com/open-nest-africa/open-nest-africa).
+![Open Nest Africa GitHub Repo](public/images/github-repo.png)
 2. Click the **Fork** button in the top right corner.
+![Fork Button](public/images/fork-button.png)
 3. This will create a copy of the repository under your GitHub account.
 
 ### Cloning the Repository
 
 1. Get the Clone URL
     - Go to your forked repository on GitHub (it should be under your account, e.g., [https://github.com/<your-username\>/open-nest-africa](https://github.com/your-username/open-nest-africa)).
+    ![Forked Repo](public/images/forked-repo.png)
     - Click the "Code" button (green button).
     - Copy the HTTPS or SSH URL
       (e.g., [https://github.com/<your-username\>/open-nest-africa.git](https://github.com/your-username/open-nest-africa.git) or [git@github.com:<your-username\>/open-nest-africa.git](git@github.com:<your-username>/open-nest-africa.git)).
+      ![Fork Button](public/images/copy-clone-url.png)
 2. Clone the Repository
     - Open a terminal (or Git Bash on Windows) and run:
       
@@ -138,4 +142,4 @@ If you have questions or want to discuss ideas:
    - Ask your question in the Q&A discussions category
    - Reach out via [project community channels](https://opennestafrica.slack.com)
 
-**Thank you for contributing to Open Nest! 🚀🫶🏼**
+**Thank you for contributing to Open Nest Africa! 🚀🫶🏼**
