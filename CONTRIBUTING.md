@@ -114,7 +114,6 @@ Example of Commit Message:
     - Issue linked (if applicable)
     - Screenshots or test outputs (if relevant)
     - Submit your PR!
-![Fill in PR Template](public/image)
       
 Wait for maintainers to review and give feedback.
 
@@ -130,7 +129,9 @@ Wait for maintainers to review and give feedback.
   
   Please: Go to the Issues tab.
     - Click New Issue.
+    ![New Issue](public/images/new-issue.png)
     - Use the appropriate template (Bug Report, Feature Request, Documentation etc.).
+    ![Issue Labels](public/images/issue-labels.png)
     - Provide as much detail as possible, including:
         - Steps to reproduce
         - Expected vs actual behaviour
@@ -140,8 +141,10 @@ Wait for maintainers to review and give feedback.
 ## Need Help?
 If you have questions or want to discuss ideas:
 
-   - Check the existing discussions 
+   - Check the existing discussions
    - Ask your question in the Q&A discussions category
+   ![Discussions](public/images/discussions.png)
    - Reach out via [project community channels](https://opennestafrica.slack.com)
+   ![Discussions](public/images/discussions.png)
 
 **Thank you for contributing to Open Nest Africa! 🚀🫶🏼**
