@@ -7,7 +7,6 @@ export default function BackToTop() {
         behavior: 'smooth',
       });
     };
-  
     return (
 
       <>
