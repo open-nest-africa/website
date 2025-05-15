@@ -21,9 +21,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint --max-warnings 0",
-    "lint:ci": "CI=true eslint --max-warnings -1"
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "eslintConfig": {
     "extends": [
