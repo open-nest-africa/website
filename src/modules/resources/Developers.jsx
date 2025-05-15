@@ -9,7 +9,7 @@ const Developers = () => {
   );
 
   return (
-    <Layout t>
+    <Layout>
       <ContributionGuide
         data={developerData.contributions}
         role={developerData.role}

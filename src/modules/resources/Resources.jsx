@@ -8,7 +8,6 @@ const Resources = () => {
     <Layout>
       <Overview />
     </Layout>
-    // no extra t
   );
 };
 
