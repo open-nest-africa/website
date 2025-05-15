@@ -8,9 +8,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const CLIENT_ID = process.env.GITHUB_CLIENT_ID;
-const CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
-const PORT = process.env.PORT || 4000;
+const CLIENT_ID = import.meta.env.VITE_GITHUB_CLIENT_ID;
+const CLIENT_SECRET = import.meta.env.VITE_GITHUB_CLIENT_SECRET;
+const PORT = import.meta.env.VITE_PORT || 4000;
 
 app.get("/auth/github", async (req, res) => {
 	const code = req.query.code;
