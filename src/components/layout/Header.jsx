@@ -26,7 +26,6 @@ const Header = () => {
             <div
               className="flex items-center gap-x-1 cursor-pointer"
               onClick={(e) => {
-                e.stopPropagation();
                 setIsResourcesOpen(!isResourcesOpen);
               }}
               onMouseEnter={() => setIsResourcesOpen(true)}
@@ -40,12 +39,7 @@ const Header = () => {
                 onMouseLeave={() => setIsResourcesOpen(false)}
               >
                 <Link to={"/resources"}>
-                  <button
-                    className="b  lock w-full text-left px-4 py-2 text-sm text-gray-700   hover:bg-[#0C9EDD] hover:text-white"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                    }}
-                  >
+                  <button className="b  lock w-full text-left px-4 py-2 text-sm text-gray-700   hover:bg-[#0C9EDD] hover:text-white">
                     Overview
                   </button>
                 </Link>
@@ -54,30 +48,17 @@ const Header = () => {
                   <button
                     className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white"
                     color=""
-                    onClick={(e) => {
-                      e.stopPropagation();
-                    }}
                   >
                     Technical-Writing
                   </button>
                 </Link>
                 <Link to={"/resources/developers"}>
-                  <button
-                    className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                    }}
-                  >
+                  <button className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white">
                     Development
                   </button>
                 </Link>
                 <Link to={"/resources/designers"}>
-                  <button
-                    className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                    }}
-                  >
+                  <button className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white">
                     Design
                   </button>
                 </Link>
