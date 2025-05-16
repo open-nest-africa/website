@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
 	const handleGithubLogin = () => {
-		const clientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
-		const redirectUri = process.env.REACT_APP_GITHUB_REDIRECT_URL; 
+		const clientId = import.meta.env.VITE_GITHUB_CLIENT_ID;
+		const redirectUri = import.meta.env.VITE_GITHUB_REDIRECT_URL; 
 		const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=user`;
 		window.location.href = githubAuthUrl;
 	};
