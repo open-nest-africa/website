@@ -11,7 +11,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="px-[112px] py-6">
+    <header className="px-[112px] py-6 relative ">
       <nav className="flex items-center justify-between">
         <div>
           <Link to="/">
