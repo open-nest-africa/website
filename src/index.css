@@ -50,3 +50,73 @@ body {
    overflow: hidden;
   }
 }
+
+/* @layer components {
+  .mobile-cont {
+    max-width:768px;
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  .mobile-header {
+    font-size: 30px;
+    text-align: center;
+  }
+
+} */
+
+@media ( max-width:768px) {
+    .mobile-cont {
+    max-width:768px;
+    text-align: center;
+    justify-content: center;
+
+  }
+
+    .mobile-header {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .technical-writer {
+    width: 95% !important;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .technical-list {
+    width: 89% !important;
+  }
+
+  .technical-role {
+    padding-top: 30px;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    line-height: 45px;
+  }
+
+  .youtube-text {
+    width: 95%;
+  }
+
+  .mobile-previous {
+    margin-left: 13px;
+  }
+
+  .mobile-next {
+    margin-right: 13px;
+  }
+
+  .mobile-next, .mobile-previous {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .contribute-role {
+    width: 95% !important;
+  }
+}
