@@ -8,14 +8,14 @@ import Designers from "./modules/resources/Designers";
 function App() {
   const Home = lazy(() => import("./modules/Home"));
   const Login = lazy(() => import("./modules/auth/pages/Login"));
+  const RequestPasswordReset = lazy(() => import("./modules/auth/pages/RequestPasswordReset"));
+  const ResetPassword = lazy(() => import("./modules/auth/pages/ResetPassword"));
   const Signup = lazy(() => import("./modules/auth/pages/Signup"));
   const Resources = lazy(() => import("./modules/resources/Resources"));
   const AboutUs = lazy(() => import("./modules/about-us/AboutUs"));
   const GithubAuth = lazy(() => import("./modules/auth/pages/GithubAuth"));
   const Dashboard = lazy(() => import("./modules/dashboard"));
-  const MostProjects = lazy(() =>
-    import("./modules/dashboard/pages/MostProjects")
-  );
+  const MostProjects = lazy(() => import("./modules/dashboard/pages/MostProjects"));
   const Sopohome = lazy(() => import("./modules/dashboard/pages/Sopohome"));
   const Gitlab = lazy(() => import("./modules/dashboard/pages/Gitlab"));
   const MeshAI = lazy(() => import("./modules/dashboard/pages/MeshAI"));
@@ -44,6 +44,8 @@ function App() {
             <Route path="meshai" element={<MeshAI />} />
             <Route path="openai" element={<OpenAI />} />
           </Route>
+          <Route path="/forgot-password" element={<RequestPasswordReset />} />
+          <Route path="/reset-password/:token" element={<ResetPassword />} />
         </Routes>
       </Suspense>
     </Router>
