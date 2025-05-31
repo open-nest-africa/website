@@ -1,8 +1,8 @@
-# 🌸 OpenNest-Africa
+# 🌸 OpenNest-Africa Website
 
 Your Safe Start for Every OpenSourcer!
 
-Welcome to OpenNest-Africa, a cozy hub where beginners—technical or non-technical—can explore, learn, and grow in the world of open source.
+Welcome to OpenNest-Africa Website, a cozy hub where beginners—technical or non-technical—can explore, learn, and grow in the world of open source.
 
 Whether you’re coding, writing, designing, or just curious, you belong here. Let’s start your open-source journey together!
 
@@ -145,22 +145,6 @@ You should see the OpenNest Africa website running locally! 🎉
 Need Help?
 * If you get stuck, don’t hesitate to ask on our Slack community, we’re here to help you get started smoothly!
   
----
-
-### 👫 **Meet the Team**  
-We’re a passionate group of developers, designers, and writers—working together to make open source more inclusive.  
-
-- **Aishat Muibudeen** – *Community Manager & Product Designer*  
-  _I love building meaningful tools and simplifying complex ideas for the community._  
-- **Noimot Alabi** – *FrontEnd Developer*  
-  _Frontend enthusiast with a passion for clean, functional design._
-- **Miracle Ozukalu** – *Product Designer*  
-  _Committed to crafting intuitive and accessible user experiences._
-- **Mutiat Bashua** – *Software Developer*  
-  _Passionate about coding and building impactful open-source tools._
-
-![Temyyy](https://github.com/user-attachments/assets/5148134e-4225-4055-8dc3-95f6392b34cf)
-
 ---
 
 ### 💌 Our Values
