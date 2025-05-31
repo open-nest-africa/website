@@ -12,12 +12,11 @@ Whether you’re coding, writing, designing, or just curious, you belong here. L
 
 ## 📖 Table of Contents
 - [What is OpenNest-Africa](#-what-is-opennest-africa)
-- [How to Contribute to OpenNest](#-how-to-contribute-to-opennest)
+- [How to Contribute to OpenNest-Africa Website](#-how-to-contribute-to-opennest-africa-website)
 - [Features & Pages](#-features--pages)
 - [Limitations](#%EF%B8%8F-limitations)
 - [Future Improvements](#-future-improvements)
 - [How to Fork and Run the Project Locally](#-how-to-fork-and-run-the-project-locally)
-- [Meet the Team](#-meet-the-team)
 - [Our Values](#-our-values)
 - [Get in Touch](#-get-in-touch)
 
@@ -34,7 +33,7 @@ OpenNest-Africa is a beginner-friendly, community-driven space designed to:
 
 ---
 
-### 🌱 How to Contribute to OpenNest
+### 🌱 How to Contribute to OpenNest-Africa Website
 Every contribution counts at OpenNest, no matter how little:
 
 - Explore our [Designers](./resources/Designer.md), [Developers](./resources/Developer.md), and [Technical Writers](./resources/Technical%20Writing.md) guides to kickstart your contributions!
