@@ -1,12 +1,7 @@
 # 🌸 OpenNest-Africa Website
 
-Your Safe Start for Every OpenSourcer!
+Welcome to OpenNest-Africa Website repository, a cozy hub where beginners—technical or non-technical—can explore, learn, and grow in the world of open source.
 
-Welcome to OpenNest-Africa Website, a cozy hub where beginners—technical or non-technical—can explore, learn, and grow in the world of open source.
-
-Whether you’re coding, writing, designing, or just curious, you belong here. Let’s start your open-source journey together!
-
-![OpenNest Africa](https://github.com/user-attachments/assets/6a641175-18b8-4247-b763-94e763e8a34d)
 
 ---
 
