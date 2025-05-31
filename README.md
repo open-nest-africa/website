@@ -10,7 +10,20 @@ Whether you’re coding, writing, designing, or just curious, you belong here. L
 
 ---
 
-### 🌟 What is OpenNest-Africa?
+## 📖 Table of Contents
+- [What is OpenNest-Africa](#-what-is-opennest-africa)
+- [How to Contribute to OpenNest](#-how-to-contribute-to-opennest)
+- [Features & Pages](#-features--pages)
+- [Limitations](#%EF%B8%8F-limitations)
+- [Future Improvements](#-future-improvements)
+- [How to Fork and Run the Project Locally](#-how-to-fork-and-run-the-project-locally)
+- [Meet the Team](#-meet-the-team)
+- [Our Values](#-our-values)
+- [Get in Touch](#-get-in-touch)
+
+---
+
+## 🌟 What is OpenNest-Africa?
 
 OpenNest-Africa is a beginner-friendly, community-driven space designed to:
 
@@ -33,7 +46,7 @@ Every contribution counts at OpenNest, no matter how little:
 
 ---
 
-### 📚 Available Pages and Navigating the OpenNest Application
+### 📚 Features & Pages
 Here are the currently available and functional pages in the application:
 
 - Home Page (`/`)
@@ -73,33 +86,65 @@ We’re actively working on resolving these issues. Contributions are welcome!
 
 ### 🌟 Future Improvements 
 - Have enough resources 
-- Onboard 20 active contributor before the end of 2024
+- Onboard 1000 active contributor before the end of 2025
 - Create Mentorship Programs for beginners in open source
 - Have our first OpenNest Africa Summit
 
 ---
 
-### 🌱 How to Start the project locally
- 
-This repository contains the sources of OpenNest-Africa website:
+### 🌱 How to Fork and Run the Project Locally
+Follow these simple steps to get the OpenNest Africa website running on your local machine. Don’t worry if you’re new to this, we’ve got your back every step of the way! 🚀
 
-- It's powered by React.js,
-- It uses Tailwind CSS framework,
-- It's build and deployed with Netlify,
+🧰 Requirements
+Before we start, make sure you have these installed on your computer:
 
-### Requirements
-Use the following tools to set up the project:
-- Node.js v20.12.0+
-- npm v10.5.0+
+* Node.js version 20.12.0 or higher — ![Download Node.js](https://nodejs.org/en/download/)
 
-### Run locally
-- Fork the repository by clicking on Fork option on top right of the main repository.
-- Open Command Prompt on your local computer.
-- Clone the forked repository by adding your own GitHub username in place of <username>. For multiple contributions it is recommended to have proper configuration of forked repo.
-```git clone https://github.com/<username>/website/```
+* npm version 10.5.0 or higher (npm comes bundled with Node.js)
 
-- Navigate to the website directory.
 
+## 1. Fork the Repository
+This will create your own copy of the project on your GitHub account.
+
+Go to the top-right corner of this page and click the Fork button.
+
+This will copy the repository to your GitHub account under your ususername.
+
+
+## 2. Clone Your Fork Locally
+Now, let’s get that forked repository on your own computer.
+
+Open your terminal (Command Prompt, Git Bash, or any terminal you prefer).
+
+Run the following commands:
+
+`git clone https://github.com/YOUR-USERNAME/website.git
+cd website`
+
+> Replace YOUR-USERNAME with your actual GitHub username. This downloads the code to your machine and moves into the project folder.
+
+## 3. Install Project Dependencies
+The project uses some tools and libraries that need to be installed before running.
+
+* Run this command in your terminal inside the project folder:
+`npm install`
+
+> This will download and install everything the project needs to work.
+
+## 4. Run the Development Server
+Let’s start the project so you can see it live on your browser.
+
+* Run this command to launch the local server:
+`npm run dev`
+
+* Once it’s running, open your browser and go to:
+`http://localhost:5173`
+
+You should see the OpenNest Africa website running locally! 🎉
+
+Need Help?
+* If you get stuck, don’t hesitate to ask on our Slack community, we’re here to help you get started smoothly!
+  
 ---
 
 ### 👫 **Meet the Team**  
@@ -127,10 +172,11 @@ We believe in collaboration, kindness, and learning. At OpenNest, everyone is we
 ### 📬 **Get in Touch**  
 If you have questions or ideas or want to say hello, we'd love to hear from you! 
 
-- **Join Us on Slack:** [@Opennest-Africa](https://join.slack.com/t/opennestafrica/shared_invite/zt-2thai992d-d5UqQ0FYHhj4Boty5S5UKA)
-- **Sponsor OpenNest Africa** [@Opennest-Africa](https://opencollective.com/open-nest-africa/)
-- **Website:** [OpenNest Africa Website](https://opennestafrica.netlify.app)
-- **Follow Us on Twitter:** [@Opennest-Africa](https://x.com/Opennest_Africa)
-- **Follow Us on Linkedin:** [@Opennest-Africa](https://www.linkedin.com/company/opennest-africa/)
+- [Join Us on Slack](https://join.slack.com/t/opennestafrica/shared_invite/zt-36a95q8is-A9GBGWrt89ko4egspqyV6g)
+- [Sponsor OpenNest Africa](https://opencollective.com/open-nest-africa/)
+- [Website](https://opennestafrica.netlify.app)
+- [Follow Us on Twitter](https://x.com/Opennest_Africa)
+- [Follow Us on Linkedin](https://www.linkedin.com/company/opennest-africa/)
+- [Follow Us on Instagram](https://www.instagram.com/opennestafrica)
 
 ---
