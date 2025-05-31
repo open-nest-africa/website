@@ -20,7 +20,13 @@ const Signup = () => {
     try {
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
-      navigate("/");
+      const token = await user.getIdToken(); // Firebase token
+
+      // Store token
+      localStorage.setItem("accessToken", token);
+
+      console.log("User:", user);
+      navigate("/dashboard");
     } catch (error) {
       console.error("Error during sign-up:", error);
     }
