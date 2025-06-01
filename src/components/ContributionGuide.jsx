@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 
 const ContributionGuide = ({
 	data,
@@ -13,20 +13,20 @@ const ContributionGuide = ({
 	summaryContent2,
 }) => {
 	return (
-		<div className="px-[7.4rem] py-24 bg-[#F5FCFF] flex flex-col gap-12">
-			<div className="flex flex-col gap-10">
-				<h4 className="text-6xl font-semibold">
+		<div className="md:px-[7.4rem] md:py-24 bg-[#F5FCFF] flex flex-col md:gap-12">
+			<div className="flex flex-col md:gap-10 mx-auto technical-writer">
+				<h4 className="md:text-6xl font-semibold technical-role">
 					{icon} {role}
 				</h4>
-				<p className="text-xl leading-9">{info}</p>
+				<p className="md:text-xl leading-9 technical-info">{info}</p>
 			</div>
 			<div className="flex flex-col gap-8">
 				{data.map((contribution, i) => (
 					<div key={i} className="">
-						<h2 className="text-2xl font-bold mb-4">
+						<h2 className="text-2xl font-bold mb-4 technical-role">
 							{contribution.title}
 						</h2>
-						<ul className="list-disc pl-6 text-xl leading-9">
+						<ul className="list-disc md:pl-6 text-xl leading-9 mx-auto technical-list">
 							{contribution.points.map((point, index) => (
 								<li key={index} className="mb-2">
 									<strong>{point.title}</strong>: {point.description}
@@ -37,18 +37,18 @@ const ContributionGuide = ({
 				))}
 			</div>
 			{videoContent && (
-				<div>
-					<h6 className="text-2xl font-bold mb-4">🎥 Video Tutorial</h6>
-					<p className="text-xl leading-9">{videoText}:</p>
+				<div className="mobile-cont">
+					<h6 className="text-2xl font-bold mb-4 technical-role">🎥 Video Tutorial</h6>
+					<p className="text-xl leading-9 border-2 youtube-text mx-auto">{videoText}:</p>
 					<a
 						href={videoLink}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-xl leading-9 underline"
 					>
-						How to Contribute to Open Source as {role}
+					<p className="contribute-role mx-auto mt-6">	How to Contribute to Open Source as {role}</p>
 					</a>
-					<div className="mt-10 flex justify-center items-center overflow-hidden">
+					<div className="mt-10 flex justify-center items-center overflow-hidden mx-auto technical-writer">
 						<iframe
 							width="800"
 							height="500"
@@ -67,8 +67,8 @@ const ContributionGuide = ({
 					</div>
 				</div>
 			)}
-			<div className="flex flex-col gap-6">
-				<h6 className="text-2xl font-bold">{summaryTitle}</h6>
+			<div className="flex flex-col md:gap-6 mx-auto technical-writer">
+				<h6 className="text-2xl font-bold technical-role">{summaryTitle}</h6>
 				<p className="text-xl leading-9">{summaryContent1}</p>
 				<p className="text-xl leading-9">{summaryContent2}</p>
 			</div>

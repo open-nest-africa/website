@@ -32,24 +32,27 @@ const Resources = () => {
       <div
         className={`${
           tab === 0 ? "justify-end" : "justify-between"
-        } bg-[#E3DA35] w-full h-[118px] mb-[140px] flex items-center px-[99px]`}
+        } bg-[#E3DA35] w-full mt-[30px] h-[118px] mb-[140px] flex items-center md:px-[99px]`}
       >
         {tab !== 0 && (
-          <div className="flex items-center gap-x-2">
-            <button onClick={handlePrevious}>
+          <div className="flex items-center gap-x-2 mobile-previous">
+            <button className="hidden sm:block" onClick={handlePrevious}>
               <ArrowLeftIcon className="w-5 h-5" />
             </button>
 
             <span className="text-2xl">Previous</span>
-            <label className="text-black text-[32px]">
+            <label className="text-black md:text-[32px]">
               {resources[tab-1].name}
             </label>
+              <button className="block md:hidden" onClick={handlePrevious}>
+              <ArrowLeftIcon className="w-5 h-5" />
+            </button>
           </div>
         )}
         {tab !== resources.length - 1 && (
-          <div className="flex items-center gap-x-2">
+          <div className="flex items-center gap-x-2 mobile-next">
             <span className="text-2xl">Next</span>
-            <label className="text-black font-medium text-[32px]">
+            <label className="text-black md:font-medium md:text-[32px]">
               {resources[tab+1].name}
             </label>
             <button

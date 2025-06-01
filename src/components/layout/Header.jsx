@@ -2,12 +2,15 @@ import React from "react";
 import Button from "../Button";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
+import Navbar from "./mobileNav";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 bg-white px-[112px] py-6 shadow">
+    <div> 
+       <Navbar></Navbar>
+    <header className="sticky top-0 z-50 bg-white px-[112px] py-6 shadow hidden md:block">
       <nav className="flex items-center justify-between">
-        <div>
+        <div> 
           <Link to="/">
             <img src="/images/logo.svg" alt="OpenNest logo" />
           </Link>
@@ -16,11 +19,13 @@ const Header = () => {
           <li className="flex items-center gap-x-1">
             use cases <ChevronDownIcon className="w-6 h-6" />
           </li>
+
           <li>
             <Link to="/resources" className="flex items-center gap-x-1">
               Resources <ChevronDownIcon className="w-6 h-6" />
             </Link>
           </li>
+
           <li>
             <Link to="/about-us">
               About us
@@ -36,6 +41,7 @@ const Header = () => {
         </Link>
       </nav>
     </header>
+     </div>
   );
 };
 
