@@ -170,6 +170,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Sulaimonyusuf123"><img src="https://avatars.githubusercontent.com/u/128190714?v=4?s=100" width="100px;" alt="Yusuf sulaimon"/><br /><sub><b>Yusuf sulaimon</b></sub></a><br /><a href="https://github.com/Sulaimonyusuf123/website/commits?author=Sulaimonyusuf123" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Olaitan991"><img src="https://avatars.githubusercontent.com/u/127941543?v=4?s=100" width="100px;" alt="Olaitan991"/><br /><sub><b>Olaitan991</b></sub></a><br /><a href="#design-Olaitan991" title="Design">🎨</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.behance.net/muibudeenaisha"><img src="https://avatars.githubusercontent.com/u/105395613?v=4?s=100" width="100px;" alt="Aishat Muibudeen"/><br /><sub><b>Aishat Muibudeen</b></sub></a><br /><a href="#design-Mayaleeeee" title="Design">🎨</a></td>
     </tr>
   </tbody>
 </table>
