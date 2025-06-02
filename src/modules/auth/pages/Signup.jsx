@@ -7,6 +7,7 @@ import { auth, provider } from "../../../firebase/firebase";
 import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
+  const [errorMessage, setErrorMessage] = React.useState("");
   const navigate = useNavigate();
 
   const handleGithubLogin = () => {
@@ -21,14 +22,23 @@ const Signup = () => {
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
       const token = await user.getIdToken();
-      console.log(token);
 
       localStorage.setItem("accessToken", token);
-
-      console.log("User:", user);
       navigate("/dashboard");
     } catch (error) {
-      console.error("Error during sign-up:", error);
+      if (error.code === "auth/popup-closed-by-user") {
+        setErrorMessage("Popup closed. Please try again.");
+      } else if (error.code === "auth/network-request-failed") {
+        setErrorMessage("Network error. Please try again.");
+      } else if (
+        error.code === "auth/account-exists-with-different-credential"
+      ) {
+        setErrorMessage("Account exists. Please try logging in instead.");
+      } else if (error.code === "auth/too-many-requests") {
+        setErrorMessage("Too many attempts. Please wait a bit.");
+      } else {
+        setErrorMessage("Signup failed. Please try again.");
+      }
     }
   };
 
@@ -42,12 +52,19 @@ const Signup = () => {
             icon="/images/github-logo.svg"
             className="bg-primary text-[#344054] text-base font-semibold align-center py-4 px-24 w-full"
           />
+
           <Button
             onClick={handleGoogleSignup}
             text="Continue with Google"
             icon="/images/google-logo.svg"
             className="bg-primary text-[#344054] text-base font-semibold align-center py-4 px-24 w-full"
           />
+
+          {errorMessage && (
+            <p className="text-red-600 text-sm text-center mb-4">
+              {errorMessage}
+            </p>
+          )}
           <div className="flex items-center w-full gap-x-3">
             <h className="border border-green-900 border-solid w-full" />
             or
