@@ -27,13 +27,12 @@ const ResetPassword = () => {
     }
 
     try {
-      await axios.post("/api/auth/password-reset", {
+      await axios.post("http://localhost:4000/auth/password-reset", {
         token,
         newPassword: password,
       });
       setSuccess("Password has been reset successfully.");
 
-      // Redirect to login after 2 seconds
       setTimeout(() => {
         navigate("/login");
       }, 2000);
