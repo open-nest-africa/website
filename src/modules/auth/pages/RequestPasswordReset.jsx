@@ -19,13 +19,8 @@ const RequestPasswordReset = () => {
     setSuccess("");
 
     try {
-      const response = await axios.post("http://localhost:4000/auth/password-request", { email });
+      await axios.post("http://localhost:4000/auth/password-request", { email });
       setSuccess("Password reset link has been sent to your email.");
-
-      // If you want to show the reset link in the UI (for testing)
-      if (response.data.resetUrl) {
-        console.log("Reset URL:", response.data.resetUrl);
-      }
     } catch (err) {
       setError(err.response?.data?.error || "Failed to send reset link. Please try again.");
     } finally {
