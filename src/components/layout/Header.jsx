@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../Button";
 import { ChevronDownIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
@@ -10,6 +10,11 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
+
+  useEffect(() => {
+    setIsResourcesOpen(false);
+  }, []);
   return (
     <header className="sticky top-0 z-50 bg-white shadow">
       <nav className="relative px-4 md:px-[112px] py-6">
@@ -33,20 +38,58 @@ const Header = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex items-center justify-between text-base font-semibold text-dark-2 capitalize gap-x-8 bg-[#F7F9FC] rounded-[40px] py-4 px-10">
-            <li className="flex items-center gap-x-1">
-              use cases <ChevronDownIcon className="w-6 h-6" />
-            </li>
-            <li>
-              <Link to="/resources" className="flex items-center gap-x-1">
-                Resources <ChevronDownIcon className="w-6 h-6" />
-              </Link>
-            </li>
-            <li>
-              <Link to="/about-us">About us</Link>
-            </li>
-            <li>What's new</li>
-          </ul>
+           <ul className="hidden md-flex items-center justify-between text-base font-semibold text-dark-2 capitalize gap-x-8 bg-[#F7F9FC] rounded-[40px] py-4 px-10">
+          <li className="flex items-center gap-x-1">
+            use cases <ChevronDownIcon className="w-6 h-6" />
+          </li>
+          <li className="relative">
+            <div
+              className="flex items-center gap-x-1 cursor-pointer"
+              onClick={(e) => {
+                setIsResourcesOpen(!isResourcesOpen);
+              }}
+              onMouseEnter={() => setIsResourcesOpen(true)}
+            >
+              Resources <ChevronDownIcon className="w-6 h-6" />
+            </div>
+            {isResourcesOpen && (
+              <div
+                className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50"
+                onClick={(e) => e.stopPropagation()}
+                onMouseLeave={() => setIsResourcesOpen(false)}
+              >
+                <Link to={"/resources"}>
+                  <button className="block w-full text-left px-4 py-2 text-sm text-gray-700   hover:bg-[#0C9EDD] hover:text-white">
+                    Overview
+                  </button>
+                </Link>
+
+                <Link to={"/resources/technical-writing"}>
+                  <button
+                    className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white"
+                    color=""
+                  >
+                    Technical-Writing
+                  </button>
+                </Link>
+                <Link to={"/resources/developers"}>
+                  <button className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white">
+                    Development
+                  </button>
+                </Link>
+                <Link to={"/resources/designers"}>
+                  <button className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white">
+                    Design
+                  </button>
+                </Link>
+              </div>
+            )}
+          </li>
+          <li>
+            <Link to="/about-us">About us</Link>
+          </li>
+          <li>What's new</li>
+        </ul>
 
           <Link to="/signup" className="hidden md:block">
             <Button
@@ -80,6 +123,7 @@ const Header = () => {
               </Link>
             </li>
           </ul>
+         </div>
         </div>
       </nav>
     </header>
