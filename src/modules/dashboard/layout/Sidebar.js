@@ -8,7 +8,7 @@ const Sidebar = ({ userName, fullName, githubAvatar }) => {
 
 	return (
 		<div className="bg-white w-[272px] flex flex-col h-screen overflow-hidden  border-r border-[#E4E7EC]">
-			<Link to="/dashboard" className="py-8 px-5 inline-block">
+			<Link to="/" className="py-8 px-5 inline-block">
 				<span>
 					<img src="/images/logo.svg" alt="OpenNest logo" />
 				</span>
