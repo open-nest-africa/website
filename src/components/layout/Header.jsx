@@ -38,7 +38,7 @@ const Header = () => {
                 onMouseLeave={() => setIsResourcesOpen(false)}
               >
                 <Link to={"/resources"}>
-                  <button className="b  lock w-full text-left px-4 py-2 text-sm text-gray-700   hover:bg-[#0C9EDD] hover:text-white">
+                  <button className="block w-full text-left px-4 py-2 text-sm text-gray-700   hover:bg-[#0C9EDD] hover:text-white">
                     Overview
                   </button>
                 </Link>
