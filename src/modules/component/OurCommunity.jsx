@@ -15,17 +15,23 @@ const OurCommunity = () => {
           ecosystem.
         </p>
         <div className="mt-11">
-          <Button
-            text="Join Our Community"
-            className="bg-blue text-white text-base font-semibold px-[114px] py-4"
-          />
+          <a
+            href="https://opennestafrica.slack.com/join/shared_invite/zt-34axoub3n-lQTtFlPezkyls8~ncwHfiQ#/shared-invite/email"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              text="Join Our Community"
+              className="bg-blue text-white text-base font-semibold px-[114px] py-4"
+            />
+          </a>
         </div>
       </aside>
-      <aside className="w-1/2  relative right-0">
+      <aside className="w-1/2 relative right-0">
         <img
           src="/images/community-image.svg"
           className="h-[30rem] w-full"
-          alt="Lot of people sanding together"
+          alt="Lot of people standing together"
         />
       </aside>
     </section>
