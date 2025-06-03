@@ -19,7 +19,7 @@ const RequestPasswordReset = () => {
     setSuccess("");
 
     try {
-      await axios.post("http://localhost:4000/auth/password-request", { email });
+      await axios.post(`${import.meta.env.VITE_API_URL}/auth/password-request`, { email });
       setSuccess("Password reset link has been sent to your email.");
     } catch (err) {
       setError(err.response?.data?.error || "Failed to send reset link. Please try again.");
