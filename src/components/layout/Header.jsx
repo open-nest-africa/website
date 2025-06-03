@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Button from "../Button";
+import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 
 const Header = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
 
+  useEffect(() => {
+    setIsResourcesOpen(false);
+  }, []);
   return (
     <header className="sticky top-0 z-50 bg-white px-4 sm:px-8 md:px-16 lg:px-[112px] py-4 sm:py-6 shadow">
       <nav className="flex items-center justify-between">
@@ -20,15 +25,51 @@ const Header = () => {
           <li className="flex items-center gap-x-1 cursor-pointer hover:text-gray-900 transition-colors">
             use cases <ChevronDown className="w-4 h-4 xl:w-6 xl:h-6" />
           </li>
-          <li>
-            <Link to="/resources" className="flex items-center gap-x-1 hover:text-gray-900 transition-colors">
-              Resources <ChevronDown className="w-4 h-4 xl:w-6 xl:h-6" />
-            </Link>
+          <li className="relative">
+            <div
+              className="flex items-center gap-x-1 cursor-pointer"
+              onClick={(e) => {
+                setIsResourcesOpen(!isResourcesOpen);
+              }}
+              onMouseEnter={() => setIsResourcesOpen(true)}
+            >
+              Resources <ChevronDownIcon className="w-6 h-6" />
+            </div>
+            {isResourcesOpen && (
+              <div
+                className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50"
+                onClick={(e) => e.stopPropagation()}
+                onMouseLeave={() => setIsResourcesOpen(false)}
+              >
+                <Link to={"/resources"}>
+                  <button className="block w-full text-left px-4 py-2 text-sm text-gray-700   hover:bg-[#0C9EDD] hover:text-white">
+                    Overview
+                  </button>
+                </Link>
+
+                <Link to={"/resources/technical-writing"}>
+                  <button
+                    className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white"
+                    color=""
+                  >
+                    Technical-Writing
+                  </button>
+                </Link>
+                <Link to={"/resources/developers"}>
+                  <button className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white">
+                    Development
+                  </button>
+                </Link>
+                <Link to={"/resources/designers"}>
+                  <button className="block w-full text-left px-4 py-2 text-sm text-gray-700  hover:bg-[#0C9EDD] hover:text-white">
+                    Design
+                  </button>
+                </Link>
+              </div>
+            )}
           </li>
           <li>
-            <Link to="/about-us" className="hover:text-gray-900 transition-colors">
-              About us
-            </Link>
+            <Link to="/about-us">About us</Link>
           </li>
           <li className="cursor-pointer hover:text-gray-900 transition-colors">What's new</li>
         </ul>
