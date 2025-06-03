@@ -12,10 +12,8 @@ app.use(cors());
 
 const PORT = process.env.VITE_PORT || 4000;
 
-// Connect to MongoDB
 connectDB();
 
-// System Routes
 app.use("/auth", authRoutes);
 app.use("/user", usersRoutes);
 

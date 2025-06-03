@@ -20,7 +20,6 @@ const requestPasswordReset = async (email) => {
   user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
   await user.save();
 
-  // Generate reset URL
   const resetUrl = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
 
   const emailSent = await sendPasswordResetEmail(email, resetToken);
