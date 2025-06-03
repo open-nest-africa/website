@@ -44,9 +44,8 @@ const ResetPassword = () => {
   };
 
   return (
-    <AuthLayout title="Set New Password" className="flex-col gap-5 w-full max-w-md mx-auto">
+    <AuthLayout title="Set New Password" className="flex-col gap-5 w-full max-w-md mx-auto" showOpenNestText={false}>
       <div className="flex flex-col gap-8">
-        <p className="text-2xl font-semibold">Set new password</p>
         <p className="text-sm text-[#667185]">Please enter your new password below.</p>
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           <TextField
