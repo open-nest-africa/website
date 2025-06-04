@@ -4,7 +4,7 @@ const axios = require("axios");
 const User = require("../models/User");
 const { sendPasswordResetEmail } = require("../config/email");
 
-const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key";
+const JWT_SECRET = process.env.JWT_SECRET;
 const CLIENT_ID = process.env.VITE_GITHUB_CLIENT_ID;
 const CLIENT_SECRET = process.env.VITE_GITHUB_CLIENT_SECRET;
 
