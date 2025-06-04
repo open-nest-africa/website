@@ -69,12 +69,40 @@ const Header = () => {
           </li>
           <li>What's new</li>
         </ul>
-        <Link to="/signup">
-          <Button
-            text="Sign up"
-            className="bg-blue text-white font-semibold text-base py-4 px-10"
-          />
-        </Link>
+
+          <Link to="/signup" className="hidden md:block">
+            <Button
+              text="Sign up"
+              className="bg-blue text-white font-semibold text-base py-4 px-10"
+            />
+          </Link>
+        </div>
+
+        {/* Mobile Navigation */}
+        <div className={`${isMenuOpen ? 'block' : 'hidden'} md:hidden absolute top-full left-0 right-0 bg-white shadow-lg`}>
+          <ul className="flex flex-col text-base font-semibold text-dark-2 capitalize">
+            <li className="p-4 border-b flex items-center justify-between">
+              use cases <ChevronDownIcon className="w-6 h-6" />
+            </li>
+            <li className="p-4 border-b">
+              <Link to="/resources" className="flex items-center justify-between">
+                Resources <ChevronDownIcon className="w-6 h-6" />
+              </Link>
+            </li>
+            <li className="p-4 border-b">
+              <Link to="/about-us">About us</Link>
+            </li>
+            <li className="p-4 border-b">What's new</li>
+            <li className="p-4">
+              <Link to="/signup" className="block">
+                <Button
+                  text="Sign up"
+                  className="bg-blue text-white font-semibold text-base py-4 px-10 w-full"
+                />
+              </Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   );
