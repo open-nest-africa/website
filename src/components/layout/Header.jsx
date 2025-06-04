@@ -123,7 +123,6 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-         </div>
         </div>
       </nav>
     </header>
