@@ -10,14 +10,29 @@ const Header = () => {
     setIsResourcesOpen(false);
   }, []);
   return (
-    <header className="sticky top-0 z-50 bg-white px-[112px] py-6 shadow">
-      <nav className="flex items-center justify-between">
-        <div>
-          <Link to="/">
-            <img src="/images/logo.svg" alt="OpenNest logo" />
-          </Link>
-        </div>
-        <ul className="flex items-center justify-between text-base font-semibold text-dark-2 capitalize gap-x-8 bg-[#F7F9FC] rounded-[40px] py-4 px-10">
+    <header className="sticky top-0 z-50 bg-white shadow">
+      <nav className="relative px-4 md:px-[112px] py-6">
+        <div className="flex items-center justify-between">
+          <div>
+            <Link to="/">
+              <img src="/images/logo.svg" alt="OpenNest logo" />
+            </Link>
+          </div>
+          
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden p-2 text-dark-2"
+            onClick={toggleMenu}
+          >
+            {isMenuOpen ? (
+              <XMarkIcon className="w-6 h-6" />
+            ) : (
+              <Bars3Icon className="w-6 h-6" />
+            )}
+          </button>
+
+          {/* Desktop Navigation */}
+           <ul className="hidden md:flex items-center justify-between text-base font-semibold text-dark-2 capitalize gap-x-8 bg-[#F7F9FC] rounded-[40px] py-4 px-10">
           <li className="flex items-center gap-x-1">
             use cases <ChevronDownIcon className="w-6 h-6" />
           </li>
