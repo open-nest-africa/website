@@ -1,99 +1,22 @@
 const express = require("express");
-const axios = require("axios");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const connectDB = require("./src/config/database");
+const authRoutes = require("./src/routes/authRoutes");
+const usersRoutes = require("./src/routes/usersRoutes");
 require("dotenv").config();
 
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const CLIENT_ID = import.meta.env.VITE_GITHUB_CLIENT_ID;
-const CLIENT_SECRET = import.meta.env.VITE_GITHUB_CLIENT_SECRET;
-const PORT = import.meta.env.VITE_PORT || 4000;
+const PORT = process.env.VITE_PORT || 4000;
 
-app.get("/auth/github", async (req, res) => {
-	const code = req.query.code;
+connectDB();
 
-	try {
-		const tokenResponse = await axios.post(
-			"https://github.com/login/oauth/access_token",
-			{
-				client_id: CLIENT_ID,
-				client_secret: CLIENT_SECRET,
-				code: code,
-			},
-			{
-				headers: {
-					accept: "application/json",
-				},
-			}
-		);
-
-		if (!tokenResponse.data.access_token) {
-			return res.status(401).json({ error: "Bad credentials" });
-		}
-
-		const accessToken = tokenResponse.data.access_token;
-
-		const userResponse = await axios.get("https://api.github.com/user", {
-			headers: {
-				Authorization: `Bearer ${accessToken}`,
-			},
-		});
-
-		const userData = userResponse.data;
-
-		res.json({
-			accessToken: accessToken,
-			user: userData,
-		});
-	} catch (error) {
-		console.error("Error during authentication:", error.message || error);
-		if (error.response) {
-			console.error("Response data:", error.response.data);
-			console.error("Response status:", error.response.status);
-		}
-		res.status(500).json({ error: "Error during authentication" });
-	}
-});
-
-app.get("/user", async (req, res) => {
-	const token = req.headers.authorization?.split(" ")[1];
-
-	if (!token) {
-		return res.status(401).json({ error: "Unauthorized" });
-	}
-
-	try {
-		const response = await axios.get("https://api.github.com/user", {
-			headers: {
-				Authorization: `Bearer ${token}`,
-			},
-		});
-
-		res.json({
-			user: {
-				login: response.data.login,
-				id: response.data.id,
-				avatar_url: response.data.avatar_url,
-				html_url: response.data.html_url,
-				name: response.data.name,
-				location: response.data.location,
-				bio: response.data.bio,
-				followers: response.data.followers,
-				following: response.data.following,
-				public_repos: response.data.public_repos,
-			},
-		});
-	} catch (error) {
-		console.error(error);
-		res.status(500).json({ error: "Failed to fetch user data from GitHub." });
-	}
-});
+app.use("/auth", authRoutes);
+app.use("/user", usersRoutes);
 
 app.listen(PORT, () => {
-	console.log(
-		`Server running on port ${PORT} in ${process.env.NODE_ENV} mode`
-	);
+  console.log(`Server running on port ${PORT} in ${process.env.NODE_ENV} mode`);
 });
