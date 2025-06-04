@@ -38,7 +38,7 @@ const Header = () => {
           </button>
 
           {/* Desktop Navigation */}
-           <ul className="hidden md-flex items-center justify-between text-base font-semibold text-dark-2 capitalize gap-x-8 bg-[#F7F9FC] rounded-[40px] py-4 px-10">
+           <ul className="hidden md:flex items-center justify-between text-base font-semibold text-dark-2 capitalize gap-x-8 bg-[#F7F9FC] rounded-[40px] py-4 px-10">
           <li className="flex items-center gap-x-1">
             use cases <ChevronDownIcon className="w-6 h-6" />
           </li>
