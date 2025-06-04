@@ -17,7 +17,7 @@ const requestPasswordReset = async (email) => {
   const resetToken = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: "1h" });
 
   user.resetPasswordToken = resetToken;
-  user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
+  user.resetPasswordExpires = Date.now() + 3600000;
   await user.save();
 
   const resetUrl = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
