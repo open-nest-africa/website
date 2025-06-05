@@ -42,7 +42,7 @@ const Dashboard = () => {
 		>
 			<SEO 
 				title="Dashboard - OpenNest-Africa"
-				description="Manage your OpenNest-Africa profile, track your contributions, and access project resources. Your central hub for open source collaboration."
+				description="Manage your profile, follow your project contributions, and stay connected with the open source community."
 			/>
 			<Outlet context={{ user, projects, loading, error }} />
 		</Layout>

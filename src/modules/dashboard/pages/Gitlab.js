@@ -6,7 +6,7 @@ const Gitlab = () => {
     <div>
       <SEO 
         title="GitLab Projects - OpenNest-Africa"
-        description="Browse and contribute to GitLab-hosted open source projects. Connect with African developers and expand your portfolio."
+        description="Check out GitLab-hosted projects and contribute your ideas—whether you're writing code, creating content, or managing workflows."
       />
       Gitlab
     </div>

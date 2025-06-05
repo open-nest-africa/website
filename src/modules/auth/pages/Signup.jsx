@@ -15,7 +15,7 @@ const Signup = () => {
     <AuthLayout title="Sign up" className="flex-col items-center">
       <SEO 
         title="Join OpenNest-Africa - Sign Up"
-        description="Create your OpenNest-Africa account to start your journey in open source contribution. Connect with African tech talent and grow your skills."
+        description="Create your account and start exploring open source projects, learning opportunities, and global collaboration at OpenNest-Africa."
       />
       <div>
         <div className="space-y-4 flex flex-col justify-center items-center w-[448px] pt-10">

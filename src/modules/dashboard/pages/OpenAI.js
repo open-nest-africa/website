@@ -8,7 +8,7 @@ function OpenAI() {
     <DashboardContentLayout>
       <SEO 
         title="OpenAI Projects - OpenNest-Africa"
-        description="Access and contribute to OpenAI-related projects. Join African developers working on AI innovation and implementation."
+        description="Explore OpenAI-powered projects and collaborate with people working on accessible AI solutions in the open."
       />
       <div>
         <OpenAIContent />

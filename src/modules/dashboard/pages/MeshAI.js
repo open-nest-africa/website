@@ -6,7 +6,7 @@ const MeshAI = () => {
     <div>
       <SEO 
         title="MeshAI Projects - OpenNest-Africa"
-        description="Explore AI and machine learning projects on OpenNest-Africa. Contribute to cutting-edge technology development."
+        description="Join open source AI and machine learning projects. Bring your skills or curiosity—there's something for everyone."
       />
       MeshAI
     </div>

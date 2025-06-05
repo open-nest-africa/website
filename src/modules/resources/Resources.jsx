@@ -31,7 +31,7 @@ const Resources = () => {
     <Layout>
       <SEO 
         title="Learning Resources - OpenNest-Africa"
-        description="Access curated learning resources, tutorials, and guides for developers, designers, and technical writers. Enhance your skills and contribute to open source."
+        description="Find handpicked learning resources and guides for all backgrounds—tech or not. Discover how you can contribute and grow with open source."
       />
       {resources[tab].component}
       <div
