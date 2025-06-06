@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from "react";
 import Button from "../Button";
-import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import { ChevronDownIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
-import { ChevronDown, Menu, X } from "lucide-react";
 
 const Header = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
+
+  useEffect(() => {
+    setIsResourcesOpen(false);
+  }, []);
   return (
     <header className="sticky top-0 z-50 bg-white shadow">
       <nav className="relative px-4 md:px-[112px] py-6">
@@ -80,7 +88,7 @@ const Header = () => {
           <li>
             <Link to="/about-us">About us</Link>
           </li>
-          <li className="cursor-pointer hover:text-gray-900 transition-colors">What's new</li>
+          <li>What's new</li>
         </ul>
 
           <Link to="/signup" className="hidden md:block">
@@ -117,38 +125,6 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-
-      {isMobileMenuOpen && (
-        <div className="lg:hidden mt-4 pb-4 border-t border-gray-200">
-          <ul className="flex flex-col space-y-4 pt-4 text-base font-semibold text-gray-700">
-            <li className="flex items-center justify-between py-2 cursor-pointer hover:text-gray-900 transition-colors">
-              <span>Use cases</span>
-              <ChevronDown className="w-5 h-5" />
-            </li>
-            <li className="py-2">
-              <Link to="/resources" className="flex items-center justify-between hover:text-gray-900 transition-colors">
-                <span>Resources</span>
-                <ChevronDown className="w-5 h-5" />
-              </Link>
-            </li>
-            <li className="py-2">
-              <Link to="/about-us" className="hover:text-gray-900 transition-colors">
-                About us
-              </Link>
-            </li>
-            <li className="py-2 cursor-pointer hover:text-gray-900 transition-colors">
-              What's new
-            </li>
-            <li className="pt-4 sm:hidden">
-              <Link to="/signup" className="block">
-                <button className="bg-blue text-white font-semibold text-sm lg:text-base py-3 lg:py-4 px-6 lg:px-10 w-full">
-                  Sign up
-                </button>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      )}
     </header>
   );
 };
