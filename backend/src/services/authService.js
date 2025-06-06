@@ -4,7 +4,7 @@ const axios = require("axios");
 const User = require("../models/User");
 const { sendPasswordResetEmail } = require("../config/email");
 
-const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key";
+const JWT_SECRET = process.env.JWT_SECRET;
 const CLIENT_ID = process.env.VITE_GITHUB_CLIENT_ID;
 const CLIENT_SECRET = process.env.VITE_GITHUB_CLIENT_SECRET;
 
@@ -17,7 +17,7 @@ const requestPasswordReset = async (email) => {
   const resetToken = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: "1h" });
 
   user.resetPasswordToken = resetToken;
-  user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
+  user.resetPasswordExpires = Date.now() + 3600000;
   await user.save();
 
   const resetUrl = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
