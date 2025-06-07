@@ -80,7 +80,7 @@ const ResetPassword = () => {
 
           <p className="text-sm text-[#667185] text-center">
             Remember your password?{" "}
-            <button type="button" onClick={() => navigate("/login")} className="text-blue font-medium">
+            <button type="button" onClick={() => navigate("/login")} className="text-blue font-medium hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block">
               Back to Login
             </button>
           </p>

@@ -2,7 +2,7 @@ import React from "react";
 import RepositoryCard from "../../components/RepositoryCard";
 
 const RepositoryList = ({ repos, loading, error }) => {
-	if (loading) return <p>Loading repositories...</p>;
+	if (!loading) return <p>Loading repositories...</p>;
 	if (error) return <p>{error}</p>;
 
 	return (

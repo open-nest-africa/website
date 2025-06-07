@@ -41,7 +41,7 @@ const Signup = () => {
         </div>
         <p className="text-sm text-[#667185] mt-10">
           Already have an account?{" "}
-          <span className="font-medium text-[#0C9EDD]">
+          <span className="font-medium text-[#0C9EDD] hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block">
             <Link to="/login">Sign in</Link>
           </span>
         </p>
