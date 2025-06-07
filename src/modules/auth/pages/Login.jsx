@@ -4,9 +4,6 @@ import Button from "../../../components/Button";
 import TextField from "../../../components/form/TextField";
 import { FormDivider } from "../../../components/FormDivider";
 import { Link } from "react-router-dom";
-import { signInWithPopup } from "firebase/auth";
-import { auth, provider } from "../../../firebase/firebase";
-import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const handleGithubLogin = () => {
