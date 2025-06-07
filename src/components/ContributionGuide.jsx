@@ -44,7 +44,7 @@ const ContributionGuide = ({
 						href={videoLink}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="text-xl leading-9 underline"
+						className="text-xl leading-9 underline hover:scale-[104%] hover:translate-x-1 transition-all duration-300 ease-in-out inline-block"
 					>
 						How to Contribute to Open Source as {role}
 					</a>
