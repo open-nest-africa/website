@@ -10,7 +10,7 @@ export default function BackToTop() {
     return (
 
       <>
-      <div className="fixed bottom-6 right-6 flex flex-col items-center z-50">
+      <div className="fixed bottom-6 right-0 mr-3 flex flex-col items-center z-50">
         <button
           onClick={scrollToTop}
           className="bg-[#0C9EDD] text-white px-4 py-2 rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
