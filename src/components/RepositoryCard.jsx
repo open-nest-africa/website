@@ -23,14 +23,14 @@ const RepositoryCard = ({ repo }) => {
 			</div>
 			<div className="border border-blue p-4 rounded-md flex flex-col gap-3">
 				<h3 className="text-lg font-semibold underline">
-					<a
-						href={repo.html_url}
+					<Link
+						to={repo.html_url}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-blue-500 hover:underline"
 					>
 						{repo.name}
-					</a>
+					</Link>
 				</h3>
 				<p className="text-gray-600">
 					{repo.description || "No description provided."}
@@ -62,14 +62,14 @@ const RepositoryCard = ({ repo }) => {
 							className="h-4 w-5 mr-1 text-blue"
 							aria-hidden="true"
 						/>
-						<a
-							href={`${repo.html_url}/issues`}
+						<Link
+							to={`${repo.html_url}/issues`}
 							target="_blank"
 							rel="noopener noreferrer"
 							className="text-blue-500 hover:underline"
 						>
 							{repo.open_issues_count} open issues
-						</a>
+						</Link>
 					</span>
 				</div>
 			</div>

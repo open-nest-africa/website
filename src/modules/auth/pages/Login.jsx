@@ -80,7 +80,7 @@ const Login = () => {
         </div>
         <p className="text-sm text-[#667185]">
           Are you new here?{" "}
-          <Link to="/signup" className="text-blue">
+          <Link to="/signup" className="text-blue hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block">
             Create account
           </Link>
         </p>
