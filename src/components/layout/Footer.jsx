@@ -28,7 +28,7 @@ const Footer = () => {
               <li className="pt-4 sm:pt-6">
                 <Link
                   to="/"
-                  className="hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block"
+                  className=" hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
                 >
                   Technical Writing
                 </Link>
@@ -36,7 +36,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block"
+                  className=" hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
                 >
                   Development
                 </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block"
+                  className=" hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
                 >
                   Product Design
                 </Link>
@@ -52,7 +52,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block"
+                  className=" hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
                 >
                   Pull Request
                 </Link>
@@ -60,18 +60,18 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block"
+                  className=" hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
                 >
                   Resume Build
                 </Link>
               </li>
             </ul>
-            <ul className="text-[#3E3838] text-sm font-medium space-y-4">
+            <ul className=" text-sm font-medium space-y-4">
               <span className="text-[#8D8484]">Community</span>
               <li className="pt-4 sm:pt-6">
                 <Link
                   to="/"
-                  className="hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block"
+                  className=" hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
                 >
                   OpenNest Community
                 </Link>
@@ -79,7 +79,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block"
+                  className=" hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
                 >
                   Get Support
                 </Link>
@@ -87,7 +87,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block"
+                  className="hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
                 >
                   Help Center
                 </Link>
@@ -98,7 +98,7 @@ const Footer = () => {
               <li className="pt-4 sm:pt-6">
                 <Link
                   to="/"
-                  className="hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block"
+                  className="hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
                 >
                   Documentation
                 </Link>
@@ -106,7 +106,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block"
+                  className="hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
                 >
                   Blog
                 </Link>
@@ -114,7 +114,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block"
+                  className="hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
                 >
                   Git Tutorials
                 </Link>
@@ -126,7 +126,7 @@ const Footer = () => {
               <img
                 src="/images/logo.svg"
                 alt="OpenNest logo"
-                className=" transform transition-all duration-300 ease-in-out hover:scale-105 "
+                className="transform transition-all duration-300 ease-in-out hover:scale-105"
               />
             </Link>
           </div>
@@ -134,13 +134,13 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row sm:justify-start space-y-4 sm:space-y-0 sm:space-x-9 text-[#514A4A] text-sm font-semibold">
           <Link
             to="/"
-            className="hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block"
+            className="hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
           >
             Privacy Policy
           </Link>
           <Link
             to="/"
-            className="hover:scale-105 hover:translate-x-1 transition-all duration-300 ease-in-out inline-block"
+            className="hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
           >
             Terms of Use
           </Link>
