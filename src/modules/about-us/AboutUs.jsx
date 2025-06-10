@@ -65,7 +65,7 @@ const AboutUs = () => {
                   ⭐{" "}
                   <Link
                     to="https://github.com/open-nest-africa/open-nest-africa"
-                    className="font-semibold underline hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+                    className="font-semibold underline hover:text-blue"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -79,7 +79,7 @@ const AboutUs = () => {
                   <Link
                     to="https://opencollective.com/open-nest-africa"
                     target="_blank"
-                    className="font-semibold underline hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+                    className="font-semibold underline hover:text-blue"
                     rel="noreferrer"
                   >
                     Sponsor us on OpenCollective

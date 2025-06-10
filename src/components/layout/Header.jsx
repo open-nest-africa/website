@@ -44,12 +44,12 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center justify-between text-base font-semibold text-dark-2 capitalize gap-x-8 bg-[#F7F9FC] rounded-[40px] py-4 px-10">
-            <li className="flex items-center gap-x-1">
+            <li className="flex items-center gap-x-1 cursor-pointer hover:text-blue">
               use cases <ChevronDownIcon className="w-6 h-6" />
             </li>
             <li className="relative">
               <div
-                className="flex items-center gap-x-1 cursor-pointer"
+                className="flex items-center gap-x-1 cursor-pointer hover:text-blue"
                 onClick={(e) => {
                   setIsResourcesOpen(!isResourcesOpen);
                 }}
@@ -90,10 +90,10 @@ const Header = () => {
                 </div>
               )}
             </li>
-            <li>
+            <li className="cursor-pointer hover:text-blue">
               <Link to="/about-us">About us</Link>
             </li>
-            <li>What's new</li>
+            <li className="cursor-pointer hover:text-blue">What's new</li>
           </ul>
 
           <Link to="/signup" className="hidden md:block">
