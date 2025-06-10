@@ -1,4 +1,91 @@
-const { requestPasswordReset, resetPassword, handleGitHubAuth } = require("../services/authService");
+const { requestPasswordReset, resetPassword, handleGitHubAuth, register, login } = require("../services/authService");
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const User = require("../models/User");
+
+const handleRegister = async (req, res) => {
+  
+  try {
+    const { name, email, password } = req.body;
+
+    const { user, token } = await register(name, email, password);
+
+    res.cookie('token', token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'strict',
+      maxAge: 24 * 60 * 60 * 1000,
+    });
+
+    res.status(201).json({
+      message: "User created successfully!",
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+      },
+    });
+  } catch (error) {
+    console.error("Error creating user: ", error);
+
+    if (error.message === "Required fields missing!") {
+      return res.status(400).json({ error: error.message });
+    }
+    if (error.message === "User already exists") {
+      return res.status(409).json({ error: error.message });
+    }
+    res.status(500).json({ error: "Error creating user" });
+  }
+};
+
+const handleLogin = async (req, res) => {
+  try {
+    const { email, password } = req.body;
+
+    const { user, token } = await login(email, password);
+
+    res.cookie('token', token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'strict',
+      maxAge: 24 * 60 * 60 * 1000,
+    });
+
+    res.status(200).json({
+      message: "User logged in successfully!",
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+      },
+    });
+  } catch (error) {
+    console.error("Error logging user: ", error);
+
+    if (error.message === "Email and Password are required!") {
+      return res.status(400).json({ error: error.message });
+    }
+    
+    if (error.message === "Invalid email" || error.message === "Invalid password") {
+      return res.status(401).json({ error: error.message });
+    }
+
+    res.status(500).json({ error: "Error creating user" });
+  }
+}
+
+const handleLogout = async (req, res) => {
+  try {
+    res.clearCookie('token', {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'strict',
+  });
+  return res.status(200).json({ message: 'Logged out successfully!' });
+  } catch (error) {
+    return res.status(500).json({ message: 'Error logging out' });
+  }
+}
 
 const handlePasswordResetRequest = async (req, res) => {
   try {
@@ -52,4 +139,7 @@ module.exports = {
   handlePasswordResetRequest,
   handlePasswordReset,
   githubAuth,
+  handleRegister,
+  handleLogin,
+  handleLogout,
 };

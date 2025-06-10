@@ -7,6 +7,49 @@ const { sendPasswordResetEmail } = require("../config/email");
 const JWT_SECRET = process.env.JWT_SECRET;
 const CLIENT_ID = process.env.VITE_GITHUB_CLIENT_ID;
 const CLIENT_SECRET = process.env.VITE_GITHUB_CLIENT_SECRET;
+const NODE_ENV = process.env.NODE_ENV;
+
+const register = async (name, email, password) => {
+
+  if(!name || !email || !password) {
+    throw new Error('Required fields missing!');
+  }
+  
+  const existingUser = await User.findOne({email});
+  if(existingUser) {
+    throw new Error('User already exists');
+  }
+  
+  const hashedPassword = await bcrypt.hash(password, 10);
+  const user = new User({ name, email, password: hashedPassword });
+
+  await user.save();
+
+  const token = jwt.sign({ id: user._id}, JWT_SECRET, { expiresIn: '1d' });
+
+  return { user, token };
+};
+
+const login = async (email, password) => {
+  if(!email || !password) {
+    throw new Error('Email and Password are required!');
+  }
+
+  const user = await User.findOne({ email });
+
+  if(!user) {
+    throw new Error('Invalid email')
+  }
+
+  const passwordIsMatch = await bcrypt.compare(password, user.password);
+  if(!passwordIsMatch) {
+    throw new Error('Invalid password');
+  }
+
+  const token = jwt.sign({ id: user._id}, JWT_SECRET, { expiresIn: '1d' });
+
+  return { user, token };
+}
 
 const requestPasswordReset = async (email) => {
   const user = await User.findOne({ email });
@@ -90,4 +133,6 @@ module.exports = {
   requestPasswordReset,
   resetPassword,
   handleGitHubAuth,
+  register,
+  login,
 };
