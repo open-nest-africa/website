@@ -2,7 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Card } from "../../component/OpenNestInAction";
 
-const AuthLayout = ({ title, children, className, showOpenNestText = true }) => {
+const AuthLayout = ({
+  title,
+  children,
+  className,
+  showOpenNestText = true,
+}) => {
   return (
     <section className="w-full h-screen flex">
       <aside className={`${className} w-3/5 flex justify-center`}>
@@ -14,7 +19,11 @@ const AuthLayout = ({ title, children, className, showOpenNestText = true }) => 
       </aside>
       <aside className="w-2/5 bg-light-yellow flex flex-col justify-between p-10">
         <Link to="/">
-          <img src="/images/logo.svg" alt="OpenNest logo" />
+          <img
+            src="/images/logo.svg"
+            alt="OpenNest logo"
+            className=" transform transition-all duration-300 ease-in-out hover:scale-105 "
+          />
         </Link>
         <Card
           name="Sarah, "
