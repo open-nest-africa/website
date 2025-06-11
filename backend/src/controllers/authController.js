@@ -1,4 +1,4 @@
-const { requestPasswordReset, resetPassword, handleGitHubAuth, register, login } = require("../services/authService");
+const { requestPasswordReset, resetPassword, handleGitHubAuth, register, login, sendEmailVerifyOtp, requestEmailVerifyOtp, verifyEmail } = require("../services/authService");
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require("../models/User");
@@ -87,6 +87,67 @@ const handleLogout = async (req, res) => {
   }
 }
 
+const handleSendEmailVerifyOtpRequest = async (req, res) => {
+  try {
+    const userId = req.user.id;
+
+    if (!userId) {
+      return res.status(400).json({ error: 'User ID is required' });
+    }
+
+    await requestEmailVerifyOtp(userId);
+
+    res.status(200).json({ message: 'OTP sent to your email address.' });
+  } catch (error) {
+    console.error('Error sending OTP:', error);
+    
+    if (error.message === 'Email has already been verified') {
+      return res.status(400).json({ error: error.message });
+    }
+
+    if (error.message === 'User not found') {
+      return res.status(404).json({ error: error.message });
+    }
+
+    res.status(500).json({ error: 'Could not send verification OTP' });
+  }
+};
+
+const handleVerifyEmail = async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const { otp } = req.body;
+
+    await verifyEmail(userId, otp);
+
+    res.status(200).json({
+      message: "Email verified successfully",
+    });
+  } catch (error) {
+    console.error('Error verifying email:', error);
+    
+    if (error.message === 'Missing details' || error.message === 'Invalid OTP' || error.message === 'OTP is expired') {
+      return res.status(401).json({ error: error.message });
+    }
+
+    if (error.message === 'User not found') {
+      return res.status(404).json({ error: error.message });
+    }
+
+    res.status(500).json({ error: 'Could not verify email' });
+  }
+
+};
+
+const isAuthenticated = async (req, res) => {
+  try {
+    return res.status(200).json({ message: 'User is authenticated', userId: req.user.id });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Something went wrong' });
+  }
+};
+
 const handlePasswordResetRequest = async (req, res) => {
   try {
     const { email } = req.body;
@@ -142,4 +203,7 @@ module.exports = {
   handleRegister,
   handleLogin,
   handleLogout,
+  handleSendEmailVerifyOtpRequest,
+  handleVerifyEmail,
+  isAuthenticated,
 };
