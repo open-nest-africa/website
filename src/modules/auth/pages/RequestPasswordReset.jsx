@@ -54,7 +54,7 @@ const RequestPasswordReset = () => {
 
           <p className="text-sm text-[#667185] text-center">
             Remember your password?{" "}
-            <button type="button" onClick={() => navigate("/login")} className="text-blue font-medium">
+            <button type="button" onClick={() => navigate("/login")} className="text-blue font-medium hover:font-bold transition-all duration-300 ease-in-out inline-block">
               Back to Login
             </button>
           </p>
