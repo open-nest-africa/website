@@ -14,7 +14,10 @@ const Footer = () => {
           excellence, innovation, and creativity.
         </p>
         <div className="pt-3">
-          <Button text="Get Started" className="bg-blue px-6 md:px-[29.5px] py-4" />
+          <Button
+            text="Get Started"
+            className="bg-blue px-6 md:px-[29.5px] py-4"
+          />
         </div>
       </aside>
       <aside className="bg-[#AEDFF4] rounded-[20px] w-full lg:w-2/3 h-auto lg:h-[380px] p-6 md:p-9 flex flex-col gap-10 md:gap-y-20">
@@ -23,60 +26,128 @@ const Footer = () => {
             <ul className="text-[#3E3838] text-sm font-medium space-y-4">
               <span className="text-[#8D8484]">Product</span>
               <li className="pt-4 sm:pt-6">
-                <Link to="/">Technical Writing</Link>
+                <Link
+                  to="/"
+                  className=" hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+                >
+                  Technical Writing
+                </Link>
               </li>
               <li>
-                <Link to="/">Development</Link>
+                <Link
+                  to="/"
+                  className=" hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+                >
+                  Development
+                </Link>
               </li>
               <li>
-                <Link to="/">Product Design</Link>
+                <Link
+                  to="/"
+                  className=" hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+                >
+                  Product Design
+                </Link>
               </li>
               <li>
-                <Link to="/">Pull Request</Link>
+                <Link
+                  to="/"
+                  className=" hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+                >
+                  Pull Request
+                </Link>
               </li>
               <li>
-                <Link to="/">Resume Build</Link>
+                <Link
+                  to="/"
+                  className=" hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+                >
+                  Resume Build
+                </Link>
               </li>
             </ul>
-            <ul className="text-[#3E3838] text-sm font-medium space-y-4">
+            <ul className=" text-sm font-medium space-y-4">
               <span className="text-[#8D8484]">Community</span>
               <li className="pt-4 sm:pt-6">
-                <Link to="/">OpenNest Community</Link>
+                <Link
+                  to="/"
+                  className=" hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+                >
+                  OpenNest Community
+                </Link>
               </li>
               <li>
-                <Link to="/">Get Support</Link>
+                <Link
+                  to="/"
+                  className=" hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+                >
+                  Get Support
+                </Link>
               </li>
               <li>
-                <Link to="/">Help Center</Link>
+                <Link
+                  to="/"
+                  className="hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+                >
+                  Help Center
+                </Link>
               </li>
             </ul>
             <ul className="text-[#3E3838] text-sm font-medium space-y-4">
               <span className="text-[#8D8484]">Learn</span>
               <li className="pt-4 sm:pt-6">
-                <Link to="/">Documentation</Link>
+                <Link
+                  to="/"
+                  className="hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+                >
+                  Documentation
+                </Link>
               </li>
               <li>
-                <Link to="/">Blog</Link>
+                <Link
+                  to="/"
+                  className="hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+                >
+                  Blog
+                </Link>
               </li>
               <li>
-                <Link to="/">Git Tutorials</Link>
+                <Link
+                  to="/"
+                  className="hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+                >
+                  Git Tutorials
+                </Link>
               </li>
             </ul>
           </div>
           <div className="self-start">
             <Link to="/">
-              <img src="/images/logo.svg" alt="OpenNest logo" />
+              <img
+                src="/images/logo.svg"
+                alt="OpenNest logo"
+                className="transform transition-all duration-300 ease-in-out hover:scale-105"
+              />
             </Link>
           </div>
         </div>
         <div className="flex flex-col sm:flex-row sm:justify-start space-y-4 sm:space-y-0 sm:space-x-9 text-[#514A4A] text-sm font-semibold">
-          <Link to="/">Privacy Policy</Link>
-          <Link to="/">Terms of Use</Link>
+          <Link
+            to="/"
+            className="hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+          >
+            Privacy Policy
+          </Link>
+          <Link
+            to="/"
+            className="hover:text-blue hover:font-bold transition-all duration-300 ease-in-out inline-block"
+          >
+            Terms of Use
+          </Link>
         </div>
       </aside>
     </section>
   );
 };
-
 
 export default Footer;
