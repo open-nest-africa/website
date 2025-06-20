@@ -17,6 +17,7 @@
     - [Submitting a Pull Request](#submitting-a-pull-request)
     - [Testing Requirements](#testing-requirements)
 - [Reporting Bugs or Issues](#reporting-bugs-or-issues)
+- [Contributing as a Designer](#contributing-as-a-designer)
 - [Need Help?](#need-help)
 
 ---
@@ -138,12 +139,38 @@ Wait for maintainers to review and give feedback.
         - Environment (browser, OS, etc.)
         - Screenshots (if any)
 
+## Contributing As A Designer
+We welcome design contributions to make Open Nest Africa more user-friendly, accessible, and visually appealing. Whether you want to give feedback or propose new design ideas, we’d love your input.
+
+1. 🖼️ Access the Figma Design File
+👉 ![Open Nest Africa Figma File](https://www.figma.com/design/ajDY4kQpZkCpnjgQdPmWZM/OpenNest-Africa--Copy-?node-id=2005-1600&t=HQUhwiT3RKGjyCas-0)
+    If you'd like to leave comments or edit directly, request access by:
+        - Opening a GitHub issue with your Figma username, or
+        - Contacting the team via [Slack](https://opennestafrica.slack.com)
+![Opening Figma File in Comment Mode](public/images/figma-comment-mode.png)
+
+2. ✍️ How Designers Can Contribute
+- Leave suggestions in comment mode on Figma
+- Propose new layouts, components, or styles
+- Share accessibility or UX feedback
+- Create mobile/desktop mockups or component variants
+![Navigating the Pages Panel in Figma](public/images/figma-pages.png)
+
+3. 📤 Submitting Design Work
+You can share your design suggestions by:
+
+- Linking your Figma frame or file in an Issue
+- Starting a Discussion
+![Discussions](public/images/discussions.png)
+
+###### 📝 Tip: When submitting designs, include a short description explaining the goal or problem you're addressing.
+
 ## Need Help?
 If you have questions or want to discuss ideas:
 
    - Check the existing discussions
    - Ask your question in the Q&A discussions category
    ![Discussions](public/images/discussions.png)
-   - Reach out via [project community channels](https://opennestafrica.slack.com)
+   - Reach out via ![project community channels](https://opennestafrica.slack.com)
 
 **Thank you for contributing to Open Nest Africa! 🚀🫶🏼**
