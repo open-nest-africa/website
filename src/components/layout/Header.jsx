@@ -9,6 +9,9 @@ import { Link } from "react-router-dom";
 import { IconButton } from "@mui/material";
 import { Brightness4, Brightness7 } from "@mui/icons-material";
 import { useColorMode } from "../../ThemeProvider";
+import { IconButton } from "@mui/material";
+import { Brightness4, Brightness7 } from "@mui/icons-material";
+import { useColorMode } from "../../ThemeProvider";
 
 const Header = () => {
 
@@ -33,6 +36,17 @@ const Header = () => {
   useEffect(() => {
     setIsResourcesOpen(false);
   }, []);
+
+  const { mode, toggleColorMode} = useColorMode();
+
+  const ThemeToggle = () => {
+    return(
+    <IconButton onClick={toggleColorMode}>
+      {mode === 'dark' ? <Brightness7 sx={{color: 'black'}}/> : <Brightness4 sx={{ color: 'black'}}/>}
+    </IconButton>
+    )
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-white shadow">
       <nav className="relative px-4 md:px-[112px] py-6">
@@ -111,6 +125,7 @@ const Header = () => {
           </ul>
 
           <ThemeToggle />
+        <ThemeToggle />
         <Link to="/signup" className="hidden md:block">
             <Button
               text="Sign up"
