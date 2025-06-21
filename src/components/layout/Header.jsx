@@ -111,8 +111,6 @@ const Header = () => {
             </li>
             <li className="cursor-pointer hover:text-blue">What's new</li>
           </ul>
-
-          <ThemeToggle />
         <ThemeToggle />
         <Link to="/signup" className="hidden md:block">
             <Button
