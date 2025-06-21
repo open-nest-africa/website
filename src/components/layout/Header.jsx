@@ -2,8 +2,22 @@ import React from "react";
 import Button from "../Button";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
+import { IconButton } from "@mui/material";
+import { Brightness4, Brightness7 } from "@mui/icons-material";
+import { useColorMode } from "../../ThemeProvider";
 
 const Header = () => {
+
+  const { mode, toggleColorMode} = useColorMode();
+
+  const ThemeToggle = () => {
+    return(
+    <IconButton onClick={toggleColorMode}>
+      {mode === 'dark' ? <Brightness7 sx={{color: 'black'}}/> : <Brightness4 sx={{ color: 'black'}}/>}
+    </IconButton>
+    )
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-white px-[112px] py-6 shadow">
       <nav className="flex items-center justify-between">
@@ -28,6 +42,7 @@ const Header = () => {
           </li>
           <li>What's new</li>
         </ul>
+        <ThemeToggle />
         <Link to="/signup">
           <Button
             text="Sign up"
