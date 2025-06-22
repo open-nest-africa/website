@@ -4,7 +4,8 @@
 	"main": "server.js",
 	"scripts": {
 		"start": "cross-env NODE_ENV=production node server.js",
-		"dev": "cross-env NODE_ENV=development node --watch server.js"
+		"dev": "cross-env NODE_ENV=development nodemon server.js",
+		"test": "jest"
 	},
 	"keywords": [],
 	"author": "",
@@ -18,11 +19,13 @@
 		"cors": "^2.8.5",
 		"dotenv": "^16.4.5",
 		"express": "^4.21.1",
+		"jest": "^29.7.0",
 		"jsonwebtoken": "^9.0.2",
 		"mongoose": "^8.15.1",
 		"nodemailer": "^7.0.3"
 	},
 	"devDependencies": {
-		"cross-env": "^7.0.3"
+		"cross-env": "^7.0.3",
+		"nodemon": "^3.1.10"
 	}
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../components/layout/Layout";
 import ImageCard from "../../components/ImageCard";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -62,27 +63,27 @@ const AboutUs = () => {
               <ul className="list-disc pl-5">
                 <li>
                   ⭐{" "}
-                  <a
-                    href="https://github.com/open-nest-africa/open-nest-africa"
-                    className="font-semibold underline"
+                  <Link
+                    to="https://github.com/open-nest-africa/open-nest-africa"
+                    className="font-semibold underline hover:text-blue"
                     target="_blank"
                     rel="noreferrer"
                   >
                     Star us on GitHub
-                  </a>
+                  </Link>
                   {" –  "}A quick way to show support and help others discover
                   our project.
                 </li>
                 <li>
                   🌐{" "}
-                  <a
-                    href="https://opencollective.com/open-nest-africa"
+                  <Link
+                    to="https://opencollective.com/open-nest-africa"
                     target="_blank"
-                    className="font-semibold underline"
+                    className="font-semibold underline hover:text-blue"
                     rel="noreferrer"
                   >
                     Sponsor us on OpenCollective
-                  </a>{" "}
+                  </Link>{" "}
                   – If you believe in our mission, consider contributing to help
                   us grow and build a better community.
                 </li>
