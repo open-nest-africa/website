@@ -3,11 +3,11 @@ src/*:
 
 backend/*:
   - "backend"
-  
+
 resources/*:
   - "documentation"
   - "content"
-  
+
 README.md:
   - "documentation"
   - "content"
@@ -19,4 +19,3 @@ CODE_OF_CONDUCT.md:
 Roadmap.md:
   - "documentation"
   - "content"
-

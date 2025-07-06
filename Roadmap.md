@@ -7,6 +7,7 @@ This document outlines the milestones and key goals for OpenNest-Africa over the
 ---
 
 ## Vision
+
 To create a welcoming and resource-rich community hub that provides guides, tutorials, videos, and articles to help beginners across Africa start their journey in open source.
 
 ---
@@ -16,14 +17,17 @@ To create a welcoming and resource-rich community hub that provides guides, tuto
 ---
 
 ### Month 1: Foundation & Initial Content
+
 - **Goal**: Establish OpenNest-Africa’s foundation with beginner-friendly content and initial community engagement.
 
 1. **Publish 5 Starter Guides**:
+
    - Topics: Intro to Open Source, How to Use Git and GitHub, Basic Commands in Git, First Contribution Guide, and Open-Source Etiquette.
    - **Status**: In Progress
    - **Link to Issues**: [#2](https://github.com/OpenNest-Africa/repo/issues/2), [#3](https://github.com/OpenNest-Africa/repo/issues/3)
 
 2. **Set Up Community Engagement on Social Media**:
+
    - Run the **#OpenNestFirst50** campaign, encouraging the first 50 followers/contributors to join.
    - Share weekly posts highlighting beginner tips and open-source trivia.
 
@@ -38,14 +42,17 @@ To create a welcoming and resource-rich community hub that provides guides, tuto
 ---
 
 ### Month 2: Growth & Community Building
+
 - **Goal**: Increase content variety, grow engagement, and attract contributors.
 
 1. **Publish 5 More Guides and Tutorials**:
+
    - Advanced Git, Writing a ReadMe, Contributing to Open Source, Navigating GitHub Projects, and How to Fork Repositories.
    - **Status**: To Do
    - **Link to Issues**: [#7](https://github.com/OpenNest-Africa/repo/issues/7), [#8](https://github.com/OpenNest-Africa/repo/issues/8)
 
 2. **Reach 500 Social Media Followers**:
+
    - Run weekly interactive posts and polls on Twitter/LinkedIn.
    - Encourage followers to share their beginner journeys with **#MyOpenNestJourney**.
 
@@ -57,14 +64,17 @@ To create a welcoming and resource-rich community hub that provides guides, tuto
 ---
 
 ### Month 3: Scaling & Collaboration
+
 - **Goal**: Expand OpenNest-Africa’s reach through collaborations and advanced content.
 
 1. **Secure 1 Collaboration with an Open-Source Community**:
+
    - Partner with a community (like DevCareer or GDG) for cross-promotion and joint events.
    - **Status**: In Progress
    - **Link to Issue**: [#12](https://github.com/OpenNest-Africa/repo/issues/12)
 
 2. **Publish Beginner Video Series**:
+
    - Topics: Setting Up Git, Making a Pull Request, and Understanding Open-Source Licenses.
    - **Status**: To Do
    - **Link to Issues**: [#14](https://github.com/OpenNest-Africa/repo/issues/14)
@@ -78,11 +88,11 @@ To create a welcoming and resource-rich community hub that provides guides, tuto
 ---
 
 ## How to Get Involved
+
 We welcome all contributors! If you're interested, please check out the “good first issue” tag on our issues page and join our Slack community.
 
-**Join Us on Slack:** [@Opennest-Africa](https://join.slack.com/t/opennestafrica/shared_invite/zt-2thai992d-d5UqQ0FYHhj4Boty5S5UKA)  
+**Join Us on Slack:** [@Opennest-Africa](https://join.slack.com/t/opennestafrica/shared_invite/zt-2thai992d-d5UqQ0FYHhj4Boty5S5UKA)
 
---- 
+---
 
 **Thank you for being a part of OpenNest-Africa’s journey!** Let’s build something amazing for open-source beginners together.
-

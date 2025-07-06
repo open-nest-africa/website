@@ -31,7 +31,9 @@ describe("userService", () => {
     it("should throw if axios fails", async () => {
       axios.get.mockRejectedValue(new Error("GitHub error"));
 
-      await expect(userService.getGitHubUserProfile("badtoken")).rejects.toThrow("GitHub error");
+      await expect(
+        userService.getGitHubUserProfile("badtoken"),
+      ).rejects.toThrow("GitHub error");
     });
   });
 });

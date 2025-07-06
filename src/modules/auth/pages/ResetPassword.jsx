@@ -37,16 +37,25 @@ const ResetPassword = () => {
         navigate("/login");
       }, 2000);
     } catch (err) {
-      setError(err.response?.data?.error || "Failed to reset password. Please try again.");
+      setError(
+        err.response?.data?.error ||
+          "Failed to reset password. Please try again.",
+      );
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <AuthLayout title="Set New Password" className="flex-col gap-5 w-full max-w-md mx-auto" showOpenNestText={false}>
+    <AuthLayout
+      title="Set New Password"
+      className="flex-col gap-5 w-full max-w-md mx-auto"
+      showOpenNestText={false}
+    >
       <div className="flex flex-col gap-8">
-        <p className="text-sm text-[#667185]">Please enter your new password below.</p>
+        <p className="text-sm text-[#667185]">
+          Please enter your new password below.
+        </p>
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           <TextField
             className="border-dark outline-dark py-4"
@@ -80,7 +89,11 @@ const ResetPassword = () => {
 
           <p className="text-sm text-[#667185] text-center">
             Remember your password?{" "}
-            <button type="button" onClick={() => navigate("/login")} className="text-blue font-medium hover:font-bold transition-all duration-300 ease-in-out inline-block">
+            <button
+              type="button"
+              onClick={() => navigate("/login")}
+              className="text-blue font-medium hover:font-bold transition-all duration-300 ease-in-out inline-block"
+            >
               Back to Login
             </button>
           </p>

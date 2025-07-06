@@ -9,8 +9,9 @@ const CTA = () => {
         Our Commitment to Open Source
       </h1>
       <p className="text-[#04354A] text-base sm:text-lg md:text-xl lg:text-2xl tracking-tight mx-auto max-w-3xl">
-        We're dedicated to making open source accessible to everyone. Join us in building a diverse,
-        inclusive community where knowledge is shared freely and innovation thrives.
+        We're dedicated to making open source accessible to everyone. Join us in
+        building a diverse, inclusive community where knowledge is shared freely
+        and innovation thrives.
       </p>
       <div className="mt-6 md:mt-8 lg:mt-11">
         <Link to="/about-us">

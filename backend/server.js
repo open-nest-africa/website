@@ -18,7 +18,5 @@ app.use("/auth", authRoutes);
 app.use("/user", usersRoutes);
 
 app.listen(PORT, () => {
-	console.log(
-		`Server running on port ${PORT} in ${process.env.NODE_ENV} mode`
-	);
+  console.log(`Server running on port ${PORT} in ${process.env.NODE_ENV} mode`);
 });

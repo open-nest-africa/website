@@ -5,7 +5,7 @@ import Layout from "../../components/layout/Layout";
 
 const Designers = () => {
   const designerData = contributionData.find(
-    (contribution) => contribution.role === "Designers"
+    (contribution) => contribution.role === "Designers",
   );
 
   return (

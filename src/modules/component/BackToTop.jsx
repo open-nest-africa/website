@@ -1,15 +1,14 @@
-import React from "react"
+import React from "react";
 
 export default function BackToTop() {
-    const scrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
-    };
-    return (
-
-      <>
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  return (
+    <>
       <div className="fixed bottom-6 right-0 mr-3 flex flex-col items-center z-50">
         <button
           onClick={scrollToTop}
@@ -22,7 +21,11 @@ export default function BackToTop() {
             strokeWidth={2}
             viewBox="0 0 24 24"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M5 15l7-7 7 7"
+            />
           </svg>
         </button>
         <span className="mt-2 text-sm text-[#0C9EDD]  px-2 py-1 rounded">
@@ -30,5 +33,5 @@ export default function BackToTop() {
         </span>
       </div>
     </>
-    );
-  }
+  );
+}

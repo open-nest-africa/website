@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const MeshAI = () => {
-  return (
-    <div>MeshAI</div>
-  )
-}
+  return <div>MeshAI</div>;
+};
 
-export default MeshAI
+export default MeshAI;

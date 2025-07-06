@@ -20,8 +20,9 @@ describe("authService", () => {
     it("throws error if user not found", async () => {
       User.findOne.mockResolvedValue(null);
 
-      await expect(authService.requestPasswordReset("test@example.com"))
-        .rejects.toThrow("User not found");
+      await expect(
+        authService.requestPasswordReset("test@example.com"),
+      ).rejects.toThrow("User not found");
     });
 
     it("throws error if email not sent", async () => {
@@ -33,8 +34,9 @@ describe("authService", () => {
       jwt.sign.mockReturnValue("token");
       sendPasswordResetEmail.mockResolvedValue(false);
 
-      await expect(authService.requestPasswordReset("test@example.com"))
-        .rejects.toThrow("Failed to send reset email");
+      await expect(
+        authService.requestPasswordReset("test@example.com"),
+      ).rejects.toThrow("Failed to send reset email");
     });
 
     it("returns resetUrl if successful", async () => {
@@ -49,9 +51,14 @@ describe("authService", () => {
       process.env.FRONTEND_URL = "http://frontend";
       const result = await authService.requestPasswordReset("test@example.com");
 
-      expect(result).toEqual({ resetUrl: "http://frontend/reset-password/token" });
+      expect(result).toEqual({
+        resetUrl: "http://frontend/reset-password/token",
+      });
       expect(fakeUser.save).toHaveBeenCalled();
-      expect(sendPasswordResetEmail).toHaveBeenCalledWith("test@example.com", "token");
+      expect(sendPasswordResetEmail).toHaveBeenCalledWith(
+        "test@example.com",
+        "token",
+      );
     });
   });
 
@@ -60,8 +67,9 @@ describe("authService", () => {
       jwt.verify.mockReturnValue({ userId: "123" });
       User.findOne.mockResolvedValue(null);
 
-      await expect(authService.resetPassword("token", "newpass"))
-        .rejects.toThrow("Invalid or expired reset token");
+      await expect(
+        authService.resetPassword("token", "newpass"),
+      ).rejects.toThrow("Invalid or expired reset token");
     });
 
     it("resets password if token is valid", async () => {
@@ -87,8 +95,9 @@ describe("authService", () => {
     it("throws error if no access_token", async () => {
       axios.post.mockResolvedValue({ data: {} });
 
-      await expect(authService.handleGitHubAuth("code"))
-        .rejects.toThrow("Bad credentials");
+      await expect(authService.handleGitHubAuth("code")).rejects.toThrow(
+        "Bad credentials",
+      );
     });
 
     it("returns accessToken and user on success", async () => {

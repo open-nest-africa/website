@@ -17,7 +17,6 @@ const Home = () => {
         <OpenNestInAction />
         <CTA />
         <OurCommunity />
-      
       </>
     </Layout>
   );

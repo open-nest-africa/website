@@ -22,7 +22,11 @@ const Hero = () => {
         </Link>
       </div>
       <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-8 sm:pt-12 md:pt-16 lg:pt-[77px]">
-        <img src="/images/hero-image.svg" alt="Two women working on laptop" className="w-full h-auto max-w-6xl mx-auto" />
+        <img
+          src="/images/hero-image.svg"
+          alt="Two women working on laptop"
+          className="w-full h-auto max-w-6xl mx-auto"
+        />
       </div>
     </section>
   );

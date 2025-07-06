@@ -1,4 +1,8 @@
-const { requestPasswordReset, resetPassword, handleGitHubAuth } = require("../services/authService");
+const {
+  requestPasswordReset,
+  resetPassword,
+  handleGitHubAuth,
+} = require("../services/authService");
 
 const handlePasswordResetRequest = async (req, res) => {
   try {

@@ -14,7 +14,9 @@ const requestPasswordReset = async (email) => {
     throw new Error("User not found");
   }
 
-  const resetToken = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: "1h" });
+  const resetToken = jwt.sign({ userId: user._id }, JWT_SECRET, {
+    expiresIn: "1h",
+  });
 
   user.resetPasswordToken = resetToken;
   user.resetPasswordExpires = Date.now() + 3600000;
@@ -65,7 +67,7 @@ const handleGitHubAuth = async (code) => {
       headers: {
         accept: "application/json",
       },
-    }
+    },
   );
 
   if (!tokenResponse.data.access_token) {

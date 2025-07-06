@@ -1,9 +1,9 @@
-const usersController = require('../src/controllers/usersController');
-const userService = require('../src/services/userService');
+const usersController = require("../src/controllers/usersController");
+const userService = require("../src/services/userService");
 
-jest.mock('../src/services/userService');
+jest.mock("../src/services/userService");
 
-describe('usersController', () => {
+describe("usersController", () => {
   let req, res;
 
   beforeEach(() => {
@@ -15,32 +15,38 @@ describe('usersController', () => {
     jest.clearAllMocks();
   });
 
-  describe('gitHubUsers', () => {
-    it('should return 401 if no authorization header', async () => {
+  describe("gitHubUsers", () => {
+    it("should return 401 if no authorization header", async () => {
       await usersController.gitHubUsers(req, res);
 
       expect(res.status).toHaveBeenCalledWith(401);
-      expect(res.json).toHaveBeenCalledWith({ error: 'Unauthorized' });
+      expect(res.json).toHaveBeenCalledWith({ error: "Unauthorized" });
     });
 
-    it('should return user data if token is valid', async () => {
-      req.headers.authorization = 'Bearer validtoken';
-      userService.getGitHubUserProfile.mockResolvedValue({ login: 'testuser' });
+    it("should return user data if token is valid", async () => {
+      req.headers.authorization = "Bearer validtoken";
+      userService.getGitHubUserProfile.mockResolvedValue({ login: "testuser" });
 
       await usersController.gitHubUsers(req, res);
 
-      expect(userService.getGitHubUserProfile).toHaveBeenCalledWith('validtoken');
-      expect(res.json).toHaveBeenCalledWith({ user: { login: 'testuser' } });
+      expect(userService.getGitHubUserProfile).toHaveBeenCalledWith(
+        "validtoken",
+      );
+      expect(res.json).toHaveBeenCalledWith({ user: { login: "testuser" } });
     });
 
-    it('should return 500 if service throws error', async () => {
-      req.headers.authorization = 'Bearer validtoken';
-      userService.getGitHubUserProfile.mockRejectedValue(new Error('GitHub error'));
+    it("should return 500 if service throws error", async () => {
+      req.headers.authorization = "Bearer validtoken";
+      userService.getGitHubUserProfile.mockRejectedValue(
+        new Error("GitHub error"),
+      );
 
       await usersController.gitHubUsers(req, res);
 
       expect(res.status).toHaveBeenCalledWith(500);
-      expect(res.json).toHaveBeenCalledWith({ error: 'Failed to fetch user data from GitHub.' });
+      expect(res.json).toHaveBeenCalledWith({
+        error: "Failed to fetch user data from GitHub.",
+      });
     });
   });
 });

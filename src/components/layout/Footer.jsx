@@ -14,10 +14,12 @@ const Footer = () => {
           excellence, innovation, and creativity.
         </p>
         <div className="pt-3">
-          <Button
-            text="Get Started"
-            className="bg-blue px-6 md:px-[29.5px] py-4"
-          />
+          <Link
+            href="https://opennestafrica.slack.com/join/shared_invite/zt-36a95q8is-A9GBGWrt89ko4egspqyV6g#/shared-invite/email"
+            className="bg-blue px-6 md:px-[29.5px] py-4 rounded-xl text-white"
+          >
+            Get Started
+          </Link>
         </div>
       </aside>
       <aside className="bg-[#AEDFF4] rounded-[20px] w-full lg:w-2/3 h-auto lg:h-[380px] p-6 md:p-9 flex flex-col gap-10 md:gap-y-20">

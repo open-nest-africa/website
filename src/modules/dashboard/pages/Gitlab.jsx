@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Gitlab = () => {
-  return (
-    <div>Gitlab</div>
-  )
-}
+  return <div>Gitlab</div>;
+};
 
-export default Gitlab
+export default Gitlab;
