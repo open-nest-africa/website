@@ -19,19 +19,32 @@ const RequestPasswordReset = () => {
     setSuccess("");
 
     try {
-      await axios.post(`${import.meta.env.VITE_API_URL}/auth/password-request`, { email });
+      await axios.post(
+        `${import.meta.env.VITE_API_URL}/auth/password-request`,
+        { email },
+      );
       setSuccess("Password reset link has been sent to your email.");
     } catch (err) {
-      setError(err.response?.data?.error || "Failed to send reset link. Please try again.");
+      setError(
+        err.response?.data?.error ||
+          "Failed to send reset link. Please try again.",
+      );
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <AuthLayout title="Reset Password" className="flex-col gap-5 w-full max-w-md mx-auto" showOpenNestText={false}>
+    <AuthLayout
+      title="Reset Password"
+      className="flex-col gap-5 w-full max-w-md mx-auto"
+      showOpenNestText={false}
+    >
       <div className="flex flex-col gap-8">
-        <p className="text-sm text-[#667185]">Enter your email address and we'll send you a link to reset your password.</p>
+        <p className="text-sm text-[#667185]">
+          Enter your email address and we'll send you a link to reset your
+          password.
+        </p>
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           <TextField
             className="border-dark outline-dark py-4"
@@ -54,7 +67,11 @@ const RequestPasswordReset = () => {
 
           <p className="text-sm text-[#667185] text-center">
             Remember your password?{" "}
-            <button type="button" onClick={() => navigate("/login")} className="text-blue font-medium hover:font-bold transition-all duration-300 ease-in-out inline-block">
+            <button
+              type="button"
+              onClick={() => navigate("/login")}
+              className="text-blue font-medium hover:font-bold transition-all duration-300 ease-in-out inline-block"
+            >
               Back to Login
             </button>
           </p>

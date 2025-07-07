@@ -8,7 +8,7 @@ Open source isn't just about code—it's about collaboration! As a developer, yo
 - Learn: Gain experience with new technologies and frameworks.
 - Grow: Build a portfolio with real-world projects and boost your career.
 - Community: Collaborate with developers globally and grow your network.
-  
+
 ### 💡 Ways Developers Can Contribute
 
 - Bug Fixes: Find and fix issues reported in the project.
@@ -26,6 +26,7 @@ Open source isn't just about code—it's about collaboration! As a developer, yo
 - Learn & Iterate: Collaborate with the community to improve your code.
 
 ### 🌱 Start Your Development Journey Today!
+
 No contribution is too small—whether it's fixing a bug, adding a feature, or reviewing code. Jump in, write code, and help make open source better one commit at a time!
 
 If you ever get stuck, reach out to the community—developers love to help each other grow and learn. Together, we can build amazing things! 🚀

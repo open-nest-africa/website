@@ -1,5 +1,5 @@
-import React from 'react';
-import Button from '../../components/Button';
+import React from "react";
+import Button from "../../components/Button";
 
 const OurCommunity = () => {
   return (
@@ -9,7 +9,10 @@ const OurCommunity = () => {
           Our Community
         </h2>
         <p className="text-[#04354A] tracking-normal sm:-tracking-[0.5px] md:-tracking-[1px] text-base sm:text-lg md:text-xl lg:text-2xl mt-4">
-          Join our vibrant community of open source enthusiasts. Connect with fellow developers, designers, and technical writers. Share knowledge, collaborate on projects, and grow together in the open source ecosystem.
+          Join our vibrant community of open source enthusiasts. Connect with
+          fellow developers, designers, and technical writers. Share knowledge,
+          collaborate on projects, and grow together in the open source
+          ecosystem.
         </p>
         <div className="mt-8 sm:mt-10 md:mt-11">
           <Button

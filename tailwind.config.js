@@ -11,8 +11,8 @@ module.exports = {
         blue: "#0C9EDD",
       },
       dropShadow: {
-        'custom': '1px 12px 24px 0 rgba(8, 37, 82, 0.05)',
-        'custom2': '0.88px 7.05px 5.02px 0px rgba(0, 0, 0, 0.1)', 
+        custom: "1px 12px 24px 0 rgba(8, 37, 82, 0.05)",
+        custom2: "0.88px 7.05px 5.02px 0px rgba(0, 0, 0, 0.1)",
       },
     },
   },

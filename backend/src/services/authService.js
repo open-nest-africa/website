@@ -2,7 +2,10 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const axios = require("axios");
 const User = require("../models/User");
-const { sendPasswordResetEmail, sendEmailVerifyOtp } = require("../config/email");
+const {
+  sendPasswordResetEmail,
+  sendEmailVerifyOtp,
+} = require("../config/email");
 
 const JWT_SECRET = process.env.JWT_SECRET;
 const CLIENT_ID = process.env.VITE_GITHUB_CLIENT_ID;
@@ -10,46 +13,45 @@ const CLIENT_SECRET = process.env.VITE_GITHUB_CLIENT_SECRET;
 const NODE_ENV = process.env.NODE_ENV;
 
 const register = async (name, email, password) => {
+  if (!name || !email || !password) {
+    throw new Error("Required fields missing!");
+  }
 
-  if(!name || !email || !password) {
-    throw new Error('Required fields missing!');
+  const existingUser = await User.findOne({ email });
+  if (existingUser) {
+    throw new Error("User already exists");
   }
-  
-  const existingUser = await User.findOne({email});
-  if(existingUser) {
-    throw new Error('User already exists');
-  }
-  
+
   const hashedPassword = await bcrypt.hash(password, 10);
   const user = new User({ name, email, password: hashedPassword });
 
   await user.save();
 
-  const token = jwt.sign({ id: user._id}, JWT_SECRET, { expiresIn: '1d' });
+  const token = jwt.sign({ id: user._id }, JWT_SECRET, { expiresIn: "1d" });
 
   return { user, token };
 };
 
 const login = async (email, password) => {
-  if(!email || !password) {
-    throw new Error('Email and Password are required!');
+  if (!email || !password) {
+    throw new Error("Email and Password are required!");
   }
 
   const user = await User.findOne({ email });
 
-  if(!user) {
-    throw new Error('Invalid email')
+  if (!user) {
+    throw new Error("Invalid email");
   }
 
   const passwordIsMatch = await bcrypt.compare(password, user.password);
-  if(!passwordIsMatch) {
-    throw new Error('Invalid password');
+  if (!passwordIsMatch) {
+    throw new Error("Invalid password");
   }
 
-  const token = jwt.sign({ id: user._id}, JWT_SECRET, { expiresIn: '1d' });
+  const token = jwt.sign({ id: user._id }, JWT_SECRET, { expiresIn: "1d" });
 
   return { user, token };
-}
+};
 
 const requestEmailVerifyOtp = async (userId) => {
   const user = await User.findById(userId);
@@ -58,11 +60,11 @@ const requestEmailVerifyOtp = async (userId) => {
     throw new Error("User not found");
   }
 
-  if(user.isEmailVerified) {
-	throw new Error('Email has already been verified');
+  if (user.isEmailVerified) {
+    throw new Error("Email has already been verified");
   }
 
-  const otp = String(Math.floor (10000 + Math.random() * 90000));
+  const otp = String(Math.floor(10000 + Math.random() * 90000));
 
   user.verifyEmailOtp = otp;
   user.verifyEmailOtpExpiredAt = Date.now() + 20 * 60 * 1000;
@@ -73,30 +75,30 @@ const requestEmailVerifyOtp = async (userId) => {
   if (!emailSent) {
     throw new Error("Failed to send verification OTP email");
   }
-}
+};
 
 const verifyEmail = async (userId, otp) => {
   console.log("UserId:", userId);
   console.log("OTP received:", otp);
-  if(!userId || !otp) {
-    throw new Error('Missing details');
+  if (!userId || !otp) {
+    throw new Error("Missing details");
   }
 
   const user = await User.findById(userId);
-  if(!user) {
-    throw new Error('User not found');
+  if (!user) {
+    throw new Error("User not found");
   }
 
-  if(user.verifyEmailOtp === '' || user.verifyEmailOtp !== otp) {
-    throw new Error('Invalid OTP');
+  if (user.verifyEmailOtp === "" || user.verifyEmailOtp !== otp) {
+    throw new Error("Invalid OTP");
   }
 
-  if(user.verifyEmailOtpExpiredAt < Date.now()) {
-    throw new Error('OTP is expired')
+  if (user.verifyEmailOtpExpiredAt < Date.now()) {
+    throw new Error("OTP is expired");
   }
 
   user.isEmailVerified = true;
-  user.verifyEmailOtp = '';
+  user.verifyEmailOtp = "";
   user.verifyEmailOtpExpiredAt = 0;
 
   await user.save();
@@ -108,7 +110,9 @@ const requestPasswordReset = async (email) => {
     throw new Error("User not found");
   }
 
-  const resetToken = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: "1h" });
+  const resetToken = jwt.sign({ userId: user._id }, JWT_SECRET, {
+    expiresIn: "1h",
+  });
 
   user.resetPasswordToken = resetToken;
   user.resetPasswordExpires = Date.now() + 3600000;
@@ -159,7 +163,7 @@ const handleGitHubAuth = async (code) => {
       headers: {
         accept: "application/json",
       },
-    }
+    },
   );
 
   if (!tokenResponse.data.access_token) {

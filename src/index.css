@@ -1,39 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .loader {
-  border-top-color: #AEDFF4;
+  border-top-color: #aedff4;
   animation: spin 1s infinite linear;
 }
 
 .scrollable-container {
-    height: 30rem; 
-    overflow-y: auto;
+  height: 30rem;
+  overflow-y: auto;
 }
 
 .scrollable-container::-webkit-scrollbar {
-    width: 8px; 
+  width: 8px;
 }
 
 .scrollable-container::-webkit-scrollbar-thumb {
-    /* background-color: rgba(0, 0, 0, 0.5);  */
-    background-color: #0C9EDD; 
-    border-radius: 4px; 
-    height: 50px; 
+  /* background-color: rgba(0, 0, 0, 0.5);  */
+  background-color: #0c9edd;
+  border-radius: 4px;
+  height: 50px;
 }
 
 .scrollable-container::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1); 
+  background: rgba(0, 0, 0, 0.1);
 }
-
 
 @keyframes spin {
   0% {

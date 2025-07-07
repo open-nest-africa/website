@@ -5,6 +5,7 @@ Welcome to OpenNest-Africa Website, a cozy hub where beginners—technical or no
 ---
 
 ## 📖 Table of Contents
+
 - [What is OpenNest-Africa](#-what-is-opennest-africa)
 - [How to Contribute to OpenNest-Africa Website](#-how-to-contribute-to-opennest-africa-website)
 - [Features & Pages](#-features--pages)
@@ -28,6 +29,7 @@ OpenNest-Africa is a beginner-friendly, community-driven space designed to:
 ---
 
 ### 🌱 How to Contribute to OpenNest-Africa Website
+
 Every contribution counts at OpenNest, no matter how little:
 
 - Explore our [Designers](./resources/Designer.md), [Developers](./resources/Developer.md), and [Technical Writers](./resources/Technical%20Writing.md) guides to kickstart your contributions!
@@ -40,45 +42,47 @@ Every contribution counts at OpenNest, no matter how little:
 ---
 
 ### 📚 Features & Pages
+
 Here are the currently available and functional pages in the application:
 
 - Home Page (`/`)
   The OpenNest home page provides an overview of the project and guidance on how to get started as an open-source enthusiast.
   ![Home page](https://github.com/open-nest-africa/open-nest-africa/blob/main/home-page.png)
-  
+
   - Resources (`/resources`)
     The resources page contains materials that can help you get started, regardless of your field. We have included videos that explain extensively how you can contribute to an open-source project. You can use the arrow icon to navigate to the resource of your choice.
-  
+
   ![Resources page](https://github.com/open-nest-africa/open-nest-africa/blob/main/resources.png)
-  
+
   - About Us (`/about-us`)
     This page provides information about the four unique individuals who are the brains behind OpenNest. It also calls on open-source enthusiasts to contribute to the project to make the open-source journey easier for others.
-  
+
   ![About us page](https://github.com/open-nest-africa/open-nest-africa/blob/main/about-us.png)
-  
+
 - Dashboard (`/dashboard`)
-The dashboard gives you exclusive access to the OpenNest community, while also helping you keep track of the projects you've contributed to and providing a list of projects you can contribute to. To access this page, You can either login with your github or google account.
-  
+  The dashboard gives you exclusive access to the OpenNest community, while also helping you keep track of the projects you've contributed to and providing a list of projects you can contribute to. To access this page, You can either login with your github or google account.
   ![Dashboard](https://github.com/open-nest-africa/open-nest-africa/blob/main/dashboard.png)
-  
 - OpenAI Page (`/dashboard/openai`)
-The Openai page is only accessible once you login to the dashboard. The plan is to integrate OpenAI, making it easy for you to use the AI prompts while on the platform.
+  The Openai page is only accessible once you login to the dashboard. The plan is to integrate OpenAI, making it easy for you to use the AI prompts while on the platform.
 
   ![Openai page](https://github.com/open-nest-africa/open-nest-africa/blob/main/openai.png)
 
 ---
 
 ### ⚠️ Limitations
+
 There's still so much to do on the project, as most of the data are just dummy data. This is why we are making it open to everyone around the world to contribute. Please note the following limitations in the current version of the project:
+
 - **Sign Up and Sign In with Google:** Not implemented yet.
 - **Responsiveness:** The app is not fully responsive on mobile devices yet.
 - The dashboard is also a work in progress.
-We’re actively working on resolving these issues. Contributions are welcome!
+  We’re actively working on resolving these issues. Contributions are welcome!
 
 ---
 
-### 🌟 Future Improvements 
-- Have enough resources 
+### 🌟 Future Improvements
+
+- Have enough resources
 - Onboard 1000 active contributor before the end of 2025
 - Create Mentorship Programs for beginners in open source
 - Have our first OpenNest Africa Summit
@@ -86,25 +90,26 @@ We’re actively working on resolving these issues. Contributions are welcome!
 ---
 
 ### 🌱 How to Fork and Run the Project Locally
+
 Follow these simple steps to get the OpenNest Africa website running on your local machine. Don’t worry if you’re new to this, we’ve got your back every step of the way! 🚀
 
 🧰 Requirements
 Before we start, make sure you have these installed on your computer:
 
-* Node.js version 20.12.0 or higher — ![Download Node.js](https://nodejs.org/en/download/)
+- Node.js version 20.12.0 or higher — ![Download Node.js](https://nodejs.org/en/download/)
 
-* npm version 10.5.0 or higher (npm comes bundled with Node.js)
-
+- npm version 10.5.0 or higher (npm comes bundled with Node.js)
 
 ## 1. Fork the Repository
+
 This will create your own copy of the project on your GitHub account.
 
 Go to the top-right corner of this page and click the Fork button.
 
 This will copy the repository to your GitHub account under your ususername.
 
-
 ## 2. Clone Your Fork Locally
+
 Now, let’s get that forked repository on your own computer.
 
 Open your terminal (Command Prompt, Git Bash, or any terminal you prefer).
@@ -117,27 +122,30 @@ cd website`
 > Replace YOUR-USERNAME with your actual GitHub username. This downloads the code to your machine and moves into the project folder.
 
 ## 3. Install Project Dependencies
+
 The project uses some tools and libraries that need to be installed before running.
 
-* Run this command in your terminal inside the project folder:
-`npm install`
+- Run this command in your terminal inside the project folder:
+  `npm install`
 
 > This will download and install everything the project needs to work.
 
 ## 4. Run the Development Server
+
 Let’s start the project so you can see it live on your browser.
 
-* Run this command to launch the local server:
-`npm run dev`
+- Run this command to launch the local server:
+  `npm run dev`
 
-* Once it’s running, open your browser and go to:
-`http://localhost:5173`
+- Once it’s running, open your browser and go to:
+  `http://localhost:5173`
 
 You should see the OpenNest Africa website running locally! 🎉
 
 Need Help?
-* If you get stuck, don’t hesitate to ask on our Slack community, we’re here to help you get started smoothly!
-  
+
+- If you get stuck, don’t hesitate to ask on our Slack community, we’re here to help you get started smoothly!
+
 ---
 
 ### 💌 Our Values
@@ -146,8 +154,9 @@ We believe in collaboration, kindness, and learning. At OpenNest, everyone is we
 
 ---
 
-### 📬 **Get in Touch**  
-If you have questions or ideas or want to say hello, we'd love to hear from you! 
+### 📬 **Get in Touch**
+
+If you have questions or ideas or want to say hello, we'd love to hear from you!
 
 - [Join Us on Slack](https://join.slack.com/t/opennestafrica/shared_invite/zt-36a95q8is-A9GBGWrt89ko4egspqyV6g)
 - [Sponsor OpenNest Africa](https://opencollective.com/open-nest-africa/)

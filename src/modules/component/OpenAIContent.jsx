@@ -23,18 +23,21 @@ const OpenAIContent = () => {
             <span>
               <img src="/images/avatar.svg" alt="User avatar" />
             </span>
-            <p className="text-2xl text-black">How do I get started in Open Source?</p>
+            <p className="text-2xl text-black">
+              How do I get started in Open Source?
+            </p>
           </div>
           <span className="text-[#292D32]">
-            <PencilIcon className="w-5 h-5"/>
+            <PencilIcon className="w-5 h-5" />
           </span>
         </div>
         <div className="bg-white rounded-2xl p-9 space-y-12">
           <p className="text-black text-2xl leading-8">
-            Getting started with open source can be intimidating, but it doesn't have to be. 
-            Start by exploring projects that interest you, reading their documentation, and 
-            looking for issues labeled "good first issue" or "help wanted". Remember, every 
-            contribution, no matter how small, makes a difference in the open source community.
+            Getting started with open source can be intimidating, but it doesn't
+            have to be. Start by exploring projects that interest you, reading
+            their documentation, and looking for issues labeled "good first
+            issue" or "help wanted". Remember, every contribution, no matter how
+            small, makes a difference in the open source community.
           </p>
           <div className="flex items-center gap-x-6">
             <span>

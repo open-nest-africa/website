@@ -8,10 +8,22 @@ const WhyOpenNest = () => {
         Why Choose OpenNest
       </h1>
       <main className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-6 md:gap-x-[25px] gap-y-6 pt-6 sm:pt-8">
-        <WhyOpenNestCard title="Beginner-Friendly Guides" paragraph="Step-by-step tutorials to guide you through the open-source space." />
-        <WhyOpenNestCard title="Curated Resources" paragraph="Access to the best tools, guides, and articles for newcomers." />
-        <WhyOpenNestCard title="Community Support" paragraph="Join our community and collaborate with others on open-source projects." />
-        <WhyOpenNestCard title="Regular Updates" paragraph="Stay ahead with the latest trends and best practices in open source." />
+        <WhyOpenNestCard
+          title="Beginner-Friendly Guides"
+          paragraph="Step-by-step tutorials to guide you through the open-source space."
+        />
+        <WhyOpenNestCard
+          title="Curated Resources"
+          paragraph="Access to the best tools, guides, and articles for newcomers."
+        />
+        <WhyOpenNestCard
+          title="Community Support"
+          paragraph="Join our community and collaborate with others on open-source projects."
+        />
+        <WhyOpenNestCard
+          title="Regular Updates"
+          paragraph="Stay ahead with the latest trends and best practices in open source."
+        />
       </main>
     </section>
   );

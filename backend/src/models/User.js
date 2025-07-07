@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: true
+      required: true,
     },
     email: {
       type: String,
@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema(
     },
     verifyEmailOtp: {
       type: String,
-      default: '',
+      default: "",
     },
     verifyEmailOtpExpiredAt: {
       type: Number,
@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema(
     resetPasswordToken: String,
     resetPasswordExpires: Date,
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 module.exports = mongoose.models.User || mongoose.model("User", userSchema);
