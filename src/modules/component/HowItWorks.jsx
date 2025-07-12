@@ -4,7 +4,7 @@ import { Card } from "../../components/Card";
 const HowItWorks = () => {
   return (
     <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[103px]">
-      <h1 className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[64px] leading-tight sm:leading-[1.4] md:leading-[1.3] lg:leading-[1.2] xl:leading-[92.8px] font-semibold text-center">
+      <h1 className="text-black dark:text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[64px] leading-tight sm:leading-[1.4] md:leading-[1.3] lg:leading-[1.2] xl:leading-[92.8px] font-semibold text-center">
         How it Works
       </h1>
       <div className="flex flex-col lg:flex-row justify-center gap-6 lg:gap-x-6 pt-6 sm:pt-8 md:pt-10">
