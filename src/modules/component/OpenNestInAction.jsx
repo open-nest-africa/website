@@ -4,8 +4,8 @@ const OpenNestInAction = () => {
   return (
     <section className="py-8 sm:py-10 md:py-14 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[100px]">
       <div className="text-center">
-        <h1 className="text-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[64px] leading-tight sm:leading-[1.4] md:leading-[1.3] lg:leading-[1.2] xl:leading-[92.8px] font-semibold text-center">OpenNest in Action</h1>
-        <p className="text-[#04354A] text-lg sm:text-xl md:text-2xl lg:text-3xl mt-2 sm:mt-3 md:mt-4">Hear from our community members</p>
+        <h1 className="text-black dark:text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[64px] leading-tight sm:leading-[1.4] md:leading-[1.3] lg:leading-[1.2] xl:leading-[92.8px] font-semibold text-center">OpenNest in Action</h1>
+        <p className="text-[#04354A] dark:text-[#A4DDEE] text-lg sm:text-xl md:text-2xl lg:text-3xl mt-2 sm:mt-3 md:mt-4">Hear from our community members</p>
       </div>
       <main className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 mt-6 sm:mt-8 md:mt-12">
         <Card
